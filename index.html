@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <title>Agencia Crash</title>
+</head>
+
+<body id="page-top">
+    <!-- Header -->
+    <header class="bg-light-pink Header" id="header">
+        <div class="container-fluid">
+            <div class="row align-items-center p-3">
+                <div class="col">
+                    <h6>Dark Mode</h6>
+                </div>
+                <div class="col d-flex justify-content-end">
+
+                    <a class="menu-toggle " href="#"><i class="fas fa-bars"></i></a>
+                    <nav id="sidebar-wrapper">
+                        <ul class="sidebar-nav">
+                            <li class="sidebar-brand p-3"><a href="#page-top">Start Bootstrap</a></li>
+                            <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                            <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                            <li class="sidebar-nav-item"><a href="#services">Services</a></li>
+                            <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <!-- Hero -->
+    <!-- Services -->
+    <!-- About -->
+    <!-- Gallery -->
+    <!-- Bonus -->
+    <!-- Contact -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+    <script>
+        function myFunction() {
+           document.getElementById('header').classList.toggle("dark-mode");
+           document.getElementById('sidebar-wrapper').classList.toggle("dark-mode");
+        }
+        </script>
+</body>
+
+</html>
