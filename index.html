@@ -16,7 +16,7 @@
     <!-- Header -->
     <header class="bg-light-pink Header" id="header">
         <div class="container-fluid">
-            <div class="row align-items-center p-3">
+            <div class="row align-items-center pt-3">
                 <div class="col">
                     <h6>Dark Mode</h6>
                 </div>
@@ -24,13 +24,13 @@
 
                     <a class="menu-toggle " href="#"><i class="fas fa-bars"></i></a>
                     <nav id="sidebar-wrapper">
-                        <ul class="sidebar-nav">
-                            <li class="sidebar-brand p-3"><a href="#page-top">Start Bootstrap</a></li>
-                            <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                            <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                            <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                            <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                            <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+                        <ul class="sidebar-nav" id="sidebar-nav">
+                            <li class="sidebar-brand p-3" id="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
+                            <li class="sidebar-nav-item" ><a href="#page-top">Home</a></li>
+                            <li class="sidebar-nav-item" ><a href="#about">About</a></li>
+                            <li class="sidebar-nav-item" ><a href="#services">Services</a></li>
+                            <li class="sidebar-nav-item" ><a href="#portfolio">Portfolio</a></li>
+                            <li class="sidebar-nav-item" ><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -52,6 +52,8 @@
         function myFunction() {
            document.getElementById('header').classList.toggle("dark-mode");
            document.getElementById('sidebar-wrapper').classList.toggle("dark-mode");
+           document.getElementById('sidebar-nav').classList.toggle("dark-mode");
+           document.getElementById('sidebar-brand').classList.toggle("dark-mode");
         }
         </script>
 </body>
