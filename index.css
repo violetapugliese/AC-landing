@@ -16,11 +16,12 @@
 .bg-pink {
   background-color: var(--ac-pink);
 }
-.Header {
+.header {
   color: #2157db;
   height: 60px;
+  border-bottom: 1px solid var(--ac-blue);
 }
-.Header h6 {
+.header h6 {
   margin: 0;
 }
 
@@ -35,10 +36,10 @@
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: var(--ac-light-pink);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+.sidebar-wrapper {
+  background-color: var(--ac-light-pink);
+}
 .sidebar-nav {
   position: absolute;
   top: 0;
@@ -53,7 +54,6 @@
   display: block;
   text-decoration: none;
   padding: 15px;
-
 }
 
 .sidebar-nav li a:hover {
@@ -72,12 +72,12 @@
   color: #2157db;
 }
 
- .sidebar-brand a {
+.sidebar-brand a {
   color: #2157db;
   text-decoration: none;
 }
 
- .sidebar-brand a:hover {
+.sidebar-brand a:hover {
   background: none;
 }
 
@@ -102,6 +102,94 @@
 
 .btn-xl {
   padding: 1.25rem 2.5rem;
+}
+
+/* Hero */
+#carouselExampleFade {
+  position: relative;
+}
+#Hero .carousel-inner .carousel-item img {
+  object-fit: cover;
+  max-height: 90vh;
+  filter: grayscale(40%);
+}
+/* Marquee */
+.marquee {
+  overflow: hidden;
+  max-height: 50px;
+  background-color: var(--ac-blue);
+  color: white;
+}
+.marquee-container {
+  min-width: 150vw;
+}
+
+/* Services */
+.services {
+  background-color: var(--ac-light-pink);
+  color: var(--ac-blue);
+}
+.services-col-one h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 0;
+}
+.services-col-one h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.client-card {
+  background-color: #f2733b;
+  height: 200px;
+}
+/* About */
+
+.about-img img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 90vh;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.overlay .container ,
+.overlay .row {
+  width: 100%;
+  height: 100%;
+}
+.about-container .overlay p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: underline 2px solid white;
+}
+.manifest-title {
+  width: 100%;
+  background-color: var(--ac-orange);
+}
+.manifest-title p {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: underline solid 2px white;
+}
+.manifest-text-one {
+  border: solid 2px var(--ac-orange);
+  color: #f2733b;
+}
+.manifest-text-one p {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.manifest-text-two p {
+  color: #2157db;
+  margin-bottom: 0;
+  font-weight: 500;
 }
 /* Darck Mode */
 .dark-mode {
@@ -154,5 +242,8 @@
   .masthead h1,
   .masthead .h1 {
     font-size: 5.5rem;
+  }
+  .about-container .overlay p {
+    font-size: 2.5rem;
   }
 }
