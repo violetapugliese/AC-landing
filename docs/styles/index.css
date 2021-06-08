@@ -16,8 +16,9 @@
 .bg-pink {
   background-color: var(--ac-pink);
 }
+
+/* Header */
 .header {
-  position: fixed;
   color: #2157db;
   height: 60px;
   border-bottom: 1px solid var(--ac-blue);
@@ -123,7 +124,7 @@
   color: white;
 }
 .marquee-container {
-  min-width: 150vw;
+ min-width: 150vw; 
 }
 
 /* Wheel */
