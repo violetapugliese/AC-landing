@@ -17,9 +17,11 @@
   background-color: var(--ac-pink);
 }
 .header {
+  position: fixed;
   color: #2157db;
   height: 60px;
   border-bottom: 1px solid var(--ac-blue);
+  z-index: 2;
 }
 .header h6 {
   margin: 0;
@@ -124,6 +126,19 @@
   min-width: 150vw;
 }
 
+/* Wheel */
+.wheel {
+  width: 300px ;
+  height: 300px;
+  position: block;
+}
+.wheel-container {
+  position: relative;
+}
+.wheel-title{
+  position: absolute;
+  top: 0;
+}
 /* Services */
 .services {
   background-color: var(--ac-light-pink);
@@ -190,6 +205,14 @@
   color: #2157db;
   margin-bottom: 0;
   font-weight: 500;
+}
+
+/* Gallery */
+.gallery-container .col {
+  height: 120px;
+}
+#Bonus {
+  height: 500px;
 }
 /* Darck Mode */
 .dark-mode {
