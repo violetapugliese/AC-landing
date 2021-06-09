@@ -145,12 +145,11 @@
 }
 .wheel-title {
   top: -135px; 
+  display: none;
 }
-.wheel-title-out {
-  visibility: hidden;
-}
+
 .wheel-title-show {
-  visibility: show;
+  display: block;
 }
 /* Services */
 .services {

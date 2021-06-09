@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row w-100">
                 <div class="col-6">
-                    <button type="button" class="btn badge rounded-pill bg-primary" onclick="myFunction()">Dark
+                    <button type="button" class="btn badge rounded-pill bg-primary" onclick="darkMode()">Dark
                         mode</button>
                 </div>
                 <div class="col-6 d-flex justify-content-end">
@@ -77,11 +77,11 @@
     <div id="Wheel" class="wheel ">
         <div class="wheel-container d-flex justify-content-center ">
             <div id="sunny title" class="sunny-title w-75"><img src="./assets/sunny-title.png" alt="sunny"></div>
-            <div id="services-title" class="wheel-title wheel-title-show absolute"><img
+            <div id="services-title" class="wheel-title absolute"><img
                     src="./assets/services-title.png" alt=""></div>
-            <div id="about-title" class="wheel-title wheel-title-out absolute"><img src="./assets/about-title.png"
+            <div id="about-title" class="wheel-title absolute"><img src="./assets/about-title.png"
                     alt=""></div>
-            <div id="works-title" class="wheel-title wheel-title-out absolute"><img src="./assets/works-title.png"
+            <div id="works-title" class="wheel-title absolute"><img src="./assets/works-title.png"
                     alt=""></div>
         </div>
     </div>
@@ -171,7 +171,7 @@
     <!-- /About -->
 
     <!-- Gallery -->
-    <section id="Gallery" class="bg-light-pink">
+    <section id="Works" class="bg-light-pink">
         <div class="container gallery-container">
             <div class="row justify-content-between">
                 <div class="col col-5 h-4 mx-1 mb-1 bg-primary"></div>
@@ -202,24 +202,11 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/wheel.js"></script>
     <script>
-        const wheel = document.getElementById('Wheel');
-        var wheelTop = wheel.offsetTop;
-        // console.log(wheelTop)
-        let y = 0
-        window.onscroll = function () {
-            let y = window.scrollY;
-            // console.log(y);
-            if (y > wheelTop) {
-            wheel.classList.add('wheel-absolute')
-        } else {
-            wheel.classList.remove('wheel-absolute')
-        }
-        };
+       
 
-        
-
-        function myFunction() {
+        function darkMode() {
             document.getElementById('Header').classList.toggle("dark-mode");
             document.getElementById('sidebar-wrapper').classList.toggle("dark-mode");
             document.getElementById('sidebar-nav').classList.toggle("dark-mode");
