@@ -21,8 +21,7 @@
 .header {
   color: #2157db;
   height: 60px;
-  border-bottom: 1px solid var(--ac-blue);
-  z-index: 2;
+  z-index: 3;
 }
 .header h6 {
   margin: 0;
@@ -128,17 +127,30 @@
 }
 
 /* Wheel */
-.wheel {
-  width: 300px ;
-  height: 300px;
-  position: block;
+.wheel-absolute{
+  position: fixed;
+  top: 55px;
+  z-index: 2;
 }
+
 .wheel-container {
   position: relative;
 }
 .wheel-title{
   position: absolute;
   top: 0;
+}
+.sunny-title img{
+  max-width: 100%;
+}
+.wheel-title {
+  top: -135px; 
+}
+.wheel-title-out {
+  visibility: hidden;
+}
+.wheel-title-show {
+  visibility: show;
 }
 /* Services */
 .services {
