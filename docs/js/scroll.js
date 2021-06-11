@@ -11,20 +11,6 @@ $(function () {
 
   var controller = new ScrollMagic.Controller();
 
-  // var blockTween = new TweenMax.to("#services-title", 1.5, {
-  //   display: "block",
-  //   transform: "rotate(160deg)",
-  //   transitionDuration: "2s",
-  //   transitionProperty: "transform",
-  // });
-  // var containerScene = new ScrollMagic.Scene({
-  //   triggerElement: "#Services",
-  //   duration: parseFloat(aboutSectionTop),
-  // })
-  //   .setTween(blockTween)
-  //   // .addIndicators()
-  //   .addTo(controller);
-
   // Services IN-OUT
     new ScrollMagic.Scene({ triggerElement: "#MarqueeOne" , duration: parseFloat(aboutSectionTop),})
     .setClassToggle("#services-title", "wheel-title-show") 
