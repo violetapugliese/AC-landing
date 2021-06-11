@@ -179,9 +179,11 @@
   width: 280px;
   height: 280px;
   top: -140px;
-  display: none;
+  opacity: 0;
   border-radius: 50%;
   overflow: hidden;
+  transform: rotate(-90deg);
+  transition: all 1s ease-in-out;
 }
 .wheel-title img {
   max-width: 280px;
@@ -189,10 +191,14 @@
   border-radius: 50%;
 }
 .wheel-title-show {
-  display: block;
-  transition-duration: 2s;
-  transition-property: transform;
-  transform: rotate(90deg);
+  opacity: 1;
+  transition: all 2s ease-in-out;
+  transform: rotate(180deg); 
+}
+.wheel-title-out{
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transform: rotate(360deg);
 }
 /* Services */
 .services {
