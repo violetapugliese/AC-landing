@@ -151,8 +151,8 @@
 .wheel-absolute {
   position: sticky;
   height: auto;
-  top: 50px;
-  z-index: 4;
+  top: 0;
+  z-index: 200;
 }
 
 .wheel-container {
@@ -167,13 +167,10 @@
   height: 280px;
   text-align: center;
   top: -140px;
-  /* border-radius: 50%;
-  background-color: red; */
 }
 .sunny-title img {
   max-width: 100%;
 }
-
 .wheel-title {
   position: absolute;
   width: 280px;
