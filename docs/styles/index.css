@@ -167,6 +167,8 @@
   height: 280px;
   text-align: center;
   top: -140px;
+  border-radius: 50%;
+  background-color: var(--ac-light-pink);
 }
 .sunny-title img {
   max-width: 100%;
