@@ -13,22 +13,22 @@ var wheelTop = (wheelOffsetTop + 100)
 // const servicesSectionTop = servicesSection.offsetTop;
 // const aboutSectionTop = aboutSection.offsetTop;
 // const worksSectionTop = worksSection.offsetTop;
-let yPlus = 0;
-let y = 0;
-window.onscroll = function () {
-    let y = window.scrollY;
-    let yPlus = y + 400;
-    wheelFixed(yPlus);
-    // addTitleWithScroll(y);
-}
+// let yPlus = 0;
+// let y = 0;
+// window.onscroll = function () {
+//     let y = window.scrollY;
+//     let yPlus = y + 400;
+//     wheelFixed(yPlus);
+//     // addTitleWithScroll(y);
+// }
 
-function wheelFixed (yPlus) {
-    if (yPlus > wheelTop) {
-        wheel.classList.add('wheel-absolute')
-    } else {
-        wheel.classList.remove('wheel-absolute')
-    }
-}
+// function wheelFixed (yPlus) {
+//     if (yPlus > wheelTop) {
+//         wheel.classList.add('wheel-absolute')
+//     } else {
+//         wheel.classList.remove('wheel-absolute')
+//     }
+// }
 
 // function addTitleWithScroll  (y) {
     

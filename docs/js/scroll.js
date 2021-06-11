@@ -39,4 +39,11 @@ $(function () {
   .setClassToggle("#works-title", "wheel-title-out")
   .addTo(controller);
 
+  // Pin wheel
+  new ScrollMagic.Scene({triggerElement: "#Services", duration: parseFloat(bonusSectionTop)})
+  .setClassToggle("#Wheel", "wheel-absolute")
+  .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+  .addTo(controller);
+
+
 });
