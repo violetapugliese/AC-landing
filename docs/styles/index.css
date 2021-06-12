@@ -30,13 +30,21 @@ body {
   height: 60px;
   z-index: 100;
 }
- .header .row {
-   position: absolute;
-   top: 2px;
+.header-icons-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+ .header .col-1 {
+   margin: 0.2rem 0.5rem 0 0;
    font-size: 2rem;
    color: var(--ac-blue);
  }
- .header .row i{
+ .header .col-1 a {
+  z-index: 1000;
+}
+ .header i{
   font-size: 1.5rem;
  }
 
@@ -63,7 +71,7 @@ body {
   z-index: 2;
   right: 0;
   top: 0;
-  width: 250px;
+  width: 160px;
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
@@ -71,11 +79,12 @@ body {
 
 .sidebar-nav {
   position: absolute;
-  top: 0;
-  width: 250px;
+  top: 160px;
+  width: 160px;
   margin: 0;
   padding: 1rem;
   list-style: none;
+  text-align: right;
 }
 
 .sidebar-nav li.sidebar-nav-item a {
@@ -102,7 +111,7 @@ body {
 }
 .sidebar-brand h1{
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #f2733b;
   font-weight: 600;
 }
@@ -116,7 +125,7 @@ body {
 
 #sidebar-wrapper.active {
   right: 250px;
-  width: 250px;
+  width: 160px;
   transition: all 0.4s ease 0s;
   border-left: 1px solid #fac1b9;
 }
@@ -189,7 +198,7 @@ body {
   position: sticky;
   height: auto;
   top: 0px ;
-  z-index: 99;
+  z-index: 998;
 }
 
 .wheel-container {
@@ -269,7 +278,7 @@ body {
   margin: 0;
 }
 .client-card {
-  background-color: #a5bc00;
+  background-color: #f2733b;
   height: 200px;
 }
 /* About */

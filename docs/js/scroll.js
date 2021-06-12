@@ -3,11 +3,15 @@ $(function () {
     const aboutSection = document.getElementById('About')
     const worksSection = document.getElementById('Works')
     const bonusSection = document.getElementById('Bonus')
+    const contactSection = document.getElementById('Contact')
+    const footerSection = document.getElementById('Footer')
     
     const servicesSectionTop = servicesSection.offsetTop;
     const aboutSectionTop = aboutSection.offsetTop;
     const worksSectionTop = worksSection.offsetTop;
     const bonusSectionTop = bonusSection.offsetTop;
+    const contactSectionTop = contactSection.offsetTop;
+    const footerSectionTop = footerSection.offsetTop;
 
   var controller = new ScrollMagic.Controller();
 
@@ -41,9 +45,9 @@ $(function () {
   .addTo(controller);
 
   // Pin wheel
-  new ScrollMagic.Scene({triggerElement: "#Services", duration: parseFloat(bonusSectionTop)})
+  new ScrollMagic.Scene({triggerElement: "#Services", duration: 5000,})
   .setClassToggle("#Wheel", "wheel-absolute")
-  // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+  .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
   .addTo(controller);
 
 
