@@ -279,8 +279,18 @@ body {
 }
 .client-card {
   background-color: #f2733b;
-  height: 200px;
+  height: 16rem;
 }
+.client-card-img{
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+}
+.client-card-img img{
+  object-fit: cover;
+  width: 100%;
+}
+
 /* About */
 
 .about-img img {
