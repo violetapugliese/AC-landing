@@ -30,17 +30,22 @@
 }
  .header .row {
    position: absolute;
-   top: 0;
-   width: 40px;
-   padding-bottom: 0.5rem ;
-   border-radius: 0 0 20px 20px ;
-   background-color: #fcf2fab2;
+   top: 20px;
+   /* width: 2rem;
+   padding-bottom: 1rem ;
+   border-radius: 0 0 1rem 1rem ;
+   background-color: #fcf2fab2; */
+   font-size: 2rem;
+   color: var(--ac-blue);
+ }
+ .header .row i{
+  font-size: 1.5rem;
  }
 .header h6 {
   margin: 0;
 }
 .header a {
-  color: #2157db;
+  color: #f2733b;
 }
 
 /* Navbar */
