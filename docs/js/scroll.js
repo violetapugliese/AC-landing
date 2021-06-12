@@ -23,6 +23,7 @@ $(function () {
   // About IN-OUT
     new ScrollMagic.Scene({triggerElement: "#About" , duration: parseFloat(worksSectionTop),})
     .setClassToggle("#about-title", "wheel-title-show") 
+    .addIndicators()
     .addTo(controller);
 
     new ScrollMagic.Scene({ triggerElement: "#Works" ,  duration: parseFloat(worksSectionTop),})

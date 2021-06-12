@@ -166,22 +166,13 @@
 
 .wheel-container {
   position: relative;
-  height: auto;
-  width: 280px;
   margin: 0 auto;
 }
 .sunny{
   position: absolute;
-  width: 280px;
-  height: 280px;
-  text-align: center;
   top: -140px;
-  border-radius: 50%;
-  /* background-color: var(--ac-light-pink); */
 }
-.sunny img {
-  width: 100%;
-}
+
 .wheel-title {
   position: absolute;
   width: 280px;
