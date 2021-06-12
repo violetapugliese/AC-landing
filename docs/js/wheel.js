@@ -1,6 +1,6 @@
-const wheel = document.getElementById('Wheel');
-var wheelOffsetTop = wheel.offsetTop;
-var wheelTop = (wheelOffsetTop + 100)
+// const wheel = document.getElementById('Wheel');
+// var wheelOffsetTop = wheel.offsetTop;
+// var wheelTop = (wheelOffsetTop + 100)
 
 // const servicesTitle = document.getElementById('services-title') 
 // const aboutTitle = document.getElementById('about-title') 

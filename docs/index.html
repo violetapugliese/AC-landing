@@ -51,15 +51,10 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
             data-bs-pause="false">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/hero-beer3.jpg" class="d-block w-100" alt="beer">
+                <div class="carousel-item active"><img src="./assets/hero-beer3.jpg" class="d-block w-100" alt="beer">
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/hero-beer2.jpg" class="d-block w-100" alt="beer">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/hero-beer3.jpg" class="d-block w-100 " alt="beer">
-                </div>
+                <div class="carousel-item"><img src="./assets/hero-beer2.jpg" class="d-block w-100" alt="beer"> </div>
+                <div class="carousel-item"><img src="./assets/hero-beer3.jpg" class="d-block w-100 " alt="beer"></div>
             </div>
             <div class="aro">
                 <img src="./assets/aro.png" alt="aro">
@@ -84,10 +79,10 @@
     <!-- Wheel -->
     <section id="Wheel" class="wheel">
         <div class="wheel-container">
-            <div id="sunny-title" class="sunny-title"><img src="./assets/sunny-title.svg" alt="sunny"></div>
             <div id="services-title" class="wheel-title "><img src="./assets/services-title.png" alt=""></div>
             <div id="about-title" class="wheel-title "><img src="./assets/about-title.png" alt=""></div>
             <div id="works-title" class="wheel-title "><img src="./assets/works-title.png" alt=""></div>
+            <div id="Sunny" class="sunny"><img src="./assets/sunny-title.png" alt="sunny"></div>
         </div>
     </section>
     <!-- /Wheel -->
@@ -177,25 +172,132 @@
 
     <!-- Gallery -->
     <section id="Works" class="bg-light-pink">
-        <div class="container gallery-container">
-            <div class="row justify-content-between">
-                <div class="col col-5 h-4 mx-1 mb-1 bg-primary"></div>
-                <div class="col col-5 h-4 mx-1 mb-1 bg-dark"></div>
-                <div class="col col-8 h-4 mx-1 mb-1 bg-primary"></div>
-                <div class="col col-4 h-4 mx-1 mb-1 bg-dark"></div>
-                <div class="col col-5 h-4 mx-1 mb-1 bg-primary"></div>
-                <div class="col col-5 h-4 mx-1 mb-1 bg-dark"></div>
-                <div class="col col-8 h-4 mx-1 mb-1 bg-primary"></div>
-                <div class="col col-4 h-4 mx-1 mb-1 bg-dark"></div>
-                <div class="col col-5 h-4 mx-1 mb-1 bg-dark"></div>
-                <div class="col col-8 h-4 mx-1 mb-1 bg-primary"></div>
-                <div class="col col-4 h-4 mx-1 mb-1 bg-dark"></div>
+
+        <div id="Gallery" class="gallery-container container">
+            <div class="row">
+
+                <div id="gallery-client1" class="col-6 col-md-4 p-0  gallery-client1" >
+                        <div class="card-colum" >
+                            <script>
+                                var imgGallery = ["girl2", "girl1", "client1", "hero-beer2", "hero-beer3", "friends"];
+                                var galleryOne = document.getElementById('gallery-client1');
+    
+                                for (img of imgGallery) {
+                                    galleryOne.innerHTML += `
+                                    <div class="card">
+                                      <a data-bs-toggle="modal" data-bs-target="#id${img}">
+                                      <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
+                                      </a>
+                                    </div>
+    
+                                    <div class="modal  fade" id="id${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Cliente - campaña</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./assets/gallery/${img}.jpg" alt="">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    `
+                                }
+                            </script>
+                        </div>
+                    </div>
+    
+                    <div id="gallery-client2" class="col-6 col-md-4 p-0  gallery-client2">
+                        <div class="card-colum">
+                            <script>
+                                var imgGallery2 = ["friends1", "hero-beer22", "hero-beer33", "client2", "girl4" , "girl3"];
+                                var galleryTwo = document.getElementById('gallery-client2');
+    
+                                for (img of imgGallery2) {
+                                    galleryTwo.innerHTML += `
+                                    <div class="card ">
+                                      <a data-bs-toggle="modal" data-bs-target="#id${img}">
+                                      <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
+                                      </a>
+                                    </div>
+    
+                                    <div class="modal  fade" id="id${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Cliente - campaña</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./assets/gallery/${img}.jpg" alt="">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    `
+                                }
+                            </script>
+                        </div>
+                    </div>
+    
+                    <div id="gallery-client3" class="col-6 col-md-4 p-0  gallery-client3" >
+                        <div class="card-colum" >
+                            <script>
+                                var imgGallery = ["girl22", "girl11", "hero-beer222", "hero-beer333", "client3", "friends11"];
+                                var galleryThree = document.getElementById('gallery-client3');
+    
+                                for (img of imgGallery) {
+                                    galleryThree.innerHTML += `
+                                    <div class="card">
+                                      <a data-bs-toggle="modal" data-bs-target="#id${img}">
+                                      <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
+                                      </a>
+                                    </div>
+    
+                                    <div class="modal  fade" id="id${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Cliente - campaña</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./assets/gallery/${img}.jpg" alt="">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    `
+                                }
+                            </script>
+                        </div>
+                    </div>
+    
+                </div>
             </div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+        </div>
+        </div>
         </div>
     </section>
+
+
     <!-- Bonus -->
     <section id="Bonus" class="bg-light-pink">
         <div class="container ">
