@@ -57,10 +57,14 @@
                 <div class="carousel-item"><img src="./assets/hero-beer3.jpg" class="d-block w-100 " alt="beer"></div>
             </div>
             <div class="aro">
-                <img src="./assets/aro.png" alt="aro">
-            </div>
-
+                <div class="circuloafuera">
+                    <div class="circuloadentro">
+                    </div>
+                </div>
+            
+        </div>
     </section>
+    
     <!-- /Hero -->
     <!-- Marquee -->
     <div id="MarqueeOne" class="marquee">
@@ -75,14 +79,21 @@
                 #ContenidoEnMovimiento</p>
         </div>
     </div>
+    
     <!-- /Marquee -->
+
     <!-- Wheel -->
+   
     <section id="Wheel" class="wheel">
-        <div class="wheel-container">
+        <div id="wheel-container" class="wheel-container">
             <div id="services-title" class="wheel-title "><img src="./assets/services-title.png" alt=""></div>
             <div id="about-title" class="wheel-title "><img src="./assets/about-title.png" alt=""></div>
             <div id="works-title" class="wheel-title "><img src="./assets/works-title.png" alt=""></div>
-            <div id="Sunny" class="sunny"><img src="./assets/sunny-title.png" alt="sunny"></div>
+        </div>
+        <div class="circuloafuera">
+            <div class="circuloadentro">
+                <img src="./assets/sunny-title-solo.png" alt="">
+            </div>
         </div>
     </section>
     <!-- /Wheel -->
@@ -176,14 +187,14 @@
         <div id="Gallery" class="gallery-container container">
             <div class="row">
 
-                <div id="gallery-client1" class="col-6 col-md-4 p-0  gallery-client1" >
-                        <div class="card-colum" >
-                            <script>
-                                var imgGallery = ["girl2", "girl1", "client1", "hero-beer2", "hero-beer3", "friends"];
-                                var galleryOne = document.getElementById('gallery-client1');
-    
-                                for (img of imgGallery) {
-                                    galleryOne.innerHTML += `
+                <div id="gallery-client1" class="col-6 col-md-4 p-0  gallery-client1">
+                    <div class="card-colum">
+                        <script>
+                            var imgGallery = ["girl2", "girl1", "client1", "hero-beer2", "hero-beer3", "friends"];
+                            var galleryOne = document.getElementById('gallery-client1');
+
+                            for (img of imgGallery) {
+                                galleryOne.innerHTML += `
                                     <div class="card">
                                       <a data-bs-toggle="modal" data-bs-target="#id${img}">
                                       <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
@@ -209,19 +220,19 @@
                                     </div>
                                     </div>
                                     `
-                                }
-                            </script>
-                        </div>
+                            }
+                        </script>
                     </div>
-    
-                    <div id="gallery-client2" class="col-6 col-md-4 p-0  gallery-client2">
-                        <div class="card-colum">
-                            <script>
-                                var imgGallery2 = ["friends1", "hero-beer22", "hero-beer33", "client2", "girl4" , "girl3"];
-                                var galleryTwo = document.getElementById('gallery-client2');
-    
-                                for (img of imgGallery2) {
-                                    galleryTwo.innerHTML += `
+                </div>
+
+                <div id="gallery-client2" class="col-6 col-md-4 p-0  gallery-client2">
+                    <div class="card-colum">
+                        <script>
+                            var imgGallery2 = ["friends1", "hero-beer22", "hero-beer33", "client2", "girl4", "girl3"];
+                            var galleryTwo = document.getElementById('gallery-client2');
+
+                            for (img of imgGallery2) {
+                                galleryTwo.innerHTML += `
                                     <div class="card ">
                                       <a data-bs-toggle="modal" data-bs-target="#id${img}">
                                       <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
@@ -247,19 +258,19 @@
                                     </div>
                                     </div>
                                     `
-                                }
-                            </script>
-                        </div>
+                            }
+                        </script>
                     </div>
-    
-                    <div id="gallery-client3" class="col-6 col-md-4 p-0  gallery-client3" >
-                        <div class="card-colum" >
-                            <script>
-                                var imgGallery = ["girl22", "girl11", "hero-beer222", "hero-beer333", "client3", "friends11"];
-                                var galleryThree = document.getElementById('gallery-client3');
-    
-                                for (img of imgGallery) {
-                                    galleryThree.innerHTML += `
+                </div>
+
+                <div id="gallery-client3" class="col-6 col-md-4 p-0  gallery-client3">
+                    <div class="card-colum">
+                        <script>
+                            var imgGallery = ["girl22", "girl11", "hero-beer222", "hero-beer333", "client3", "friends11"];
+                            var galleryThree = document.getElementById('gallery-client3');
+
+                            for (img of imgGallery) {
+                                galleryThree.innerHTML += `
                                     <div class="card">
                                       <a data-bs-toggle="modal" data-bs-target="#id${img}">
                                       <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
@@ -285,13 +296,13 @@
                                     </div>
                                     </div>
                                     `
-                                }
-                            </script>
-                        </div>
+                            }
+                        </script>
                     </div>
-    
                 </div>
+
             </div>
+        </div>
         </div>
         </div>
         </div>
