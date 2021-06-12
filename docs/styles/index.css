@@ -25,12 +25,22 @@
 
 /* Header */
 .header {
-  color: #2157db;
   height: 60px;
   z-index: 100;
 }
+ .header .row {
+   position: absolute;
+   top: 0;
+   width: 40px;
+   padding-bottom: 0.5rem ;
+   border-radius: 0 0 20px 20px ;
+   background-color: #fcf2fab2;
+ }
 .header h6 {
   margin: 0;
+}
+.header a {
+  color: #2157db;
 }
 
 /* Navbar */
@@ -124,9 +134,7 @@
   height: 100vh;
   filter: grayscale(40%);
 }
-#Hero .carousel-inner {
-  padding-top: 50px;
-}
+
 .aro {
   position: absolute;
   bottom: -190px;
@@ -165,13 +173,17 @@
   position: sticky;
   height: auto;
   top: 0;
-  z-index: 200;
+  transform: translateY(-2px);
+  transition-duration: 2s;
+  transition-property: transform;
+  z-index: 99;
 }
 
 .wheel-container {
   position: relative;
   margin: 0 auto;
   top: -140px;
+  background-color: var(--ac-light-pink);
 }
 .sunny {
   position: absolute;

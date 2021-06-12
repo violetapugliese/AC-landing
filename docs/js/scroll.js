@@ -23,7 +23,7 @@ $(function () {
   // About IN-OUT
     new ScrollMagic.Scene({triggerElement: "#About" , duration: parseFloat(worksSectionTop),})
     .setClassToggle("#about-title", "wheel-title-show") 
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
     new ScrollMagic.Scene({ triggerElement: "#Works" ,  duration: parseFloat(worksSectionTop),})
@@ -43,7 +43,7 @@ $(function () {
   // Pin wheel
   new ScrollMagic.Scene({triggerElement: "#Services", duration: parseFloat(bonusSectionTop)})
   .setClassToggle("#Wheel", "wheel-absolute")
-  .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+  // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
   .addTo(controller);
 
 
