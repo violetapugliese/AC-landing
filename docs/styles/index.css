@@ -22,7 +22,9 @@
 .bg-ac-blue {
   background-color: var(--ac-blue);
 }
-
+body {
+  color: #2157db;
+}
 /* Header */
 .header {
   height: 60px;
@@ -30,11 +32,7 @@
 }
  .header .row {
    position: absolute;
-   top: 20px;
-   /* width: 2rem;
-   padding-bottom: 1rem ;
-   border-radius: 0 0 1rem 1rem ;
-   background-color: #fcf2fab2; */
+   top: 2px;
    font-size: 2rem;
    color: var(--ac-blue);
  }
@@ -43,9 +41,21 @@
  }
 
 .header a {
+  position: relative;
   color: #f2733b;
 }
-
+.header img {
+  position: absolute;
+  width: 2rem;
+  padding-top: 0.5rem ;
+  display: block;
+}
+.out {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
 /* Navbar */
 
 #sidebar-wrapper {
@@ -58,46 +68,48 @@
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
 }
-.sidebar-wrapper {
-  background-color: var(--ac-light-pink);
-}
+
 .sidebar-nav {
   position: absolute;
   top: 0;
   width: 250px;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   list-style: none;
-  color: #2157db;
 }
 
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
-  padding: 15px;
+  font-size: 1.2rem;
 }
-
+.sidebar-nav p{
+  margin: 0;
+}
 .sidebar-nav li a:hover {
   text-decoration: underline;
-  background: rgba(255, 255, 255, 0.2);
+  font-size: 1.4rem;
 }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
   text-decoration: underline;
 }
-
 .sidebar-brand {
-  font-size: 1.2rem;
-  background-color: var(--ac-pink);
-  color: #2157db;
+  display: flex;
+  border-bottom: 1px solid pink;
+  margin-bottom: 1rem;
+}
+.sidebar-brand h1{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #f2733b;
+  font-weight: 600;
 }
 
-.sidebar-brand a {
-  color: #2157db;
+.sidebar-brand a{
   text-decoration: none;
 }
-
 .sidebar-brand a:hover {
   background: none;
 }
@@ -106,6 +118,7 @@
   right: 250px;
   width: 250px;
   transition: all 0.4s ease 0s;
+  border-left: 1px solid #fac1b9;
 }
 
 .menu-toggle {
@@ -175,10 +188,7 @@
 .wheel-absolute {
   position: sticky;
   height: auto;
-  top: 0;
-  transform: translateY(-2px);
-  transition-duration: 2s;
-  transition-property: transform;
+  top: 0px ;
   z-index: 99;
 }
 
@@ -187,10 +197,6 @@
   margin: 0 auto;
   top: -140px;
   background-color: var(--ac-light-pink);
-}
-.sunny {
-  position: absolute;
-  top: -140px;
 }
 
 .circuloafuera {
@@ -203,6 +209,10 @@
   height: 280px;
   border-radius: 50%;
   border: solid 1px var(--ac-orange);
+}
+.wheel-container .circuloafuera {
+  background-color: #fcf2fab6;
+
 }
 .circuloadentro {
   display: flex;
@@ -236,7 +246,7 @@
 }
 .wheel-title-show {
   opacity: 1;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
   transform: rotate(180deg);
 }
 .wheel-title-out {
@@ -245,9 +255,8 @@
   transform: rotate(360deg);
 }
 /* Services */
-.services {
-  background-color: var(--ac-light-pink);
-  color: var(--ac-blue);
+.services-col-one {
+  padding: 0 4rem;
 }
 .services-col-one h2 {
   font-size: 3rem;
@@ -280,6 +289,9 @@
   width: 100%;
   height: 100%;
 }
+.manifest-container {
+  padding: 0 4rem;
+}
 .about-container .overlay p {
   font-size: 1.5rem;
   text-align: center;
@@ -307,7 +319,6 @@
   font-weight: 500;
 }
 .manifest-text-two p {
-  color: #2157db;
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -368,6 +379,7 @@
 .menu-toggle:hover {
   border-bottom: 2px solid var(--ac-light-pink);
 }
+
 @media (max-width: 992px) {
   .map {
     height: 75%;

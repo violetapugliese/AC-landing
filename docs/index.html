@@ -18,16 +18,17 @@
     <title>Agencia Crash</title>
 </head>
 
-<body class="bg-light-pink">
+<body id="page-top" class="bg-light-pink">
     <!-- Header -->
     <header class="header navbar position-fixed w-100" id="Header">
         <div class="container">
             <div class="row ">
                 <div class="col-12 ">
                     <a class="menu-toggle " href="#"><i class="fas fa-bars"></i></a>
-                    <nav id="sidebar-wrapper" class="sidebar-wrapper">
+                    <nav id="sidebar-wrapper" class="sidebar-wrapper bg-light-pink">
                         <ul class="sidebar-nav" id="sidebar-nav">
-                            <li class="sidebar-brand p-3" id="sidebar-brand"><a href="#page-top">Agencia Crash</a>
+                            <li class="sidebar-brand" id="sidebar-brand">
+                                <a href="#page-top"><h1>Agencia Crash</h1></a>
                             </li>
                             <li class="sidebar-nav-item"><a href="#Hero"><p>Home</p></a></li>
                             <li class="sidebar-nav-item"><a href="#Services"><p>Servicios</p></a></li>
@@ -41,6 +42,12 @@
                 <div class="col-12">
                     <a type="button" class="rounded-pill" onclick="darkMode()"><i class="fas fa-moon"></i></a>
                 </div>
+                <div class="col-12">
+                    <a>
+                        <i><img id="logo-azul-fem" class="d-block" src="./assets/logo-azul-fem.svg" alt="logo-crash-blue"></i>
+                        <i><img id="logo-rosa-fem" class="out" src="./assets/logo-rosa-fem.svg" alt="logo-crash-blue"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -50,16 +57,12 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
             data-bs-pause="false">
             <div class="carousel-inner">
-                <div class="carousel-item active"><img src="./assets/hero-beer3.jpg" class="d-block w-100" alt="beer">
-                </div>
+                <div class="carousel-item active"><img src="./assets/hero-beer3.jpg" class="d-block w-100" alt="beer"></div>
                 <div class="carousel-item"><img src="./assets/hero-beer2.jpg" class="d-block w-100" alt="beer"> </div>
                 <div class="carousel-item"><img src="./assets/hero-beer3.jpg" class="d-block w-100 " alt="beer"></div>
             </div>
             <div class="aro">
-                <div class="circuloafuera">
-                    <div class="circuloadentro">
-                    </div>
-                </div>
+                <div class="circuloafuera"><div class="circuloadentro"></div></div>
             </div>
     </section>
 
@@ -82,7 +85,6 @@
     <!-- /Marquee -->
 
     <!-- Wheel -->
-
     <section id="Wheel" class="wheel">
         <div id="wheel-container" class="wheel-container">
             <div id="services-title" class="wheel-title"><img src="./assets/services-title.png" alt=""></div>
@@ -96,6 +98,7 @@
         </div>
     </section>
     <!-- /Wheel -->
+
     <!-- Services -->
     <section id="Services" class="services">
         <div class="container my-4">
@@ -181,7 +184,7 @@
     <!-- /About -->
 
     <!-- Gallery -->
-    <section id="Works" class="bg-light-pink">
+    <section id="Works" >
 
         <div id="Gallery" class="gallery-container container">
             <div class="row">
@@ -309,7 +312,7 @@
 
 
     <!-- Bonus -->
-    <section id="Bonus" class="bg-light-pink">
+    <section id="Bonus">
         <div class="container ">
             <h2>Bonus</h2>
         </div>
@@ -324,14 +327,13 @@
 
 
         function darkMode() {
-            document.getElementById('Header').classList.toggle("dark-mode");
+            document.getElementById('page-top').classList.toggle("dark-mode");
             document.getElementById('sidebar-wrapper').classList.toggle("dark-mode");
-            document.getElementById('sidebar-nav').classList.toggle("dark-mode");
-            document.getElementById('sidebar-brand').classList.toggle("dark-mode");
-            document.getElementById('Services').classList.toggle("dark-mode");
+            document.getElementById('logo-azul-fem').classList.toggle("out");
+            document.getElementById('logo-rosa-fem').classList.toggle("show");
         }
 
-
+        
     </script>
 </body>
 
