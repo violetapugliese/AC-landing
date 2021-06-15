@@ -47,8 +47,15 @@ $(function () {
   // Pin wheel
   new ScrollMagic.Scene({triggerElement: "#Services", duration: 5000,})
   .setClassToggle("#Wheel", "wheel-absolute")
-  .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+  // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
   .addTo(controller);
 
+  new ScrollMagic.Scene({triggerElement: "#services-col-one" , duration: 5000, triggerHook: 0})
+  .setClassToggle("#services-col-one", "opacity-on-scroll")
+  .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#client" , duration: 5000, triggerHook: 0})
+  .setClassToggle("#client", "opacity-on-scroll")
+  .addTo(controller);
 
 });

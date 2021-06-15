@@ -7,9 +7,8 @@
 }
 * {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
-
 .bg-light-pink {
   background-color: var(--ac-light-pink);
 }
@@ -28,13 +27,12 @@ body {
 /* Header */
 .header {
   height: 60px;
-  z-index: 100;
+  z-index: 1000;
 }
 .header-icons-container {
   position: absolute;
   right: 0;
   top: 0;
-
 }
  .header .col-1 {
    margin: 0.2rem 0.5rem 0 0;
@@ -68,7 +66,7 @@ body {
 
 #sidebar-wrapper {
   position: fixed;
-  z-index: 2;
+  z-index: 999;
   right: 0;
   top: 0;
   width: 160px;
@@ -265,7 +263,9 @@ body {
 }
 /* Services */
 .services-col-one {
-  padding: 0 4rem;
+  opacity: 1;
+  transition: 1s;
+  transition-property: opacity ;
 }
 .services-col-one h2 {
   font-size: 3rem;
@@ -277,22 +277,49 @@ body {
   font-size: 1.5rem;
   margin: 0;
 }
+.client {
+  opacity: 1;
+  transition: 1s;
+  transition-property: opacity ;
+}
 .client-card {
   background-color: #f2733b;
-  height: 16rem;
+  height: 80%;
+  color: var(--ac-light-pink);
+  font-size: 0.6rem;
+}
+.client-card-box-btn button {
+  font-size: 1rem;
+  font-weight: 600;
+  border: solid 1px var(--ac-light-pink);
+  background-color: var(--ac-orange);
+  color: var(--ac-light-pink);
+  border-radius: 0;
+}
+.client-card-box-btn button:hover {
+  text-decoration: underline 2px solid;
+}
+.client-card-title{
+  height: 2rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--ac-light-pink);
+  padding: 0.2rem;
 }
 .client-card-img{
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  float: left;
+  height: 0;
   overflow: hidden;
-  width: 100%;
-  height: 60%;
 }
-.client-card-img img{
-  object-fit: cover;
+.client-card-img img {
   width: 100%;
+  position: absolute;
+  left: 0;
 }
-
 /* About */
-
 .about-img img {
   width: 100%;
   object-fit: cover;
@@ -308,9 +335,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.manifest-container {
-  padding: 0 4rem;
-}
+
 .about-container .overlay p {
   font-size: 1.5rem;
   text-align: center;
@@ -398,7 +423,11 @@ body {
 .menu-toggle:hover {
   border-bottom: 2px solid var(--ac-light-pink);
 }
-
+/* Opacity */
+.opacity-on-scroll {
+  opacity: 0;
+  transition: 4s;
+}
 @media (max-width: 992px) {
   .map {
     height: 75%;

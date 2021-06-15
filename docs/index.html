@@ -100,8 +100,8 @@
     <!-- Services -->
     <section id="Services" class="services">
         <div class="container my-4">
-            <div class="row pt-4">
-                <div class="col-12 col-md-6 services-col-one my-4">
+            <div class="row">
+                <div id="services-col-one" class="col-12 col-md-8 col-lg-6 services-col-one my-4 show-opacity ">
                     <h2>sí a todo</h2>
                     <h3>para una mayor comodidad</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi saepe quo sunt in ea officiis
@@ -109,25 +109,61 @@
                         reiciendis, ipsum, non nemo. Pariatur cumque magni alias delectus necessitatibus officia
                         veritatis qui culpa dicta fugit.</p>
                 </div>
-                <div class="col-12 col-md-6 my-4">
-                    <div class="client">
-                        <div class="client-card">
-                            <div class="client-card-box-btn"></div>
-                            <div class="client-card-item">
-                                <div class="container p-4">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="client-card-img"><img src="./assets/hero-beer2.jpg" alt="beer"></div>
+                
+                <div class="col-12 col-md-6 offset-md-6 col-lg-6 offset-lg-5 my-4">
+                    <div id="client" class="client show-opacity ">
+                        <div id="carouselExampleControls" class="carousel slide client-card" data-bs-ride="carousel">
+                            
+                                <div class="client-card-title d-flex justify-content-between">
+                                    <p class="m-1">conocé nuestros trabajos</p>
+                                    <div class="col-1 client-card-box-btn d-flex justify-content-end">
+                                        <button class="pb-2" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev""><</button>  
+                                        <button class="pb-2" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">></button> 
+                                    </div>
+                                </div>
+                    
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active container p-3">
+                                        <div class="row h-100">
+                                            <div class="col-6">
+                                                <div class="client-card-img"><img src="./assets/hero-beer2.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>Cliente Beer2</p>
+                                                <p>Srvicios</p>
+                                                <p>Campaña</p>
+                                                <p>Trabajando juntos desde</p>
+                                            </div>
                                         </div>
-                                        <div class="col-6">
-                                            <p>Cliente</p>
-                                            <p>Srvicios</p>
-                                            <p>Campaña</p>
-                                            <p>Trabajando juntos desde</p>
+                                    </div>
+                                    <div class="carousel-item container p-3">
+                                        <div class="row h-100">
+                                            <div class="col-6">
+                                                <div class="client-card-img"><img src="./assets/hero-beer3.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>Cliente Beer</p>
+                                                <p>Srvicios</p>
+                                                <p>Campaña</p>
+                                                <p>Trabajando juntos desde</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item container p-3">
+                                        <div class="row h-100">
+                                            <div class="col-6">
+                                                <div class="client-card-img"><img src="./assets/friends.jpg" alt=""></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>Cliente Friends</p>
+                                                <p>Srvicios</p>
+                                                <p>Campaña</p>
+                                                <p>Trabajando juntos desde</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
