@@ -35,27 +35,26 @@ body {
   right: 0;
   top: 0;
 }
-.header .col-1 {
-  margin: 0.2rem 0.5rem 0 0;
+.header .col{
   font-size: 1.3rem;
   color: var(--ac-blue);
 }
-.header .col-1 a {
+.header .col a {
   z-index: 1000;
 }
-.header i {
-  font-size: 1.5rem;
-}
-
 .header a {
   position: relative;
   color: #f2733b;
 }
 .header img {
-  position: absolute;
-  padding-top: 0.2rem;
+  margin-top: 0.2rem;
   width: 1.3rem;
   z-index: 1000;
+}
+#logo-rosa-fem {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .out {
   opacity: 0;
@@ -78,7 +77,7 @@ body {
 
 .sidebar-nav {
   position: absolute;
-  top: 160px;
+  top: 112px;
   width: 160px;
   margin: 0;
   padding: 1rem;
@@ -406,7 +405,7 @@ body {
   width: 100%;
 }
 .card {
-  border: 5px solid var(--ac-light-pink);
+  border: 3px solid var(--ac-light-pink);
   cursor: pointer;
   border-radius: 0;
   overflow: hidden;
@@ -507,5 +506,14 @@ body {
   }
   .about-container .overlay p {
     font-size: 2.5rem;
+  }
+  .header .col{
+    font-size: 2.2rem;
+  }
+  .header img {
+    width: 2.2rem;
+  }
+  .sidebar-nav {
+    top: 160px;
   }
 }
