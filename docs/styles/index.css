@@ -345,6 +345,9 @@ body {
 .manifest-title {
   width: 100%;
   background-color: var(--ac-orange);
+  opacity: 1;
+  transition: 1s;
+  transition-property: opacity;
 }
 .manifest-title p {
   font-size: 2.5rem;
@@ -357,10 +360,18 @@ body {
 .manifest-text-one {
   border: solid 2px var(--ac-orange);
   color: #f2733b;
+  opacity: 1;
+  transition: 1s;
+  transition-property: opacity;
 }
 .manifest-text-one p {
   margin-bottom: 0;
   font-weight: 500;
+}
+.manifest-text-two {
+  opacity: 1;
+  transition: 1s;
+  transition-property: opacity;
 }
 .manifest-text-two p {
   margin-bottom: 0;
@@ -407,6 +418,24 @@ body {
 /* Bonus */
 #Bonus {
   height: 500px;
+}
+/* Footer */
+.footer {
+  color: #fcf2fa;
+  font-size: 0.8rem;
+}
+.footer li {
+  list-style: none;
+}
+.footer a {
+  text-decoration: none;
+  color: #fcf2fa; 
+}
+.footer a:hover {
+  text-decoration: underline solid 1px;
+}
+.footer svg {
+  font-size: 1.4rem;
 }
 /* Darck Mode */
 .dark-mode {
