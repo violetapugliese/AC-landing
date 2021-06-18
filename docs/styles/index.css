@@ -22,6 +22,7 @@
   background-color: var(--ac-blue);
 }
 body {
+  transition: 0.3s;
   color: #2157db;
 }
 /* Header */
@@ -36,7 +37,7 @@ body {
 }
 .header .col-1 {
   margin: 0.2rem 0.5rem 0 0;
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: var(--ac-blue);
 }
 .header .col-1 a {
@@ -52,9 +53,9 @@ body {
 }
 .header img {
   position: absolute;
-  width: 2rem;
-  padding-top: 0.5rem;
-  display: block;
+  padding-top: 0.2rem;
+  width: 1.3rem;
+  z-index: 1000;
 }
 .out {
   opacity: 0;
@@ -157,7 +158,29 @@ body {
   height: 100vh;
   filter: grayscale(40%);
 }
-
+.hero-animation {
+  top: 35vh;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  z-index: 2;
+  animation-name: logo-hero;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes logo-hero {
+  0% {transform: scale(0) rotate(360deg);}
+  50% {transform: scale(1.4) rotate(450deg);}
+  60% {transform: scale(1) rotate(720deg);}    
+  80% {transform: scale(1) rotate(720deg);}    
+  100% {transform: scale(0) rotate(860deg);}    
+}
+.hero-animation img {
+  width: 100%;
+}
 .aro {
   position: absolute;
   bottom: -190px;

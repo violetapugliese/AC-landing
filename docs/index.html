@@ -17,9 +17,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <script src="./js/scroll.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () { var e; if ("IntersectionObserver" in window) { e = document.querySelectorAll(".lazy"); var n = new IntersectionObserver(function (e, t) { e.forEach(function (e) { if (e.isIntersecting) { var t = e.target; t.src = t.dataset.src, t.classList.remove("lazy"), n.unobserve(t) } }) }); e.forEach(function (e) { n.observe(e) }) } else { var t; function r() { t && clearTimeout(t), t = setTimeout(function () { var n = window.pageYOffset; e.forEach(function (e) { e.offsetTop < window.innerHeight + n && (e.src = e.dataset.src, e.classList.remove("lazy")) }), 0 == e.length && (document.removeEventListener("scroll", r), window.removeEventListener("resize", r), window.removeEventListener("orientationChange", r)) }, 20) } e = document.querySelectorAll(".lazy"), document.addEventListener("scroll", r), window.addEventListener("resize", r), window.addEventListener("orientationChange", r) } });
-    </script>
     <title>Agencia Crash</title>
 </head>
 
@@ -81,6 +78,7 @@
                 <div class="carousel-item"><img src="./assets/hero-beer2.jpg" class="d-block w-100" alt="beer"> </div>
                 <div class="carousel-item"><img src="./assets/hero-beer3.jpg" class="d-block w-100 " alt="beer"></div>
             </div>
+            <div class="hero-animation"><img src="./assets/logo-animacion.png" alt="logo blanco circular agencia crash"></div>
             <div class="aro">
                 <div class="circuloafuera">
                     <div class="circuloadentro"></div>
@@ -233,7 +231,7 @@
         </div>
         <div class="container manifest-container my-4">
             <div class="row">
-                <div class="col-12 col-md-6 my-5 ps-0">
+                <div class="col-12 col-md-6 my-5">
                     <div id="manifest-title" class="manifest-title mb-2">
                         <p>manifiesto</p>
                     </div>
@@ -243,7 +241,7 @@
                             distinctio eum at! !</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 my-5 pe-0">
+                <div class="col-12 col-md-6 my-5">
                     <div class="manifest-img">
                         <img src="" alt="">
                     </div>
