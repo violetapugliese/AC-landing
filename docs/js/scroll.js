@@ -50,23 +50,23 @@ $(function () {
   // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
   .addTo(controller);
 
-  new ScrollMagic.Scene({triggerElement: "#services-col-one" , duration: 5000, triggerHook: 0})
-  .setClassToggle("#services-col-one", "opacity-on-scroll")
-  .addTo(controller);
+  // new ScrollMagic.Scene({triggerElement: "#services-col-one" , duration: 5000, triggerHook: 0})
+  // .setClassToggle("#services-col-one", "opacity-on-scroll")
+  // .addTo(controller);
 
-  new ScrollMagic.Scene({triggerElement: "#client" , duration: 5000, triggerHook: 0})
-  .setClassToggle("#client", "opacity-on-scroll")
-  .addTo(controller);
+  // new ScrollMagic.Scene({triggerElement: "#client" , duration: 5000, triggerHook: 0})
+  // .setClassToggle("#client", "opacity-on-scroll")
+  // .addTo(controller);
 
-  new ScrollMagic.Scene({triggerElement: "#manifest-title" , duration: 5000, triggerHook: 0})
-  .setClassToggle("#manifest-title", "opacity-on-scroll")
-  .addTo(controller);
+  // new ScrollMagic.Scene({triggerElement: "#manifest-title" , duration: 5000, triggerHook: 0})
+  // .setClassToggle("#manifest-title", "opacity-on-scroll")
+  // .addTo(controller);
 
-  new ScrollMagic.Scene({triggerElement: "#manifest-text-one" , duration: 5000, triggerHook: 0})
-  .setClassToggle("#manifest-text-one", "opacity-on-scroll")
-  .addTo(controller);
+  // new ScrollMagic.Scene({triggerElement: "#manifest-text-one" , duration: 5000, triggerHook: 0})
+  // .setClassToggle("#manifest-text-one", "opacity-on-scroll")
+  // .addTo(controller);
 
-  new ScrollMagic.Scene({triggerElement: "#manifest-text-two" , duration: 5000, triggerHook: 0})
-  .setClassToggle("#manifest-text-two", "opacity-on-scroll")
-  .addTo(controller);
+  // new ScrollMagic.Scene({triggerElement: "#manifest-text-two" , duration: 5000, triggerHook: 0})
+  // .setClassToggle("#manifest-text-two", "opacity-on-scroll")
+  // .addTo(controller);
 });
