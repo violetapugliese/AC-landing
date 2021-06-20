@@ -9,7 +9,6 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
@@ -23,7 +22,7 @@
 
 <body id="page-top" class="bg-light-pink">
     <!-- Header -->
-    <header class="header navbar position-fixed w-100" id="Header">
+    <!-- <header class="header navbar position-fixed w-100" id="Header">
         <div class="header-icons-container grid">
             <div class="container-fluid text-center">
                 <div class="col">
@@ -66,6 +65,45 @@
                 </div>
             </div>
         </div>
+    </header> -->
+    <header class="header navbar position-fixed w-100 bg-light-pink" id="Header">
+        <!-- <div class="header-icons-container grid"> -->
+        <div class="container">
+            <div class="col-1">
+                <a type="button" class="rounded-pill" onclick="darkMode()"><i class="fas fa-moon"></i></a>
+            </div>
+            <div class="col-11 text-end">
+                <a class="menu-toggle" href="#"><i class="fas fa-bars"></i></a>
+                <nav id="sidebar-wrapper" class="sidebar-wrapper bg-light-pink">
+                    <ul class="sidebar-nav" id="sidebar-nav">
+                        <hr>
+                        <!-- <li class="sidebar-nav-item"><a href="#page-top">
+                                    <h3>Agencia<br>Crash</h3>
+                                </a></li> -->
+                        <li class="sidebar-nav-item"><a href="#Hero">
+                                <p>Home</p>
+                            </a></li>
+                        <li class="sidebar-nav-item"><a href="#Services">
+                                <p>Servicios</p>
+                            </a></li>
+                        <li class="sidebar-nav-item"><a href="#About">
+                                <p>Nosotras</p>
+                            </a></li>
+                        <li class="sidebar-nav-item"><a href="#Works">
+                                <p>Trabajos</p>
+                            </a></li>
+                        <li class="sidebar-nav-item"><a href="#Bonus">
+                                <p>Bonus</p>
+                            </a></li>
+                        <li class="sidebar-nav-item"><a href="#Contact">
+                                <p>Contacto</p>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <!-- </div> -->
     </header>
     <!-- Hero -->
     <section id="Hero">
@@ -114,7 +152,8 @@
         </div>
         <div class="circuloafuera">
             <div class="circuloadentro">
-                <img src="./assets/sunny-title-solo.png" alt="">
+                <img src="./assets/sunny-title-solo.png" alt="sol naranja" class="sunny">
+                <img src="./assets/logo-light.svg" alt="logo agencia crash blanco" class="logo-blanco-wheel">
             </div>
         </div>
     </section>
@@ -124,13 +163,21 @@
     <section id="Services" class="services my-4">
         <div class="container">
             <div class="row">
-                <div id="services-col-one" class="col-12 col-md-6 pe-5">
-                    <h2>sí a todo</h2>
-                    <h3 class="mb-3">para una mayor comodidad</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi saepe quo sunt in ea officiis
-                        magni molestiae, sint quae voluptate nam ex quam quisquam totam enim atque dolor commodi
-                        reiciendis, ipsum, non nemo. Pariatur cumque magni alias delectus necessitatibus officia
-                        veritatis qui culpa dicta fugit.</p>
+                <div id="services-col-one" class="col-12 col-md-6 ">
+                    <div class="col">
+                        <h2>sí a todo</h2>
+                        <h3 class="mb-3">para una mayor comodidad</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi saepe quo sunt in ea officiis
+                            magni molestiae, sint quae voluptate nam ex quam quisquam totam enim atque dolor commodi
+                            reiciendis, ipsum, non nemo. Pariatur cumque magni alias delectus necessitatibus officia
+                            veritatis qui culpa dicta fugit.
+                        </p>
+                    </div>
+                    <div class="col services-buttons mb-4">
+                        <button id="btnPacks" class="btn-ac border-btn-ac px-2">Packs</button>
+                        <button id="btnTest" class="btn-ac border-btn-ac px-2">Test</button>
+                        <button id="btnWhat" class="btn-ac border-btn-ac px-2">Qué hacemos</button>
+                    </div>
                 </div>
 
                 <div class="col-12 col-md-6 ">
@@ -233,17 +280,21 @@
         </div>
         <div class="container manifest-container my-4">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 mb-4">
                     <div id="manifest-title" class="manifest-title mb-2 p-2 text-center">
                         <h2>manifiesto</h2>
                     </div>
                     <div id="manifest-text-one" class="p-3">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur a nemo deserunt autem
                             molestias sit deleniti fugit aspernatur ex. Cupiditate vitae quo consequatur ipsam? Dolorem
-                            distinctio eum at! !</p>
+                            distinctio eum at! !
+                        </p>
+                        <div>
+                            <button id="btmManifest" class="btn-ac-rect p-2">Seguir leyendo</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex my-4">  
+                <div class="col-12 col-md-6 d-flex my-4">
                     <div class="manifest-img col-6">
                         <img src="./assets/hey.svg" alt="forma rosa llamativa">
                     </div>
@@ -428,7 +479,14 @@
     <!-- Bonus -->
     <section id="Bonus">
         <div class="container vh-100">
-            <h2>Bonus</h2>
+            <div class="bonus-circle">
+                <img class="bonus-icon-two" src="./assets/bonus-icon2.svg" alt="dibujo lineas">
+                <img class="bonus-icon-three" src="./assets/bonus-icon1.svg" alt="dibujo celular">
+                <img class="bonus-icon-one" src="./assets/bonus-icon3.svg" alt="dibujo megafono">
+            </div>
+            <div class="bonus-text">
+                <p>bonus - bonus - bonus - bonus</p>
+            </div>
         </div>
     </section>
 
@@ -458,7 +516,7 @@
                 <li class="footer-item col-12 col-lg"><a href="#Bonus">
                         <p>Bonus</p>
                     </a></li>
-                <li class="footer-item col-12 col-lg"><a href="#Contacto">
+                <li class="footer-item col-12 col-lg"><a href="#Contact">
                         <p>Contacto</p>
                     </a></li>
             </div>
@@ -484,16 +542,16 @@
         crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
     <script>
-
+        var btnAc = document.getElementById('btnPacks');
 
         function darkMode() {
             document.getElementById('page-top').classList.toggle("dark-mode");
             document.getElementById('sidebar-wrapper').classList.toggle("dark-mode");
-            document.getElementById('logo-azul-fem').classList.toggle("out");
-            document.getElementById('logo-rosa-fem').classList.toggle("show");
+            document.getElementById('Header').classList.toggle("dark-mode");
+            btnAc.classList.toggle("dark-mode-border");
+            // document.getElementById('logo-azul-fem').classList.toggle("out");
+            // document.getElementById('logo-rosa-fem').classList.toggle("show");
         }
-
-
     </script>
 </body>
 
