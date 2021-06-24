@@ -9,7 +9,6 @@
   margin: 0;
 }
 html {
-  font-family: Helvetica, sans-serif, sans-serif;
   font-size: 18px;
 }
 .bg-light-pink {
@@ -25,6 +24,7 @@ html {
   background-color: var(--ac-blue);
 }
 body {
+  font-family: 'Helvatica', sans-serif;
   transition: 0.3s;
   color: #2157db;
 }
