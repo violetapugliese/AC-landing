@@ -24,7 +24,7 @@ html {
   background-color: var(--ac-blue);
 }
 body {
-  font-family: 'Helvatica', sans-serif;
+  font-family: Helvetica, sans-serif;
   transition: 0.3s;
   color: #2157db;
 }
