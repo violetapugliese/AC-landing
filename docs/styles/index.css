@@ -28,14 +28,23 @@ body {
   transition: 0.3s;
   color: #2157db;
 }
-.btn-ac {
+.btn-ac-first {
   background-color: transparent;
   border-radius: 20px;
   color: inherit;
   font-weight: 600;
-}
-.border-btn-ac {
   border: 1px solid var(--ac-blue);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.btn-ac-first:hover {
+  color: white;
+  background-color: var(--ac-blue);
+}
+.btn-ac-first:focus{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.btn-ac-first:active{
+  box-shadow: none;
 }
 .btn-ac-rect {
   background-color: var(--ac-blue);
@@ -275,27 +284,32 @@ input[type="checkbox"]{
 
 /* Wheel */
 /* Services */
-.container-services {
+.container-services-one {
   background-color: var(--ac-light-pink);
   border-radius: 20px;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.384);
 }
-h2 {
+.section-title {
   font-size: 2.5rem;
-  font-weight: 600;
   text-transform: uppercase;
   text-decoration: underline 3px;
   margin: 0;
 }
 #services-col-one h3 {
-  font-weight: 600;
   font-size: 1.2rem;
   margin: 0;
 }
 #services-col-one p {
   font-weight: 500;
-  font-size: 0.8rem;
-  line-height: 1.1rem;
+  font-size: 1rem;
+}
+.services-col-two {
+  display: none;
+}
+.container-services-one img {
+  display: none;
+  padding-left: 2rem;
+  transform: rotate(-45deg);
 }
 .client {
   opacity: 1;
@@ -503,44 +517,17 @@ h2 {
     max-width: 960px;
   }
 }
-.masthead {
-  min-height: 30rem;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    ),
-    url("../assets/img/bg-masthead.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.masthead h1,
-.masthead .h1 {
-  font-size: 4rem;
-  margin: 0;
-  padding: 0;
-}
+
 @media (min-width: 576px) {
   .wrapper {
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  /* .masthead {
-    height: 100vh;
-  }
-  .masthead h1,
-  .masthead .h1 {
-    font-size: 5.5rem;
-  } */
   .about-container .overlay p {
     font-size: 2.5rem;
+  }
+  .services-col-two, .container-services-one img  {
+    display: block;
   }
 }
