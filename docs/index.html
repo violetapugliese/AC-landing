@@ -140,17 +140,20 @@
                 <div class="col-10 offset-1 col-lg-3 pt-5 offset-lg-0 text-center ">
                     <img class="w-50" src="./assets/bonus-icon1.svg" alt="dibujo de celular conectado">
                     <h3>Lorem, ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium dicta.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium
+                        dicta.</p>
                 </div>
                 <div class="col-10 offset-1 col-lg-3 pt-5 offset-lg-0 text-center ">
                     <img class="w-50" src="./assets/bonus-icon2.svg" alt="dibujo de celular conectado">
                     <h3>Lorem, ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium dicta.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium
+                        dicta.</p>
                 </div>
                 <div class="col-10 offset-1 col-lg-3 pt-5 offset-lg-0 text-center ">
                     <img class="w-50" src="./assets/bonus-icon3.svg" alt="dibujo de celular conectado">
                     <h3>Lorem, ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium dicta.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium
+                        dicta.</p>
                 </div>
             </div>
             <div class="row">
@@ -159,64 +162,75 @@
                         <div id="carouselExampleControls" class="carousel slide client-card" data-bs-ride="carousel">
 
                             <div class="client-card-title d-flex justify-content-between">
-                                <p class="m-1">conocé nuestros trabajos</p>
+                                <p class="m-1">conocé nuestros packs </p>
                                 <div class="col-1 client-card-box-btn d-flex justify-content-end">
                                     <button class="pb-2" type="button" data-bs-target="#carouselExampleControls"
-                                        data-bs-slide="prev"></button>
-                                    <button class=" pb-2" type="button" data-bs-target="#carouselExampleControls"
-                                        data-bs-slide="next">></button>
+                                        data-bs-slide="prev"> <
+                                        </button>
+                                            <button class=" pb-2" type="button"
+                                                data-bs-target="#carouselExampleControls"
+                                                data-bs-slide="next">></button>
                                 </div>
                             </div>
 
-                            <div class="carousel-inner">
-                                <div class="carousel-item active container p-3">
+                            <div class="carousel-inner" id="carousel-inner-packs">
+
+                                <script>
+                                    const carouselPack = document.getElementById('carousel-inner-packs');
+                                    const allPacks = 
+                                        [{
+                                            name: "basic",
+                                            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                                            include: "logo - logo -logo",
+                                            class: "active", 
+                                        },
+                                        {
+                                            name: "ATC / Full",
+                                            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                                            include: "logo - logo -logo",
+                                            class: "none", 
+                                        },
+                                        {
+                                            name: "ATC Full Full",
+                                            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                                            include: "logo - logo -logo",
+                                            class: "none", 
+                                        },
+                                        {
+                                            name: "COntenido Rotativo",
+                                            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                                            include: "logo - logo -logo",
+                                            class: "none", 
+                                        }]
+                                    
+                                     for (pack of allPacks){
+                                        carouselPack.innerHTML +=
+                                            `
+                                        <div class="carousel-item ${pack.class} container p-3">
                                     <div class="row h-100">
                                         <div class="col-6">
-                                            <div class="client-card-img"><img src="./assets/hero-beer2.jpg" alt="">
+                                            <div class="client-card-img">
+                                                <h1>${pack.name}</h1>
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <p>Cliente Beer2</p>
-                                            <p>Srvicios</p>
-                                            <p>Campaña</p>
-                                            <p>Trabajando juntos desde</p>
+                                            <p>${pack.description}</p>
+                                            <p>${pack.include}</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item container p-3">
-                                    <div class="row h-100">
-                                        <div class="col-6">
-                                            <div class="client-card-img"><img src="./assets/hero-beer3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <p>Cliente Beer</p>
-                                            <p>Srvicios</p>
-                                            <p>Campaña</p>
-                                            <p>Trabajando juntos desde</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item container p-3">
-                                    <div class="row h-100">
-                                        <div class="col-6">
-                                            <div class="client-card-img"><img src="./assets/hero-beer3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <p>Cliente Friends</p>
-                                            <p>Srvicios</p>
-                                            <p>Campaña</p>
-                                            <p>Trabajando juntos desde</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                        `
+                                    }
+
+                                </script>
+
+
                         </div>
-
                     </div>
+
                 </div>
             </div>
+        </div>
 
         </div>
     </section>
