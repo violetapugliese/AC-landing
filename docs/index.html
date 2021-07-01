@@ -86,18 +86,23 @@
 
     <!-- /Hero -->
     <!-- Marquee -->
-    <div id="MarqueeOne" class="marquee">
-        <div class="marquee-container">
-            <p class="m-0">x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia
-                Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash -
-                #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento
-            </p>
-            <p class="m-0">#ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash -
-                #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento
-                x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash -
-                #ContenidoEnMovimiento</p>
+    <div id="MarqueeOne">
+        <div class="marquee r">
+            <div>
+                <span class="m-0">#Contenido en movimiento x Agencia Crash — #Contenido en movimiento x Agencia Crash —
+                    #Contenido en movimiento x Agencia Crash — #Contenido en movimiento x Agencia Crash — #Contenido en
+                    movimiento x Agencia Crash — #Contenido en movimiento x Agencia Crash — >#Contenido en movimiento x
+                    Agencia Crash — #Contenido en movimiento x Agencia Crash —</span>
+            </div>
         </div>
-
+        <div class="marquee2 r">
+            <div>
+                <span class="m-0">x Agencia Crash — #Contenido en movimiento x Agencia Crash —
+                    #Contenido en movimiento x Agencia Crash — #Contenido en movimiento x Agencia Crash — #Contenido en
+                    movimiento x Agencia Crash — #Contenido en movimiento x Agencia Crash — >#Contenido en movimiento x
+                    Agencia Crash — #Contenido en movimiento x Agencia Crash — #Contenido en movimiento </span>
+            </div>
+        </div>
     </div>
 
     <!-- /Marquee -->
@@ -109,7 +114,7 @@
     <!-- /Wheel -->
 
     <!-- Services -->
-    <section id="Services" class="services my-4">
+    <section id="Services" class="services my-4 py-5">
         <div class="container">
             <div class="row container-services-one ">
                 <div id="services-col-one" class="col-10 offset-1 col-lg-5 offset-lg-1 pt-5 d-flex ">
@@ -126,7 +131,7 @@
                             Vas a ver que ofrecemos desde servicios individuales hasta servicios totalmente integrados.
                             Prestá atención al Nivel de Potencia que ofrece cada uno.
                         </p>
-                        <button class="btn btn-ac-first rounded-pill mb-5">
+                        <button class="btn btn-ac btn-ac-first rounded-pill mb-5">
                             Conquistá el mundo digital
                         </button>
                         <p>
@@ -155,18 +160,18 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium
                         dicta.</p>
                 </div>
-            </div>  
-            <div class="row">
-                <div class="col-12 col-md-6 ">
-                    <div id="client" class="client show-opacity ">
-                        <div id="carouselExampleControls" class="carousel slide client-card" data-bs-ride="carousel">
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-lg-6 offset-lg-3 ">
+                    <div id="pack" class="pack show-opacity ">
+                        <div id="carouselExampleControls" class="carousel slide pack-container" data-bs-ride="carousel">
 
-                            <div class="client-card-title d-flex justify-content-between">
+                            <div class="pack-card-title d-flex justify-content-between">
                                 <p class="m-1">conocé nuestros packs </p>
-                                <div class="col-1 client-card-box-btn d-flex justify-content-end">
+                                <div class="col-1 pack-card-box-btn d-flex justify-content-end">
                                     <button class="pb-2" type="button" data-bs-target="#carouselExampleControls"
-                                        data-bs-slide="prev"> <
-                                        </button>
+                                        data-bs-slide="prev">
+                                        < </button>
                                             <button class=" pb-2" type="button"
                                                 data-bs-target="#carouselExampleControls"
                                                 data-bs-slide="next">></button>
@@ -177,45 +182,59 @@
 
                                 <script>
                                     const carouselPack = document.getElementById('carousel-inner-packs');
-                                    const allPacks = 
+                                    const allPacks =
                                         [{
-                                            name: "basic",
+                                            name: "Pack Basic",
                                             description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
                                             include: "logo - logo -logo",
-                                            class: "active", 
+                                            service: "lorem ipsum ♥",
+                                            especific: "lorem ipsum ✓",
+                                            class: "active",
                                         },
                                         {
                                             name: "ATC / Full",
                                             description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
                                             include: "logo - logo -logo",
-                                            class: "none", 
+                                            service: "lorem ipsum ♥",
+                                            especific: "lorem ipsum ✓",
+                                            class: "none",
                                         },
                                         {
                                             name: "ATC Full Full",
                                             description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
                                             include: "logo - logo -logo",
-                                            class: "none", 
+                                            service: "lorem ipsum ♥",
+                                            especific: "lorem ipsum ✓",
+                                            class: "none",
                                         },
                                         {
-                                            name: "COntenido Rotativo",
+                                            name: "Contenido Rotativo",
                                             description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
                                             include: "logo - logo -logo",
-                                            class: "none", 
+                                            service: "lorem ipsum ♥",
+                                            especific: "lorem ipsum ✓",
+                                            class: "none",
                                         }]
-                                    
-                                     for (pack of allPacks){
+
+                                    for (pack of allPacks) {
                                         carouselPack.innerHTML +=
                                             `
                                         <div class="carousel-item ${pack.class} container p-3">
                                     <div class="row h-100">
                                         <div class="col-6">
-                                            <div class="client-card-img">
-                                                <h1>${pack.name}</h1>
+                                            <div class="pack-card">
+                                                <h3>${pack.name}</h3>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <p>${pack.description}</p>
+                                            <p class="m-0">${pack.include}</p>
+                                            <p class="m-0">${pack.service}</p>
+                                            <p class="m-0">${pack.especific}</p>
                                             <p>${pack.include}</p>
+                                            <div class="pack-btn-container">
+                                                <button class="btn btn-ac btn-pack">Contratar</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -223,31 +242,17 @@
                                     }
 
                                 </script>
-
-
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
 
         </div>
     </section>
     <!-- /Services -->
 
-    <div class="marquee">
-        <div class="marquee-container">
-            <p class="m-0">x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia
-                Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash -
-                #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento
-            </p>
-            <p class="m-0">#ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash -
-                #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento
-                x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash - #ContenidoEnMovimiento x Agencia Crash -
-                #ContenidoEnMovimiento</p>
-        </div>
-    </div>
 
     <!-- About -->
     <section id="About" class="about position-relative">
