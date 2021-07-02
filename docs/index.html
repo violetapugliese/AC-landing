@@ -12,66 +12,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script> -->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <script src="./js/scroll.js"></script>
     <title>Agencia Crash</title>
 </head>
 
 <body id="page-top" class="hidden">
-    <!-- Header -->
+
     <div class="preloader-container" id="preloader">
         <div class="preloader-animation">
-            <!-- <div class="lds-ring"><div></div><div></div><div></div><div></div></div> -->
             <div class="loader"></div>
             <div class="loader2"></div>
         </div>
     </div>
 
+    <!-- Header -->
     <header class="header" id="Header">
         <div class="nav-bar av-transparent" id="nav-bar">
             <div class="container">
                 <div class="row">
                     <div class="col pt-4">
-                    <p>agencia crash</p>
-                </div>
-                <div class="col d-flex align-items-end">
-                    <div class="container-red">
-                        <input type="checkbox" id="active">
-                        <label for="active" class="menu-btn"><span id="menu-btn-span" class="btn-white"></span></label>
-                        <label for="active" class="close"></label>
-                        <div class="wrapper">
-                            <div class="wrapper-header text-white">
-                            </div>
-                            <ul>
-                                <!-- <span>▲ Ã</span>
+                        <p>agencia crash</p>
+                    </div>
+                    <div class="col d-flex align-items-end">
+                        <div class="container-red">
+                            <input type="checkbox" id="active">
+                            <label for="active" class="menu-btn"><span id="menu-btn-span"
+                                    class="btn-white"></span></label>
+                            <label for="active" class="close"></label>
+                            <div class="wrapper">
+                                <div class="wrapper-header text-white">
+                                </div>
+                                <ul>
+                                    <!-- <span>▲ Ã</span>
                                     <span>☼ ‼ ♦</span>
                                     <span>© ♀ ☺</span>
                                     <span>↑ @ ♣</span> -->
                                     <li><a href="#">HOLA <img src="./assets/web.png" alt=""></a></li>
-                                <li><a href="#">Servicios </a></li>
-                                <li><a href="#">Nosotras </a></li>
-                                <li><a href="#">Trabajos </a></li>
-                                <li><a href="#">Bonus <span>♫ ‼ ▲ </span></a></li>
-                                <li><a href="#">Contacto </a></li>
-                                <div class="col wrapper-icons p-4">
-                                    <a href=""><i class="far fa-envelope"></i></a>
-                                    <a href=""><i class="fab fa-whatsapp"></i></a>
-                                    <a href=""><i class="fab fa-linkedin"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </ul>
+                                    <li><a href="#">Servicios </a></li>
+                                    <li><a href="#">Nosotras </a></li>
+                                    <li><a href="#">Trabajos </a></li>
+                                    <li><a href="#">Bonus <span>♫ ‼ ▲ </span></a></li>
+                                    <li><a href="#">Contacto </a></li>
+                                    <div class="col wrapper-icons p-4">
+                                        <a href=""><i class="far fa-envelope"></i></a>
+                                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                                        <a href=""><i class="fab fa-linkedin"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </header>
     <!-- /Header -->
 
@@ -112,9 +114,15 @@
 
     <!-- /Marquee -->
 
-    <!-- Wheel -->
-    <section id="Wheel" class="wheel">
 
+    <!-- Wheel -->
+    <section id="Wheel" >
+        <div class="d-flex justify-content-center">
+            <div class="sunny-container">
+                <img class="sunny" src="./assets/sunny.png" alt="dibujo de sol naranja">
+                <img class="sunny-logo" src="./assets/logo-light.svg" alt="dibujo de sol naranja">
+            </div>
+        </div>
     </section>
     <!-- /Wheel -->
 
@@ -147,19 +155,19 @@
                 </div>
             </div>
             <div class="row container-services-two d-flex justify-content-around">
-                <div class="col-10 col-lg-3 pt-5 offset-lg-0 text-center ">
+                <div class="col-10 col-lg-3 pt-5 offset-lg-0 text-center " data-aos="fade-up">
                     <img class="w-50" src="./assets/bonus-icon1.svg" alt="dibujo de celular conectado">
                     <h3>Lorem, ipsum dolor</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium
                         dicta.</p>
                 </div>
-                <div class="col-10 col-lg-3 pt-5 offset-lg-0 text-center ">
+                <div class="col-10 col-lg-3 pt-5 offset-lg-0 text-center " data-aos="fade-up">
                     <img class="w-50" src="./assets/bonus-icon2.svg" alt="dibujo de celular conectado">
                     <h3>Lorem, ipsum dolor</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium
                         dicta.</p>
                 </div>
-                <div class="col-10 col-lg-3 pt-5 offset-lg-0 text-center mb-5 ">
+                <div class="col-10 col-lg-3 pt-5 offset-lg-0 text-center mb-5 " data-aos="flip-up">
                     <img class="w-50" src="./assets/bonus-icon3.svg" alt="dibujo de celular conectado">
                     <h3>Lorem, ipsum dolor</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quia sunt, eius hic laudantium
@@ -290,11 +298,11 @@
                 </div>
             </div>
         </div>
-         <div class="about-container position-relative">
-                <div class="about-img ">
-                    <img src="./assets/pibas.jpg" alt="friends">
-                </div>
-                <!-- <div class="overlay position-absolute">
+        <div class="about-container position-relative">
+            <div class="about-img ">
+                <img src="./assets/pibas.jpg" alt="friends">
+            </div>
+            <!-- <div class="overlay position-absolute">
                     <div class="container justify-content-end">
                         <div class="row align-items-center">
                             <div class="col col-md-6 offset-md-3  justify-content-center">
@@ -303,7 +311,7 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
+        </div>
     </section>
     <!-- /About -->
 
@@ -538,7 +546,7 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
-    <script>
+    <!-- <script>
         var btnAc = document.getElementById('btnPacks');
 
         function darkMode() {
@@ -548,7 +556,15 @@
             btnAc.classList.toggle("dark-mode-border");
             // document.getElementById('logo-azul-fem').classList.toggle("out");
             // document.getElementById('logo-rosa-fem').classList.toggle("show");
-        }
+        } -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+
     </script>
 </body>
 
