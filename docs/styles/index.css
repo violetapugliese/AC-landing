@@ -368,6 +368,67 @@ input[type="checkbox"] {
 }
 
 /* Services */
+.siemprelistas .title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: underline 2px;
+}
+.siemprelistas .ask {
+  display: inline-flex;
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0 1rem;
+  border: 1px solid #a5bc00;
+  border-radius: 20px;
+  color: #a5bc00;
+}
+.service-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.service-item .icon {
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+  background-color: #f7d9d5c2;
+  z-index: 
+  1;
+}
+.service-item .text {
+  display: flex;
+  align-items: center;
+  margin-left: -3rem;
+  width: 80%;
+  max-width: 300px;
+  height: 50px;
+  background-color: #f7d9d5;
+  padding: 0.5rem 1rem 0.5rem 3rem ;
+}
+.service-item .title {
+  font-size: 1rem;
+  margin: 0;
+}
+.service-item .description {
+  font-size: 0.7rem;
+  text-align: right;
+  margin: -1.2rem 0 ;
+  padding: 0 0 0 30%;
+}
+.mirror {
+  margin-top: 0;
+}
+.mirror .icon {
+  margin: 0 0 0 -3rem;
+}
+ .mirror .text {
+  margin: 0;
+  padding: 0.5rem 3rem 0.5rem 2rem ;
+}
+.mirror .description {
+  text-align: left;
+  padding: 0 30% 0 0;
+}
 .backg-section{
   background-image: url(../assets/SERVICES1-BG.png);
   background-position: center top;
@@ -628,7 +689,9 @@ input[type="checkbox"] {
 }
 
 @media (min-width: 576px) {
-
+  .mirror {
+    margin-top: 2rem;
+  }
   .marquee div {
     animation: marquee 100s linear infinite;  
   }
