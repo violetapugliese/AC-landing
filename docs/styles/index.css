@@ -377,31 +377,41 @@ input[type="checkbox"] {
   0% { left: -100%; }
   100% { left: 0; }
 }
-
+.prueba {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
 /* Wheel */
-#Wheel {
+/* #Wheel {
   position: sticky;
-  top: 0;
+  top: 80px;
+  width: 103px;
   overflow: hidden;
-  height: 120px;
+  height: 200px;
   z-index: 2000;
 }
 .sunny-container {
   position: relative;
-  top: 0;
+  top: 100px;
+  left: -30px;
   width: 200px;
+  height: 103px;
+  transform: rotate(270deg);
 }
 .sunny-container .sunny {
   position: absolute;
   top: 0;
-  width: 100%;
+  left: 0;
+  width: 200px;
+  height: 103px;
 }
 .sunny-container .sunny-logo {
   position: absolute;
   width: 60px;
   left: 70px;
   top: 10px;
-}
+} */
 
 /* Services */
 .container-pink {
