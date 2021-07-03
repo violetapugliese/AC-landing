@@ -146,7 +146,12 @@ body {
   right: -100%;
   height: 100%;
   width: 100%;
+  overflow: hidden;
   background-color: #fcf2fa;
+  background-image:url(../assets/menu-bg.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   transition: all 0.6s ease-in-out;
 }
 .wrapper-header {
@@ -193,7 +198,6 @@ body {
 .menu-btn:after {
   transform: translateY(8px);
 }
-
 .close {
   z-index: 1001;
   width: 50px;
@@ -201,7 +205,6 @@ body {
   pointer-events: none;
   transition: background-color 0.6s;
 }
-
 /* closing animation */
 #active:checked + .menu-btn span {
   transform: scaleX(0);
@@ -217,8 +220,11 @@ body {
 .wrapper ul {
   height: 90%;
   padding-left: 0;
-  /* transform: translate(-50%, -50%); */
   list-style: none;
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: all 0.6s ease-in-out;
+  transition-delay: 0.2s;
 }
 .wrapper ul li {
   padding: 0.5rem 0 0 1.5rem;
@@ -228,25 +234,16 @@ body {
   font-size: 2rem;
   font-weight: 500;
   color: var(--ac-blue);
-  opacity: 0;
-  transition: all 0.3s ease;
-  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .wrapper ul li a:after {
   position: absolute;
   content: "";
   transform: scaleY(0);
   z-index: 1001;
-  transition: transform 0s ease;
 }
-.wrapper ul li a:hover:after {
-  transform: scaleY(1);
-}
-.wrapper ul li a img {
-  width: 2rem;
-}
-.wrapper ul li a span {
-  color: #2157db;
+#active:checked ~ .wrapper ul {
+  opacity: 1;
+  transform: translateX(0px);
 }
 .wrapper ul li a:hover {
   color: #f2733b;
@@ -256,24 +253,11 @@ input[type="checkbox"] {
 }
 .wrapper-icons svg {
   color: #2157db;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
 }
 .wrapper-icons a svg:hover {
   color: #f2733b;
-}
-#active:checked ~ .wrapper ul li a {
-  opacity: 1;
-}
-.wrapper ul li a {
-  transition: opacity 0.5s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateX(100px);
-}
-#active:checked ~ .wrapper ul li a {
-  transform: none;
-  transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1);
-  transition-delay: 0.3s;
-  transform: translateX(-100px);
 }
 
 /* Hero */
@@ -382,40 +366,16 @@ input[type="checkbox"] {
   height: 200px;
   background-color: red;
 }
-/* Wheel */
-/* #Wheel {
-  position: sticky;
-  top: 80px;
-  width: 103px;
-  overflow: hidden;
-  height: 200px;
-  z-index: 2000;
-}
-.sunny-container {
-  position: relative;
-  top: 100px;
-  left: -30px;
-  width: 200px;
-  height: 103px;
-  transform: rotate(270deg);
-}
-.sunny-container .sunny {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 103px;
-}
-.sunny-container .sunny-logo {
-  position: absolute;
-  width: 60px;
-  left: 70px;
-  top: 10px;
-} */
 
 /* Services */
+.backg-section{
+  background-image: url(../assets/SERVICES1-BG.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .container-pink {
-  background-color: var(--ac-light-pink);
+  background-color: #fcf2fac5;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.384);
 }
 .section-title {
@@ -424,6 +384,7 @@ input[type="checkbox"] {
   text-decoration: underline 3px;
   margin: 0;
 }
+
 #services-col-one h3 {
   font-size: 1.2rem;
   margin: 0;
@@ -667,9 +628,7 @@ input[type="checkbox"] {
 }
 
 @media (min-width: 576px) {
-  .wrapper {
-    width: 50%;
-  }
+
   .marquee div {
     animation: marquee 100s linear infinite;  
   }

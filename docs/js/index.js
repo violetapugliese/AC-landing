@@ -8,7 +8,15 @@ var myBtn = document.getElementById("menu-btn-span");
 
 window.onscroll = function () {
   "use strict";
-  if (document.body.scrollTop >= 500 || document.documentElement.scrollTop >= 500 ) {
+  AOS.init({
+    easing: "ease-out-back",
+    duration: 1000,
+    mirror: true,
+  });
+  if (
+    document.body.scrollTop >= 500 ||
+    document.documentElement.scrollTop >= 500
+  ) {
     myNav.classList.add("nav-colored");
     myNav.classList.remove("nav-transparent");
     myBtn.classList.add("btn-blue");
