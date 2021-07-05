@@ -87,20 +87,42 @@
     <section id="Contact-main">
         <div class="header-secondary-page">
         </div>
-            <div class="container vh-100 my-5">
-                <div class="row container-pink">
-                    <div class="col-10 offset-1 col-md-5 py-5">
-                        <h2 class="section-title">contanos</h2>
-                        <p class="section-subtitle">¿En qué podemos ayudarte?</p>
-                        <p class="section-text">Dejanos tus dudas, ideas, proyectos y te contestaremos. No olvidesd dejar tu mail para que podamos contactarnos ↓ </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-10 offset-1">
-                        <form action=""></form>
-                    </div>
+        <div class="container container-pink my-5">
+            <div class="row ">
+                <div class="col-10 offset-1 col-md-5 py-5">
+                    <h2 class="section-title">contanos</h2>
+                    <p class="section-subtitle">¿En qué podemos ayudarte?</p>
+                    <p class="section-text">Dejanos tus dudas, ideas, proyectos y te contestaremos. No olvidesd dejar tu
+                        mail para que podamos contactarnos ↓ </p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-10 offset-1 col-md-5 ">
+                    <form action="../php/send.php" method="post">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                            <input type="text"  name="name" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Nombre Apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                            <input type="text" name="phone" class="form-control" id="exampleFormControlInput1"
+                                placeholder="011 15 0000 0000">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
 
