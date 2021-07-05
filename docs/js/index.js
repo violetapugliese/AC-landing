@@ -28,14 +28,3 @@ window.onscroll = function () {
     myBtn.classList.remove("btn-blue");
   }
 };
-
-// window.onscroll = function () {
-//   "use strict";
-//   if (document.body.scrollTop >= 500 || document.documentElement.scrollTop >= 500 ) {
-//     myBtn.classList.add("btn-blue");
-//     myBtn.classList.remove("btn-white");
-//   } else {
-//     myBtn.classList.add("btn-white");
-//     myBtn.classList.remove("btn-blue");
-//   }
-// };
