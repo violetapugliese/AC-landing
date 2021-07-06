@@ -251,96 +251,213 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="row my-5">
-                <div class="col-12 col-lg-6 offset-lg-3 ">
-                    <div id="pack" class="pack show-opacity " data-aos="fade-up">
-                        <div id="carouselExampleControls" class="carousel slide pack-container" data-bs-ride="carousel">
+        <div class="container my-5">
+            <div class="row mb-3">
+                <div class="col-10 offset-1">
+                    <h2 class="section-subtitle">Conocé nuestros packs...</h2>
+                    <p class="section-text">Podés elegir el que mejor se adpate a tu proyecto o <a href="./pages/contact.html">contactarnos</a> para que armemos la mejor opción para vos!</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="carousel-container">
+                    
+                    <input class="margin-start" type="radio" name="position" />
+                    <input type="radio" name="position" checked />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    
+                    <main id="carousel">
+                        <script>
+                            const carousel = document.getElementById('carousel');
+                            const allPacks =
+                                [{
+                                    name: "Pack Basic",
+                                    description: "Lorem ipsum dolor sit etur, adipisicing elit.",
+                                    iv: "none",
+                                    camp: "yes",
+                                    sm: "yes",
+                                    est: "none",
+                                    cont: "none",
+                                    color: "orange",
+                                },
+                                {
+                                    name: "ATC / Full",
+                                    description: "Lorem ipsum dolor sit amet, adipisicing elit.",
+                                    iv: "yes",
+                                    camp: "yes",
+                                    sm: "yes",
+                                    est: "none",
+                                    cont: "none",
+                                    color: "green",
+                                },
+                                {
+                                    name: "ATC Full Full",
+                                    description: "Lorem ipsum dolor sit  consectetur, adipisicing elit.",
+                                    iv: "yes",
+                                    camp: "yes",
+                                    sm: "yes",
+                                    est: "yes",
+                                    cont: "yes",
+                                    color: "blue",
+                                },
+                                {
+                                    name: "Contenido Rotativo",
+                                    description: "Lorem ipsum dolor  amet consectetur, adipisicing elit.",
+                                    iv: "none",
+                                    camp: "none",
+                                    sm: "none",
+                                    est: "none",
+                                    cont: "yes",
+                                    color: "orange",
+                                }]
 
-                            <div class="pack-card-title d-flex justify-content-between">
-                                <p class="m-1">conocé nuestros packs </p>
-                                <div class="col-1 pack-card-box-btn d-flex justify-content-end">
-                                    <button class="pb-2" type="button" data-bs-target="#carouselExampleControls"
-                                        data-bs-slide="prev">
-                                        < </button>
-                                            <button class=" pb-2" type="button"
-                                                data-bs-target="#carouselExampleControls"
-                                                data-bs-slide="next">></button>
-                                </div>
-                            </div>
-
-                            <div class="carousel-inner" id="carousel-inner-packs">
-                                
-                                <script>
-                                    const carouselPack = document.getElementById('carousel-inner-packs');
-                                    const allPacks =
-                                        [{
-                                            name: "Pack Basic",
-                                            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-                                            include: "logo - logo -logo",
-                                            service: "lorem ipsum ♥",
-                                            especific: "lorem ipsum ✓",
-                                            class: "active",
-                                        },
-                                        {
-                                            name: "ATC / Full",
-                                            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-                                            include: "logo - logo -logo",
-                                            service: "lorem ipsum ♥",
-                                            especific: "lorem ipsum ✓",
-                                            class: "none",
-                                        },
-                                        {
-                                            name: "ATC Full Full",
-                                            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-                                            include: "logo - logo -logo",
-                                            service: "lorem ipsum ♥",
-                                            especific: "lorem ipsum ✓",
-                                            class: "none",
-                                        },
-                                        {
-                                            name: "Contenido Rotativo",
-                                            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-                                            include: "logo - logo -logo",
-                                            service: "lorem ipsum ♥",
-                                            especific: "lorem ipsum ✓",
-                                            class: "none",
-                                        }]
-
-                                    for (pack of allPacks) {
-                                        carouselPack.innerHTML +=
-                                            `
-                                        <div class="carousel-item ${pack.class} container p-3">
-                                    <div class="row h-100">
-                                        <div class="col-6">
-                                            <div class="pack-card">
-                                                <h3>${pack.name}</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <p>${pack.description}</p>
-                                            <p class="m-0">${pack.include}</p>
-                                            <p class="m-0">${pack.service}</p>
-                                            <p class="m-0">${pack.especific}</p>
-                                            <p>${pack.include}</p>
-                                            <div class="pack-btn-container">
-                                                <button class="btn btn-ac btn-pack">Contratar</button>
-                                            </div>
-                                        </div>
+                            for (pack of allPacks) {
+                                carousel.innerHTML +=
+                                    `
+                                <div class="pack-container item bg-ac-${pack.color} container">
+                            <div class="row vh-50">
+                                <div class="col-10 offset-1  pt-3">
+                                    <div class="pack-card">
+                                        <h4 class="mb-0">${pack.name}</h4>
                                     </div>
                                 </div>
-                                        `
-                                    }
-                                        
-                                </script>
+                                <div class="col-10 offset-1 pt-3">
+                                    <p>${pack.description}</p>
+                                    <div class="pack-services-container">
+                                    <div class="pack-services ${pack.iv}">
+                                        <p class="m-0 ">Identidad Visual</p>
+                                        <p>✓</p>
+                                    </div>
+                                    <div class="pack-services ${pack.est}">
+                                        <p class="m-0">Estrategia</p>
+                                        <p>✓</p>
+                                    </div>
+                                    <div class="pack-services ${pack.sm}">
+                                        <p class="m-0">Social Media</p>
+                                        <p>✓</p>
+                                    </div>
+                                    <div class="pack-services ${pack.camp}">
+                                        <p class="m-0">Campaña</p>
+                                        <p>✓</p>
+                                    </div>
+                                    <div class="pack-services ${pack.cont}">
+                                        <p class="m-0">Generación de Contenido</p>
+                                        <p>✓</p>
+                                    </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-ac btn-pack">Contratar</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                                `
+                            }
+                                
+                        </script>
+                      </main>
+                      </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <div class="packs-section-container" id="packs-section-container">
+                        <script>
+                            const packsSection = document.getElementById('packs-section-container');
+                            const allPacks =
+                                [{
+                                    name: "Pack Basic",
+                                    description: "Lorem ipsum dolor sit etur, adipisicing elit.",
+                                    iv: "none",
+                                    camp: "yes",
+                                    sm: "yes",
+                                    est: "none",
+                                    cont: "none",
+                                    color: "orange",
+                                },
+                                {
+                                    name: "ATC / Full",
+                                    description: "Lorem ipsum dolor sit amet, adipisicing elit.",
+                                    iv: "yes",
+                                    camp: "yes",
+                                    sm: "yes",
+                                    est: "none",
+                                    cont: "none",
+                                    color: "green",
+                                },
+                                {
+                                    name: "ATC Full Full",
+                                    description: "Lorem ipsum dolor sit  consectetur, adipisicing elit.",
+                                    iv: "yes",
+                                    camp: "yes",
+                                    sm: "yes",
+                                    est: "yes",
+                                    cont: "yes",
+                                    color: "blue",
+                                },
+                                {
+                                    name: "Contenido Rotativo",
+                                    description: "Lorem ipsum dolor  amet consectetur, adipisicing elit.",
+                                    iv: "none",
+                                    camp: "none",
+                                    sm: "none",
+                                    est: "none",
+                                    cont: "yes",
+                                    color: "orange",
+                                }]
 
+                            for (pack of allPacks) {
+                                packsSection.innerHTML +=
+                                    `
+                                <div class="pack-container item bg-ac-${pack.color} container">
+                            <div class="row vh-50">
+                                <div class="col-12 pt-3">
+                                    <div class="pack-card">
+                                        <h4 class="mb-0">${pack.name}</h4>
+                                    </div>
+                                </div>
+                                <div class="col pt-3">
+                                    <p>${pack.description}</p>
+                                    <div class="pack-services-container">
+                                    <div class="pack-services ${pack.iv}">
+                                        <p class="m-0 ">Identidad Visual</p>
+                                        <p>✓</p>
+                                    </div>
+                                    <div class="pack-services ${pack.est}">
+                                        <p class="m-0">Estrategia</p>
+                                        <p>✓</p>
+                                    </div>
+                                    <div class="pack-services ${pack.sm}">
+                                        <p class="m-0">Social Media</p>
+                                        <p>✓</p>
+                                    </div>
+                                    <div class="pack-services ${pack.camp}">
+                                        <p class="m-0">Campaña</p>
+                                        <p>✓</p>
+                                    </div>
+                                    <div class="pack-services ${pack.cont}">
+                                        <p class="m-0">Generación de Contenido</p>
+                                        <p>✓</p>
+                                    </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-ac btn-pack">Contratar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                `
+                            }
+                                
+                        </script>
+                
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+
+ 
     </section>
     <!-- /Services -->
 
