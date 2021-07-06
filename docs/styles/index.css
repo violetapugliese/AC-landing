@@ -2,6 +2,7 @@
   --ac-blue: #2157db;
   --ac-orange: #f2733b;
   --ac-green: #a5bc00;
+  --ac-gray: #F2E7F0;
   --ac-pink: #f7d9d5;
   --ac-light-pink: #fcf2fa;
 }
@@ -94,6 +95,7 @@ body {
 .btn-ac-first{
   color: var(--ac-blue);
   border: 1px solid var(--ac-blue);
+  background-color: var(--ac-gray);
 }
 .btn-ac-white{
   color: white;
@@ -123,8 +125,8 @@ body {
   overflow: hidden;
 }
 .nav-colored { 
-  background-color: #fcf2fa;
-  color: #2157db;
+  background-color: var(--ac-blue);
+  color: white;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
 }
 .nav-transparent { 
@@ -390,12 +392,19 @@ input[type="checkbox"] {
   align-items: center;
 }
 .service-item .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
   min-width: 100px;
   min-height: 100px;
   border-radius: 50%;
-  background-color: #f7d9d5c2;
+  background-color: #F2E7F0;
   z-index: 
   1;
+}
+.service-item .icon img {
+  width: 50%;
 }
 .service-item .text {
   display: flex;
@@ -404,7 +413,7 @@ input[type="checkbox"] {
   width: 80%;
   max-width: 300px;
   height: 50px;
-  background-color: #f7d9d5;
+  background-color: #F2E7F0;
   padding: 0.5rem 1rem 0.5rem 3rem ;
 }
 .service-item .title {
@@ -438,7 +447,7 @@ input[type="checkbox"] {
   background-size: cover;
 } */
 .container-pink {
-  background-color: #fcf2fa;
+  background-color: var(--ac-gray);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.384);
 }
 .section-title {
@@ -518,8 +527,12 @@ input[type="checkbox"] {
   position: relative;
   top: -40px;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   z-index: -2;
+  background-image: url(../assets/pibas.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about-img img {
   width: 100%;
@@ -550,17 +563,17 @@ input[type="checkbox"] {
 }
 .manifest-title {
   width: 100%;
-  background-color: var(--ac-orange);
+  background-color: var(--ac-blue);
 }
-.manifest-title h2 {
-  color: white;
-}
+  .manifest-title h2 {
+    color: white;
+  }
 #manifest-text-one {
   position: relative;
-  border: solid 2px var(--ac-orange);
-  color: #f2733b;
+  border: solid 2px var(--ac-blue);
+  color: var(--ac-blue);
 }
-#btmManifest {
+#btn-manifest {
   position: absolute;
   right: -2px;
   bottom: -28px;
@@ -593,20 +606,25 @@ input[type="checkbox"] {
 }
 
 /* Bonus */
+
 #Bonus .container {
+  margin-top: 9rem;
   background-color: var(--ac-orange);
-  padding: 100px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.384);
 }
 #Bonus .col {
   position: relative;
 }
 .bonus-circle {
   position: relative;
+  top: -4rem;
   margin: 0 auto;
   background-color: var(--ac-light-pink);
   width: 240px;
   height: 240px;
   border-radius: 120px 120px 0 0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
+
 }
 .bonus-icon-one {
   position: absolute;
@@ -719,7 +737,9 @@ input[type="checkbox"] {
   .marquee2 div {
     animation: marquee2 100s linear infinite;  
   }
-
+  .bonus-circle {
+    transform: scale(1.5);
+  }
 }
 @media (min-width: 992px) {
   .about-container .overlay p {
@@ -735,9 +755,9 @@ input[type="checkbox"] {
   .marquee2 div {
     animation: marquee2 150s linear infinite;  
   }
-  /* .manifest-img img {
-    width: 50%;
-  } */
+  .bonus-circle {
+    transform: scale(2);
+  }
 }
 @media (min-width: 1024px) {
   .marquee div {
