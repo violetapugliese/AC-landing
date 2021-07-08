@@ -30,10 +30,16 @@ html {
 .bg-ac-green {
   background-color: var(--ac-green);
 }
+/* body {
+  font-family: Helvetica, sans-serif;
+  transition: 0.3s;
+  color: var(--ac-blue);
+} */
 body {
   font-family: Helvetica, sans-serif;
   transition: 0.3s;
-  color: #2157db;
+  color: white;
+  background-color: #081638;
 }
 .hidden {
   overflow: hidden;
@@ -410,8 +416,9 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   align-items: center;
   /* justify-content: space-between; */
-  width: 240px;
-  margin: 0 0 2rem 0;
+  /* width: 240px; */
+  margin-top: 2rem;
+  margin-bottom: 2rem  ;
 }
 .service-item .icon {
   display: flex;
@@ -437,7 +444,6 @@ input[type="checkbox"] {
   /* height: 50px; */
   /* background-color: #f2e7f0; */
   border-right: 1px solid var(--ac-orange);
-
   padding: 0 1rem 0 1rem;
 }
 .service-item .title {
@@ -450,30 +456,7 @@ input[type="checkbox"] {
   color: var(--ac-orange);
   text-align: right;
 }
-/* .mirror {
-  margin-top: 0;
-}
-.mirror .icon {
-  margin: 0 0 0 -3rem;
-}
-.mirror .text {
-  margin: 0;
-  padding: 0.5rem 3rem 0.5rem 2rem;
-}
-.mirror .description {
-  text-align: left;
-  padding: 0 30% 0 0;
-} */
-/* .backg-section{
-  background-image: url(../assets/SERVICES1-BG.png);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-/* .container-pink {
-  background-color: var(--ac-gray);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.384);
-} */
+
 .section-title {
   font-size: 2rem;
   text-transform: uppercase;
@@ -752,7 +735,6 @@ input:nth-of-type(5):checked ~ main#carousel {
 #manifest-text-one {
   position: relative;
   border: solid 2px var(--ac-blue);
-  color: var(--ac-blue);
 }
 #btn-manifest {
   position: absolute;
@@ -769,7 +751,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   width: 100%;
 }
 .card {
-  border: 3px solid var(--ac-light-pink);
+  border: 3px solid transparent;
   cursor: pointer;
   border-radius: 0;
   overflow: hidden;
@@ -787,11 +769,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 
 /* Bonus */
-#Bonus {
-  /* position: relative; */
-}
 #Bonus .container {
-  /* background-color: var(--ac-orange); */
   position: relative;
 }
 
@@ -813,9 +791,20 @@ input:nth-of-type(5):checked ~ main#carousel {
   margin: 0 auto;
   margin-bottom: 1rem;
   background-color: var(--ac-light-pink);
-  width: 240px;
-  height: 240px;
-  border-radius: 120px 120px 0 0;
+  width: 90%;
+  height: 0;
+  padding-bottom: 90%;
+  border: solid 1px var(--ac-light-pink);
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.384);
+}
+.bonus-circle-bottom {
+  position: absolute;
+  bottom: 0;
+  height:0;
+  width: 100%;
+  padding-bottom: 55%;
+  border-radius: 5px 5px 0 0 ;
+  background-color: var(--ac-light-pink);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
 }
 .bonus-icon-one {
@@ -945,6 +934,11 @@ input:nth-of-type(5):checked ~ main#carousel {
   .carousel-container {
     overflow: hidden;
   }
+  .bonus-circle {
+    width: 70%;
+    height: 0;
+    padding-bottom: 70%;
+  }
 
 }
 @media (min-width: 992px) {
@@ -964,6 +958,11 @@ input:nth-of-type(5):checked ~ main#carousel {
   .pack-container {
     min-width: 350px;
   }
+  .bonus-circle {
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+  }
 }
 @media (min-width: 1024px) {
   .marquee div {
@@ -972,7 +971,5 @@ input:nth-of-type(5):checked ~ main#carousel {
   .marquee2 div {
     animation: marquee2 200s linear infinite;
   }
-  .container-services-items .col-10 {
-    justify-content: space-between ;
-  }
+
 }
