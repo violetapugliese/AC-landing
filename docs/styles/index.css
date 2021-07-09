@@ -30,17 +30,17 @@ html {
 .bg-ac-green {
   background-color: var(--ac-green);
 }
-/* body {
+body {
   font-family: Helvetica, sans-serif;
   transition: 0.3s;
   color: var(--ac-blue);
-} */
-body {
+}
+/* bodyDARCK {
   font-family: Helvetica, sans-serif;
   transition: 0.3s;
   color: white;
   background-color: #081638;
-}
+} */
 .hidden {
   overflow: hidden;
 }
@@ -335,12 +335,16 @@ input[type="checkbox"] {
 .aro .circuloafuera {
   top: 0px;
 }
-
 /* Marquee */
 #MarqueeOne {
   background-color: var(--ac-blue);
 }
-.marquee,
+.marquee {
+  background-color: var(--ac-blue);
+  color: white;
+}
+
+/* .marquee,
 .marquee2 {
   height: 25px;
   width: 100%;
@@ -369,7 +373,7 @@ input[type="checkbox"] {
   float: left;
   width: 100%;
   color: #fcf2fa;
-}
+} */
 
 @keyframes marquee {
   0% {
@@ -392,7 +396,22 @@ input[type="checkbox"] {
   height: 200px;
   background-color: red;
 }
-
+/* BG-IMG */
+.bg1{
+  background-image: url(../assets/bg1.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.bg2{
+  background-image: url(../assets/bg2.png);
+  background-repeat: no-repeat;
+  background-position: right top ;
+}
+.bg3{
+  background-image: url(../assets/bg3.png);
+  background-repeat: no-repeat;
+  background-position: left top ;
+}
 /* Services */
 #Services {
   overflow: hidden;
@@ -415,8 +434,6 @@ input[type="checkbox"] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* justify-content: space-between; */
-  /* width: 240px; */
   margin-top: 2rem;
   margin-bottom: 2rem  ;
 }
@@ -438,11 +455,8 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin-left: -3rem; */
   width: 60%;
   max-width: 160px;
-  /* height: 50px; */
-  /* background-color: #f2e7f0; */
   border-right: 1px solid var(--ac-orange);
   padding: 0 1rem 0 1rem;
 }
@@ -468,6 +482,8 @@ input[type="checkbox"] {
 }
 .section-text {
   font-size: 0.8rem;
+  background-color: white;
+
 }
 .services-col-two {
   display: none;
@@ -537,11 +553,6 @@ input[type="checkbox"] {
 .carousel-container {
   height: 600px;
   margin: 0;
-  /* overflow: hidden; */
-  /* display: flex; */
-  /* display: grid;
-  grid-template-rows: 500px 100px;
-  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr; */
   align-items: center;
   justify-items: center;
 }
@@ -550,7 +561,7 @@ main#carousel {
   grid-row: 1 / 2;
   grid-column: 1 / 8;
   width: 100vw;
-  height: 500px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -631,73 +642,11 @@ input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
 }
 .margin-start {
-  margin: 0 0 0 40%;
+  margin: 0 0 0 75%;
 }
-
-/* .pack {
-  opacity: 1;
-  transition: 1s;
-  transition-property: opacity;
-}
-.pack-container {
-  background-color: #f2733b;
-  color: var(--ac-light-pink);
-  font-size: 0.8rem;
-  height: auto;
-  min-height: 300px;
-}
-.pack-card {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  align-items: center;
-  height: 100%;
-  height: 230px;
-  text-align: center;
-  background-color: #fcf2fa;
-  color: #f2733b;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-}
-.pack-card-box-btn button {
-  font-size: 1rem;
-  font-weight: 600;
-  border: solid 1px var(--ac-light-pink);
-  background-color: var(--ac-orange);
-  color: var(--ac-light-pink);
-  border-radius: 0;
-}
-.pack-card-box-btn button:hover {
-  text-decoration: underline 2px solid;
-}
-.pack-card-title {
-  height: 2rem;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  border-bottom: 1px solid var(--ac-light-pink);
-  padding: 0.2rem;
-}
-.btn-pack {
-  background-color: transparent;
-  width: 100%;
-  color: #fcf2fa;
-  border: 2px solid var(--ac-light-pink);
-  border-radius: 0;
-  font-weight: 600;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-} */
 
 /* About */
-.about-img {
-  position: relative;
-  top: -40px;
-  width: 100%;
-  height: 80vh;
-  z-index: -2;
-  background-image: url(../assets/pibas.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .about-img img {
   width: 100%;
   max-height: 90vh;
