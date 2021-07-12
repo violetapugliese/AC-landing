@@ -129,8 +129,8 @@
             </div>
 
             <!-- Services - icons -->
-            <div class="row justify-content-around">
-                <div class="col-10 offset-lg-1  col-lg-3  service-item">
+            <div class="service-item-container row justify-content-around">
+                <div class="service-item">
                     <div class="icon">
                         <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
                     </div>
@@ -142,7 +142,7 @@
                     </div>
 
                 </div>
-                <div class="col-10 col-lg-3  service-item">
+                <div class="service-item">
                     <div class="icon">
                         <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
                     </div>
@@ -154,7 +154,7 @@
                     </div>
 
                 </div>
-                <div class="col-10 col-lg-3  service-item">
+                <div class="service-item">
                     <div class="icon">
                         <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
                     </div>
@@ -166,7 +166,7 @@
                     </div>
 
                 </div>
-                <div class="col-10 offset-lg-1  col-lg-3  service-item">
+                <div class="service-item">
                     <div class="icon">
                         <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
                     </div>
@@ -178,7 +178,7 @@
                     </div>
 
                 </div>
-                <div class="col-10 col-lg-3  service-item">
+                <div class="service-item">
                     <div class="icon">
                         <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
                     </div>
@@ -190,7 +190,7 @@
                     </div>
 
                 </div>
-                <div class="col-10 col-lg-3  service-item">
+                <div class="service-item">
                     <div class="icon">
                         <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
                     </div>
@@ -205,7 +205,7 @@
 
         </div>
 
-        <div class="container my-5 py-5 bg2">
+        <div class="container mt-5 py-5 bg2">
             <div class="row container-services-one container-pink">
                 <div id="services-col-one" class="col-10 offset-1 col-md-5 offset-md-6 d-flex ">
                     <div class="col">
@@ -235,68 +235,77 @@
         </div>
 
         <!-- Packs -->
-        <div class="container mt-5 bg3">
+        <div class="container pt-5 bg3">
+
             <div class="row mb-3">
-                <div class="col-10 offset-1 col-md-5">
+                <div class="col-10 offset-1 col-md-5 pt-5">
                     <h2 class="section-subtitle">Conocé nuestros packs...</h2>
                     <p class="section-text mb-0">Podés elegir el que mejor se adpate a tu proyecto o <a
                             href="./pages/contact.html">contactarnos</a> para que armemos la mejor opción para vos!</p>
                 </div>
             </div>
-            <div class="carousel-container">
-                <input class="margin-start" type="radio" name="position" />
-                <input class="" type="radio" name="position" checked />
-                <input class="" type="radio" name="position" />
-                <input class="" type="radio" name="position" />
-                <main id="carousel">
-                    <script>
-                        const carousel = document.getElementById('carousel');
-                        const allPacks =
-                            [{
-                                name: "Pack Basic",
-                                description: "Lorem ipsum dolor sit etur, adipisicing elit.",
-                                iv: "none",
-                                camp: "yes",
-                                sm: "yes",
-                                est: "none",
-                                cont: "none",
-                                color: "orange",
-                            },
-                            {
-                                name: "ATC / Full",
-                                description: "Lorem ipsum dolor sit amet, adipisicing elit.",
-                                iv: "yes",
-                                camp: "yes",
-                                sm: "yes",
-                                est: "none",
-                                cont: "none",
-                                color: "green",
-                            },
-                            {
-                                name: "ATC Full Full",
-                                description: "Lorem ipsum dolor sit  consectetur, adipisicing elit.",
-                                iv: "yes",
-                                camp: "yes",
-                                sm: "yes",
-                                est: "yes",
-                                cont: "yes",
-                                color: "blue",
-                            },
-                            {
-                                name: "Contenido Rotativo",
-                                description: "Lorem ipsum dolor  amet consectetur, adipisicing elit.",
-                                iv: "none",
-                                camp: "none",
-                                sm: "none",
-                                est: "none",
-                                cont: "yes",
-                                color: "orange",
-                            }]
+            <div class="carousel-big-container">
 
-                        for (pack of allPacks) {
-                            carousel.innerHTML +=
-                                `
-                                <div class="pack-container item bg-ac-${pack.color} container">
+
+                <div class="carousel-container">
+                    <input class="input-margin-start mb-3" type="radio" name="position" id="pack1"/>
+                    <input class="mb-3" type="radio" name="position" id="pack2" checked />
+                    <input class="mb-3" type="radio" name="position" id="pack3" />
+                    <input class="mb-3" type="radio" name="position" id="pack4" />
+                    <main id="carousel">
+                        <script>
+                            const carousel = document.getElementById('carousel');
+                            const allPacks =
+                                [{
+                                    id: "1",
+                                    name: "Pack Basic",
+                                    description: "Lorem ipsum dolor sit etur, adipisicing elit.",
+                                    iv: "none",
+                                    camp: "yes",
+                                    sm: "yes",
+                                    est: "none",
+                                    cont: "none",
+                                    color: "orange",
+                                },
+                                {
+                                    id: "2",
+                                    name: "ATC / Full",
+                                    description: "Lorem ipsum dolor sit amet, adipisicing elit.",
+                                    iv: "yes",
+                                    camp: "yes",
+                                    sm: "yes",
+                                    est: "none",
+                                    cont: "none",
+                                    color: "green",
+                                },
+                                {
+                                    id: "3",
+                                    name: "ATC Full Full",
+                                    description: "Lorem ipsum dolor sit  consectetur, adipisicing elit.",
+                                    iv: "yes",
+                                    camp: "yes",
+                                    sm: "yes",
+                                    est: "yes",
+                                    cont: "yes",
+                                    color: "blue",
+                                },
+                                {
+                                    id: "4",
+                                    name: "Contenido Rotativo",
+                                    description: "Lorem ipsum dolor sit  consectetur, adipisicing elit.",
+                                    iv: "yes",
+                                    camp: "yes",
+                                    sm: "none",
+                                    est: "yes",
+                                    cont: "none",
+                                    color: "orange",
+                                }
+                                ]
+
+                            for (pack of allPacks) {
+                                carousel.innerHTML +=
+                                    `
+                                <label for="pack${pack.id}" id="item${pack.id}" class="pack-container item bg-ac-${pack.color} container">
                             <div class="row vh-50">
                                 <div class="col-10 offset-1  pt-3">
                                     <div class="pack-card">
@@ -332,11 +341,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </label>
                                 `
-                        }
-                    </script>
-                </main>
+                            }
+                        </script>
+                    </main>
+                </div>
             </div>
         </div>
     </section>
