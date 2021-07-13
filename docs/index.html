@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="canonical" href="https://agenciacrash.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/index.css">
@@ -37,37 +38,29 @@
         <div class="nav-bar nav-transparent" id="nav-bar">
             <div class="container">
                 <div class="row">
-                    <div class="col pt-4">
-                        <p>agencia crash</p>
+                    <div class="col d-flex align-items-center">
+                        <img src="./assets/logo-light.svg" class="nav-bar-logo" alt="logo blanco agencia crash">
+                        <p> agencia crash</p>
                     </div>
                     <div class="col d-flex align-items-end">
                         <div class="container-red">
-                            <input type="checkbox" id="active">
-                            <label for="active" class="menu-btn"><span id="menu-btn-span"
-                                    class="btn-white"></span></label>
-                            <label for="active" class="close"></label>
-                            <div class="wrapper">
+                            <button class="btn menu-btn" id="menu-btn">
+                                <div class="menu-btn-ham1"></div>
+                                <div class="menu-btn-ham2"></div>
+                                <div class="menu-btn-ham3"></div>
+                            </button>
+                            <div class="wrapper" id="wrapper">
                                 <div class="wrapper-header text-white">
                                 </div>
                                 <div class="container">
                                     <div class="col offset-1">
-                                        <ul>
-                                            <!-- <span>▲ Ã</span>
-                                            <span>☼ ‼ ♦</span>
-                                            <span>© ♀ ☺</span>
-                                            <span>↑ @ ♣</span> -->
-                                            <li><a href="./index.html">| HOLA </a></li>
-                                            <li><a href="#">| Servicios </a></li>
-                                            <li><a href="#">| Nosotras </a></li>
-                                            <li><a href="#">| Trabajos </a></li>
-                                            <li><a href="#">| Bonus </a></li>
-                                            <li><a href="./pages/contact.html">| Contacto</a></li>
-                                            <div class="col wrapper-icons p-4">
-                                                <a href=""><i class="far fa-envelope"></i></a>
-                                                <a href=""><i class="fab fa-whatsapp"></i></a>
-                                                <a href=""><i class="fab fa-linkedin"></i></a>
-                                                <a href=""><i class="fab fa-instagram"></i></a>
-                                            </div>
+                                        <ul class="nav-bar-menu-container">
+                                            <li class="nav-bar-menu-link"><a href="./index.html">| HOLA </a></li>
+                                            <li class="nav-bar-menu-link"><a href="#Services">| Servicios </a></li>
+                                            <li class="nav-bar-menu-link"><a href="#About">| Nosotras </a></li>
+                                            <li class="nav-bar-menu-link"><a href="#Gallery">| Trabajos </a></li>
+                                            <li class="nav-bar-menu-link"><a href="#Bonus">| Bonus </a></li>
+                                            <li class="nav-bar-menu-link"><a href="./pages/contact.html">| Contacto</a></li>
                                         </ul>
                                     </div>
                                     <div class="col">
@@ -92,8 +85,10 @@
                 </div>
                 <div class="carousel-item"><img src="./assets/hero-box.jpg" class="d-block w-100" alt="beer"> </div>
                 <div class="carousel-item"><img src="./assets/hero-box.jpg" class="d-block w-100 " alt="beer"></div>
+                <h1>Marketing Digital</h1>
             </div>
-            <div class="hero-animation"><img src="./assets/logo-animacion.png" alt="logo blanco circular agencia crash">
+            <div class="hero-animation">
+                <img src="./assets/logo-animacion.png" alt="logo blanco circular agencia crash">
             </div>
     </section>
     <!-- /Hero -->
@@ -101,7 +96,7 @@
     <!-- Marquee -->
     <div id="MarqueeOne">
         <script type="text/javascript">
-            texto = '  #Contenido en movimiento x Agencia Crash — #Contenido en movimiento x Agencia Crash — #Contenido en movimiento x Agencia Crash'; // texto de contenido.
+            texto = ' #Contenido en movimiento x Agencia Crash — #Contenido en movimiento x Agencia Crash — #Contenido en movimiento x Agencia Crash'; // texto de contenido.
             repet = texto + texto + texto + texto + texto + texto + texto + texto + texto + texto + texto + texto + texto + texto + texto + texto; // repite el contenido.
             document.write('<marquee direction=right id="marquee" scrollamount="1" scrolldelay="20" class="marquee" height="20" truespeed onmouseover="this.stop()" onmouseout="this.start()">' + repet + '</marquee>');
         </script>
@@ -111,9 +106,8 @@
             document.write('<marquee id="marquee2" scrollamount="1" scrolldelay="20" class="marquee" height="20" truespeed onmouseover="this.stop()" onmouseout="this.start()">' + repet + '</marquee>');
         </script>
     </div>
-
-
     <!-- /Marquee -->
+
 
     <!-- Services -->
     <section id="Services" class="services">
@@ -677,6 +671,33 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        
+
+        var navbar = document.querySelector('.wrapper')
+        var ham = document.querySelector('.menu-btn')
+        var ham1 = document.querySelector('.menu-btn-ham1')
+        var ham2 = document.querySelector('.menu-btn-ham2')
+        var ham3 = document.querySelector('.menu-btn-ham3')
+        var menuContainer = document.querySelector('.nav-bar-menu-container')
+        var menuLink = document.querySelectorAll(".nav-bar-menu-link")
+
+        ham.addEventListener("click", toggleHamburger)
+        function toggleHamburger() {
+            navbar.classList.toggle("showNav")
+            ham1.classList.toggle("closeBtn1")
+            ham2.classList.toggle("closeBtn2")
+            ham3.classList.toggle("closeBtn3")
+            menuContainer.classList.toggle("showMenuLink")
+        }
+        menuLink.forEach(
+            function (menuLink) {
+                menuLink.addEventListener("click", toggleHamburger)
+            }
+        )
+
+    
+    </script>
 </body>
 
 </html>
