@@ -906,7 +906,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 .header-secondary-page {
   height: 40vh;
   width: 100%;
-  background-image: url(../assets/menu-bg.png);
+  background-image: url(../assets/bg1.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
