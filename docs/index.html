@@ -60,7 +60,8 @@
                                             <li class="nav-bar-menu-link"><a href="#About">| Nosotras </a></li>
                                             <li class="nav-bar-menu-link"><a href="#Gallery">| Trabajos </a></li>
                                             <li class="nav-bar-menu-link"><a href="#Bonus">| Bonus </a></li>
-                                            <li class="nav-bar-menu-link"><a href="./pages/contact.html">| Contacto</a></li>
+                                            <li class="nav-bar-menu-link"><a href="./pages/contact.html">| Contacto</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="col">
@@ -115,7 +116,7 @@
         <div class="container">
 
             <div class="row bg1">
-                <div class="col-10 offset-1 siemprelistas">
+                <div class="col-10 offset-1 siemprelistas pt-5">
                     <h2 class="title mt-5">Siempre <br> Listas</h2>
                     <p class="subtitle">para hacer lo que <br> nos apasiona</p>
                     <p class="ask">Pero, ¿qué hacen?</p>
@@ -202,7 +203,7 @@
         <div class="container mt-5 py-5 bg2">
             <div class="row container-services-one container-pink">
                 <div id="services-col-one" class="col-10 offset-1 col-md-5 offset-md-6 d-flex ">
-                    <div class="col">
+                    <div class="col pt-5">
                         <h2 class="section-title">el impacto</h2>
                         <h3 class="mb-3 section-subtitle">de la integración</h3>
                         <p class="mb-3 section-text">En un mundo donde todo se disecciona, nosotras apuntamos a
@@ -231,7 +232,7 @@
         <!-- Packs -->
         <div class="container pt-5 bg3">
 
-            <div class="row mb-3">
+            <div class="row my-3">
                 <div class="col-10 offset-1 col-md-5 pt-5">
                     <h2 class="section-subtitle">Conocé nuestros packs...</h2>
                     <p class="section-text mb-0">Podés elegir el que mejor se adpate a tu proyecto o <a
@@ -242,7 +243,7 @@
 
 
                 <div class="carousel-container">
-                    <input class="input-margin-start mb-3" type="radio" name="position" id="pack1"/>
+                    <input class="input-margin-start mb-3" type="radio" name="position" id="pack1" />
                     <input class="mb-3" type="radio" name="position" id="pack2" checked />
                     <input class="mb-3" type="radio" name="position" id="pack3" />
                     <input class="mb-3" type="radio" name="position" id="pack4" />
@@ -355,14 +356,14 @@
                     <div id="manifest-title" class="manifest-title mb-2 p-2 text-center">
                         <h2 class="section-title">manifiesto</h2>
                     </div>
-                    <div id="manifest-text-one" class="p-3">
+                    <div  class="p-3 manifest-text-container">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur a nemo deserunt autem
                             molestias sit deleniti fugit aspernatur ex. Cupiditate vitae quo consequatur ipsam? Dolorem
-                            distinctio eum at! !
+                            distinctio eum at! Lorem 
                         </p>
-                        <div>
-                            <button id="btn-manifest" class="btn-ac-first p-2">Ver +</button>
-                        </div>
+                    </div>
+                    <div class="btn-manifest-container">
+                        <button class="btn-manifest p-2">Ver +</button>
                     </div>
                 </div>
                 <!-- <div class="col-10 offset-1 d-flex pt-5">
@@ -398,11 +399,11 @@
     <!-- Gallery -->
     <section id="Works">
 
-        <div id="Gallery" class="gallery-container container my-5">
+        <div id="Gallery" class="gallery-container container py-5">
             <div class="container">
 
                 <div class="row mb-3">
-                    <div class="col-10 offset-1 col-md-4">
+                    <div class="col-10 offset-1 col-md-4 py-3">
                         <h2 class="section-title">Trabajos realizados</h2>
                         <h3 class="mb-3 section-subtitle">para clientes felices</h3>
                         <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia sed
@@ -602,7 +603,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-10 offset-1 col-md-4 py-2">
-                    <h2 class="section-title">Elegí <br> Crashear</h2>
+                    <h2 class="section-title">Elegí Crashear</h2>
                     <p class="section-subtitle">Llevemos tu empresa <br> al próximo nivel</p>
                     <p class="section-text">Podés enviarnos consultas, ideas o solicitar una cotización para tu
                         proyecto.</p>
@@ -671,33 +672,6 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        
-
-        var navbar = document.querySelector('.wrapper')
-        var ham = document.querySelector('.menu-btn')
-        var ham1 = document.querySelector('.menu-btn-ham1')
-        var ham2 = document.querySelector('.menu-btn-ham2')
-        var ham3 = document.querySelector('.menu-btn-ham3')
-        var menuContainer = document.querySelector('.nav-bar-menu-container')
-        var menuLink = document.querySelectorAll(".nav-bar-menu-link")
-
-        ham.addEventListener("click", toggleHamburger)
-        function toggleHamburger() {
-            navbar.classList.toggle("showNav")
-            ham1.classList.toggle("closeBtn1")
-            ham2.classList.toggle("closeBtn2")
-            ham3.classList.toggle("closeBtn3")
-            menuContainer.classList.toggle("showMenuLink")
-        }
-        menuLink.forEach(
-            function (menuLink) {
-                menuLink.addEventListener("click", toggleHamburger)
-            }
-        )
-
-    
-    </script>
 </body>
 
 </html>

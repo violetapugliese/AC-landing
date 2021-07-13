@@ -34,41 +34,33 @@
 
     <!-- Header -->
     <header class="header" id="Header">
-        <div id="nav-bar"></div>
-        <div class="nav-bar nav-colored">
+        <div class="nav-bar bg-ac-blue" id="nav-bar">
             <div class="container">
                 <div class="row">
-                    <div class="col pt-4">
-                        <p>agencia crash</p>
+                    <div class="col d-flex align-items-center">
+                        <img src="../assets/logo-light.svg" class="nav-bar-logo" alt="logo blanco agencia crash">
+                        <p> agencia crash</p>
                     </div>
                     <div class="col d-flex align-items-end">
                         <div class="container-red">
-                            <input type="checkbox" id="active">
-                            <label for="active" class="menu-btn"><span id="menu-btn-span"
-                                    class="btn-white"></span></label>
-                            <label for="active" class="close"></label>
-                            <div class="wrapper">
+                            <button class="btn menu-btn" id="menu-btn">
+                                <div class="menu-btn-ham1"></div>
+                                <div class="menu-btn-ham2"></div>
+                                <div class="menu-btn-ham3"></div>
+                            </button>
+                            <div class="wrapper" id="wrapper">
                                 <div class="wrapper-header text-white">
                                 </div>
                                 <div class="container">
                                     <div class="col offset-1">
-                                        <ul>
-                                            <!-- <span>▲ Ã</span>
-                                            <span>☼ ‼ ♦</span>
-                                            <span>© ♀ ☺</span>
-                                            <span>↑ @ ♣</span> -->
-                                            <li><a href="../index.html">| HOLA </a></li>
-                                            <li><a href="#">| Servicios </a></li>
-                                            <li><a href="#">| Nosotras </a></li>
-                                            <li><a href="#">| Trabajos </a></li>
-                                            <li><a href="#">| Bonus </a></li>
-                                            <li><a href="./contact.html">| Contacto </a></li>
-                                            <div class="col wrapper-icons p-4">
-                                                <a href=""><i class="far fa-envelope"></i></a>
-                                                <a href=""><i class="fab fa-whatsapp"></i></a>
-                                                <a href=""><i class="fab fa-linkedin"></i></a>
-                                                <a href=""><i class="fab fa-instagram"></i></a>
-                                            </div>
+                                        <ul class="nav-bar-menu-container">
+                                            <li class="nav-bar-menu-link"><a href="../index.html">| HOLA </a></li>
+                                            <li class="nav-bar-menu-link"><a href="../index.html#Services">| Servicios </a></li>
+                                            <li class="nav-bar-menu-link"><a href="../index.html#About">| Nosotras </a></li>
+                                            <li class="nav-bar-menu-link"><a href="../index.html#Gallery">| Trabajos </a></li>
+                                            <li class="nav-bar-menu-link"><a href="../index.html#Bonus">| Bonus </a></li>
+                                            <li class="nav-bar-menu-link"><a href="/pages/contact.html">| Contacto</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="col">

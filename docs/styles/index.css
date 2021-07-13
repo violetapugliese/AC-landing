@@ -30,17 +30,17 @@ html {
 .bg-ac-green {
   background-color: var(--ac-green);
 }
-body {
+/* body {
   font-family: Helvetica, sans-serif;
   transition: 0.3s;
   color: var(--ac-blue);
-}
-/* bodyDARCK {
+} */
+body  {
   font-family: Helvetica, sans-serif;
   transition: 0.3s;
   color: white;
   background-color: #081638;
-} */
+}
 .hidden {
   overflow: hidden;
 }
@@ -712,6 +712,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   color: white;
   text-decoration: underline 2px solid white;
 }
+
 .manifest-container p {
   font-size: 0.8rem;
   margin-bottom: 0;
@@ -722,16 +723,29 @@ input:nth-of-type(5):checked ~ main#carousel {
   background-color: var(--ac-blue);
 }
 .manifest-title h2 {
+  font-size: 1.8rem;
   color: white;
 }
-#manifest-text-one {
-  position: relative;
+.manifest-text-container {
   border: solid 2px var(--ac-blue);
+  height: 240px;
+  overflow: hidden;
 }
-#btn-manifest {
+.manifestExpand {
+  height: auto;
+}
+.btn-manifest-container {
+  position: relative;
+  width: 100%;
+}
+.btn-manifest {
   position: absolute;
-  right: -2px;
+  right: 0;
   bottom: -28px;
+  background: var(--ac-orange);
+  color: white;
+  border-radius: none;
+  border: none;
 }
 .manifest-img img {
   width: 100%;
