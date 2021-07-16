@@ -1,0 +1,47 @@
+Header:
+Logo: en el centro queda desequeilibrado
+Texto: AGENCIA CRASH?
+
+Hero: Animación - imagen de fondo - tiene que ser foto?
+        Si hay foto en hero, está bueno agregar otra foto más.
+
+Encabezado: A dónde y qué texto va. Pero tiene que esyar. ver keywords
+
+backgrounds: definir estética. Armar diseños
+
+chat
+¿Qué dicen? Hay stickers? 
+
+Manifiesto: Ver extensión
+
+Página sobre nosotras:
+-Manifiesto
+-Fotos pibas + texto pibas
+-bonus
+
+Hacemos lo que amamos: podría ser esa onda. Eso puede estar animado
+
+Servicios:
+Los packs pueden estar en una paágina de servicios, no necesariamente en el index
+
+Pagina de servicios.
+
+Iconos con los servicios + breve descripción
+Impacto
+Packs - los pack redireccionan a página de contacto insertando texto
+
+Trabajos realizados: 
+Que dice el título?
+Qué dice el subtítulo?
+Nombre de la foto: MARCA TAL
+descripción: En la foto, breve "contenido para redes" "identidad visual". En el logo, larga "Trababjamos con MARCA TAL en una etapa en la que la marca se convertía en zararzrararza".
+
+Pagina de trabajos realizados
+
+contacto
+Que dice el título?
+Qué dice el subtítulo?
+
+pagina contacto
+Que dice el título?
+Qué dice el subtítulo?
