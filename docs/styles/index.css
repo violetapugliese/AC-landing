@@ -139,7 +139,7 @@ body {
   padding: 0.2rem 1rem;
   width: max-content;
   font-size: 0.8rem;
-  border: 1px solid var(--ac-green);
+  border: 2px solid var(--ac-green);
   border-radius:0px 20px 20px 20px;
   color: #a5bc00;
   background-color: white;
@@ -155,7 +155,7 @@ body {
   padding: 0.2rem 1rem;
   width: max-content;
   font-size: 0.8rem;
-  border: 1px solid var(--ac-orange);
+  border: 2px solid var(--ac-orange);
   border-radius:20px 20px 0px 20px;
   color:var(--ac-orange);
   background-color: white;
