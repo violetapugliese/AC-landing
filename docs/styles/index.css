@@ -220,9 +220,6 @@ body {
   width: 100%;
   overflow: hidden;
   background-color: white;
-  background-image: url(../assets/bg3.png);
-  background-position: left;
-  background-repeat: no-repeat;
   transition: all 0.6s ease-in-out;
 }
 .wrapper-header {
@@ -452,6 +449,12 @@ body {
   background-image: url(../assets/bg3.png);
   background-repeat: no-repeat;
   background-position: center top ;
+}
+.bg4 {
+  background-image: url(../assets/bg4.png);
+  background-repeat: no-repeat;
+  background-position: left bottom ;
+  background-size: cover;
 }
 /* Services */
 #Services {
@@ -748,8 +751,12 @@ input:nth-of-type(5):checked ~ main#carousel {
 .manifest-title {
   width: 100%;
   background-color: var(--ac-blue);
+  color: white;
 }
-
+.manifest-title .section-title{
+  color: white;
+  font-size: 1.8rem;
+}
 .manifest-text-container {
   border: solid 2px var(--ac-blue);
   height: 240px;
@@ -870,12 +877,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   border-bottom: 1px solid white;
 }
 /* Contact */
-#Contact {
-  /* position: relative; */
-  /* height: 70vh; */
-  background-color: var(--ac-blue);
-  color: white;
-}
+
 #Contact a {
   color: #f2733b;
 }
@@ -894,6 +896,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   text-decoration: none;
   color: white;
 }
+
 .footer a:hover {
   text-decoration: underline solid 1px;
 }
@@ -902,6 +905,9 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 .footer svg {
   font-size: 1.4rem;
+}
+a span {
+  color: var(--ac-orange);
 }
 /* Darck Mode */
 /* .dark-mode {

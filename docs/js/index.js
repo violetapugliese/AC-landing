@@ -30,10 +30,10 @@ menuLink.forEach(
     }
 )
 
-btnManifest.addEventListener("click", expandContainer)
-function expandContainer() {
-    manifestContainer.classList.toggle("manifestExpand")
-}
+// btnManifest.addEventListener("click", expandContainer)
+// function expandContainer() {
+//     manifestContainer.classList.toggle("manifestExpand")
+// }
 
 window.onscroll = function () {
   "use strict";
