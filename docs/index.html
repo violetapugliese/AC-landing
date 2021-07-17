@@ -156,8 +156,8 @@
                         <button class="btn-manifest p-2">Ver +</button>
                     </div> -->
                 </div>
-                <div class="col-10 offset-1 pt-5 mt-3">
-                    <div class="manifest-img">
+                <div class="col-10 offset-1 pt-5 mt-3" data-aos="zoom-in">
+                    <div class="manifest-img pt-5">
                         <img src="./assets/hacemos.PNG" alt="texto hacemos lo que amamos">
                     </div>
                 </div>
@@ -448,20 +448,20 @@
                 </div>
                 <div class="row">
                     <div id="gallery-client1" class="col-6 col-md-3 p-0  gallery-client1">
-                        <div class="card-colum">
+                        <div class="card-colum" data-aos-easing="linear" data-aos-duration="500">
                             <script>
                                 var imgGallery = ["girl2", "girl1", "client1", "hero-beer2", "hero-beer3", "friends"];
                                 var galleryOne = document.getElementById('gallery-client1');
 
                                 for (img of imgGallery) {
                                     galleryOne.innerHTML += `
-                                    <div class="card">
+                                    <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                                       <a data-bs-toggle="modal" data-bs-target="#id${img}">
                                       <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
                                       </a>
                                     </div>
     
-                                    <div class="modal  fade" id="id${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="id${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -493,7 +493,7 @@
 
                                 for (img of imgGallery2) {
                                     galleryTwo.innerHTML += `
-                                    <div class="card ">
+                                    <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                                       <a data-bs-toggle="modal" data-bs-target="#id${img}">
                                       <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
                                       </a>
@@ -531,7 +531,7 @@
 
                                 for (img of imgGallery) {
                                     galleryThree.innerHTML += `
-                                    <div class="card">
+                                    <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                                       <a data-bs-toggle="modal" data-bs-target="#id${img}">
                                       <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
                                       </a>
@@ -569,7 +569,7 @@
 
                                 for (img of imgGallery) {
                                     galleryFour.innerHTML += `
-                                    <div class="card">
+                                    <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                                       <a data-bs-toggle="modal" data-bs-target="#id${img}">
                                       <img src="./assets/gallery/${img}.jpg" alt="" class="card-img-top">
                                       </a>
@@ -639,14 +639,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-10 offset-1 col-md-4 col-lg-3 d-flex flex-column justify-content-center overflow-hidden">
-                   <div class="w-100" data-aos="zoom-in-right" data-aos-duration="500">
-                       <div class="mb-1 ask" >
+                       <div class="mb-1 ask" data-aos="zoom-in-right" data-aos-duration="500">
                            <p class="">¡Qué genias!</p>
                        </div>
-                       <div class="mb-3 ask" data-aos="zoom-in-right" >
+                       <div class="mb-3 ask" data-aos="zoom-in-right" data-aos-duration="500" >
                            <p class="">Me convencieron</p>
                        </div>
-                   </div>
                     <div class="mb-1 answer" data-aos="zoom-in-left" data-aos-duration="700">
                         <p>
                             Excelente

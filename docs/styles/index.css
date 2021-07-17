@@ -779,6 +779,11 @@ input:nth-of-type(5):checked ~ main#carousel {
   border-radius: none;
   border: 1px solid var(--ac-orange);
 }
+.manifest-img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
 .manifest-img img {
   width: 100%;
 }
