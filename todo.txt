@@ -5,7 +5,7 @@ Texto: AGENCIA CRASH?
 Hero: Animación - imagen de fondo - tiene que ser foto?
         Si hay foto en hero, está bueno agregar otra foto más.
 
-Encabezado: A dónde y qué texto va. Pero tiene que esyar. ver keywords
+Encabezado: A dónde y qué texto va. Pero tiene que estar. ver keywords
 
 backgrounds: definir estética. Armar diseños
 

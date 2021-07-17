@@ -17,3 +17,11 @@
       font-size: 2rem;
       color: #2157db;
   }
+  .container-contact-media{
+    display: none;
+  }
+  @media (min-width: 776px) {
+    .container-contact-media{
+      display: block;
+    }
+  }
