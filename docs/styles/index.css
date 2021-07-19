@@ -201,6 +201,11 @@ body {
   font-weight: 600;
   z-index: 1001;
 }
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  z-index: 1001;
+}
 .nav-bar-logo {
   margin-right: 0.5rem;
   width: 40px;
@@ -466,6 +471,9 @@ body {
   display: block;
   color: var(--ac-orange);
   text-align: right;
+}
+.service-item .section-text:hover{
+  color: #2157db;
 }
 .section-title {
   font-size: 2rem;

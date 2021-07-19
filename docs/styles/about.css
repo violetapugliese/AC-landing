@@ -1,0 +1,7 @@
+.header-secondary-about {
+    height: 40vh;
+    width: 100%;
+    background-image: url(../assets/bg3.png);
+    background-position: bottom ;
+    background-repeat: no-repeat;
+  }
