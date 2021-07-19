@@ -35,7 +35,7 @@ body {
   transition: 0.3s;
   color: var(--ac-blue);
 }
-/* body  {
+/* body {
   font-family: Helvetica, sans-serif;
   transition: 0.3s;
   color: white;
@@ -96,7 +96,20 @@ body {
     transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
-
+.btn-dark-mode{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 1.2rem;
+  margin-right: 2.5rem;
+  z-index: 1001;
+  padding: 0;
+}
+.btn-dark-mode img{
+  width: 1.2rem;
+}
+.btn-dark-mode:focus{
+  box-shadow: none;
+}
 .btn-ac {
   background: transparent;
   min-width: 150px;
@@ -142,7 +155,6 @@ body {
   border: 2px solid var(--ac-green);
   border-radius:0px 20px 20px 20px;
   color: #a5bc00;
-  background-color: white;
   z-index: 2;
 }
 .ask p {
@@ -158,7 +170,6 @@ body {
   border: 2px solid var(--ac-orange);
   border-radius:20px 20px 0px 20px;
   color:var(--ac-orange);
-  background-color: white;
   z-index: 2;
 }
 .answer p {

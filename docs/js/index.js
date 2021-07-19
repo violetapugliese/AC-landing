@@ -15,6 +15,8 @@ var menuContainer = document.querySelector('.nav-bar-menu-container')
 var menuLink = document.querySelectorAll(".nav-bar-menu-link")
 var manifestContainer = document.querySelector('.manifest-text-container')
 var btnManifest = document.querySelector('.btn-manifest')
+var btnDarkMode = document.getElementById('darkMode')
+var bodyPage = document.body
 
 ham.addEventListener("click", toggleHamburger)
 function toggleHamburger() {
@@ -30,10 +32,11 @@ menuLink.forEach(
     }
 )
 
-// btnManifest.addEventListener("click", expandContainer)
-// function expandContainer() {
-//     manifestContainer.classList.toggle("manifestExpand")
+// function darkMode () {
+//   bodyPage.classList.toogle('dark-mode')
 // }
+
+// btnDarkMode.addEventListener("click", darkMode)
 
 window.onscroll = function () {
   "use strict";
