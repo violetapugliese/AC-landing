@@ -1,0 +1,23 @@
+
+/* Media screen and (min-width: 992px) */
+#Hero .carousel-inner .carousel-item img {
+  max-width: 1500px;
+}
+.about-container .overlay p {
+  font-size: 2.5rem;
+}
+.manifest-img img {
+  width: 700px
+}
+.pack-container {
+  min-width: 350px;
+  max-width: 350px;
+}
+.bonus-circle {
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+}
+.bg2 {
+  background-position-x: -400px;
+}

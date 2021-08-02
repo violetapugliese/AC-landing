@@ -1,0 +1,14 @@
+/* Media screen and (min-widht: 576px) */
+#Hero .carousel-inner .carousel-item img {
+    max-width: 991px;
+}
+.manifest-img img {
+  width: 420px
+}
+.pack-container {
+  min-width: 300px;
+  max-width: 300px;
+}
+.nav-bar p {
+  display: inline;
+}

@@ -11,16 +11,10 @@
     <link rel="stylesheet" href="../styles/gallery.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <title>Agencia Crash | Trabajos realizados</title>
 </head>
 
-<body id="page-top" class="hidden">
+<body id="page-top" class="hidden body">
 
     <div class="preloader-container" id="preloader">
         <div class="preloader-animation">
@@ -44,6 +38,9 @@
                     </div>
                     <div class="col d-flex align-items-end">
                         <div class="container-red">
+                            <button type="button" class="btn-dark-mode btn" id="darkMode">
+                                <img src="../assets/darkMood.svg" width="24" alt="darkmood boton">
+                            </button>
                             <button class="btn menu-btn" id="menu-btn">
                                 <div class="menu-btn-ham1"></div>
                                 <div class="menu-btn-ham2"></div>
@@ -101,153 +98,25 @@
                 <div class="row">
                     <div id="gallery-client1" class="col-6 col-md-3 p-0  gallery-client1">
                         <div class="card-colum" data-aos-easing="linear" data-aos-duration="500">
-                            <script>
-                                var imgGallery = ["girl2", "girl1", "client1", "hero-beer2", "hero-beer3", "friends"];
-                                var galleryOne = document.getElementById('gallery-client1');
-
-                                for (img of imgGallery) {
-                                    galleryOne.innerHTML += `
-                                    <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-                                      <a data-bs-toggle="modal" data-bs-target="#id${img}">
-                                      <img src="../assets/gallery/${img}.jpg" alt="" class="card-img-top">
-                                      </a>
-                                    </div>
-    
-                                    <div class="modal fade" id="id${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Cliente - campaña</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="../assets/gallery/${img}.jpg" alt="">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <div>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    `
-                                }
-                            </script>
+                          <!-- script -->
                         </div>
                     </div>
 
                     <div id="gallery-client2" class="col-6 col-md-3 p-0  gallery-client2">
                         <div class="card-colum">
-                            <script>
-                                var imgGallery2 = ["friends1", "hero-beer22", "hero-beer33", "client2", "girl4", "girl3"];
-                                var galleryTwo = document.getElementById('gallery-client2');
-
-                                for (img of imgGallery2) {
-                                    galleryTwo.innerHTML += `
-                                    <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-                                      <a data-bs-toggle="modal" data-bs-target="#id${img}">
-                                      <img src="../assets/gallery/${img}.jpg" alt="" class="card-img-top">
-                                      </a>
-                                    </div>
-    
-                                    <div class="modal  fade" id="id${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Cliente - campaña</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="../assets/gallery/${img}.jpg" alt="">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <div>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    `
-                                }
-                            </script>
+                            <!-- script -->
                         </div>
                     </div>
 
                     <div id="gallery-client3" class="col-6 col-md-3 p-0  gallery-client3">
                         <div class="card-colum">
-                            <script>
-                                var imgGallery = ["girl22", "girl11", "hero-beer222", "hero-beer333", "client3", "friends11"];
-                                var galleryThree = document.getElementById('gallery-client3');
-
-                                for (img of imgGallery) {
-                                    galleryThree.innerHTML += `
-                                    <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-                                      <a data-bs-toggle="modal" data-bs-target="#id${img}">
-                                      <img src="../assets/gallery/${img}.jpg" alt="" class="card-img-top">
-                                      </a>
-                                    </div>
-    
-                                    <div class="modal  fade" id="id${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Cliente - campaña</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="../assets/gallery/${img}.jpg" alt="">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <div>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    `
-                                }
-                            </script>
+                            <!-- script -->
                         </div>
                     </div>
 
                     <div id="gallery-client4" class="col-6 col-md-3 p-0  gallery-client3">
                         <div class="card-colum">
-                            <script>
-                                var imgGallery = ["client4", "girl111", "hero-beer2222", "hero-beer3333", "friends111", "girl222"];
-                                var galleryFour = document.getElementById('gallery-client4');
-
-                                for (img of imgGallery) {
-                                    galleryFour.innerHTML += `
-                                    <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-                                      <a data-bs-toggle="modal" data-bs-target="#id${img}">
-                                      <img src="../assets/gallery/${img}.jpg" alt="" class="card-img-top">
-                                      </a>
-                                    </div>
-    
-                                    <div class="modal  fade" id="id${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Cliente - campaña</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="../assets/gallery/${img}.jpg" alt="">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <div>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    `
-                                }
-                            </script>
+                            <!-- script -->
                         </div>
                     </div>
                 </div>
@@ -326,11 +195,19 @@
     </footer>
     <!-- /Footer -->
 
-    <script src="../js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    <script>
+        var bodyPage = document.querySelector(".body")
+        window.onload = function () {
+            document.querySelector(".preloader-container").style.display = "none";
+            bodyPage.classList.remove("hidden");
+        };
+    </script>
+    <script async src="../js/index.js"></script>
+    <script async src="../js/galleryPge.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
 </html>

@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="canonical" href="https://agenciacrash.com">
+    <link rel="preconect" href="https://cdn.jsdelivr.net/">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+    <link rel="preconect" href="https://unpkg.com/">
+    <link rel="dns-prefetch" href="https://unpkg.com/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width: 576px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 992px)">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script async src="./js/index.js"></script>
-    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-    <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <title>Agencia Crash | Comunicación y contenido </title>
 </head>
 
-<body id="page-top" class="hidden">
+<body id="page-top" class="hidden body">
     <div class="preloader-container" id="preloader">
         <div class="preloader-animation">
             <div class="loader"></div>
@@ -33,14 +34,15 @@
                 <div class="row">
                     <div class="col d-flex align-items-center">
                         <a href="./index.html">
-                            <img src="./assets/logo-light.svg" class="nav-bar-logo" alt="logo blanco agencia crash">
+                            <img src="./assets/logo-light.svg" width="40" class="nav-bar-logo"
+                                alt="logo blanco agencia crash">
                             <p>agencia crash</p>
                         </a>
                     </div>
                     <div class="col d-flex align-items-end">
                         <div class="container-red">
                             <button type="button" class="btn-dark-mode btn" id="darkMode">
-                                <img src="./assets/darkMood.svg" alt="darkmood boton">
+                                <img src="./assets/darkMood.svg" width="24" alt="darkmood boton">
                             </button>
                             <button class="btn menu-btn" id="menu-btn">
                                 <div class="menu-btn-ham1"></div>
@@ -458,10 +460,9 @@
                 </div>
 
                 <div class="col-10 offset-1 col-md-5 d-flex align-items-center justify-content-center ">
-                    <a href=""><i class="far fa-envelope me-2"></i></a>
-                    <a href=""><i class="fab fa-whatsapp me-2"></i></a>
-                    <a href=""><i class="fab fa-linkedin me-2"></i></a>
-                    <a href=""><i class="fab fa-instagram me-2"></i></a>
+                    <a href=""><img src="./assets/iconmedia/icons8-gmail-50.svg" alt="icon gmail"></a>
+                    <a href=""><img src="./assets/iconmedia/icons8-linkedin-50.svg" alt="icon linkedin"></a>
+                    <a href=""><img src="./assets/iconmedia/icons8-whatsapp-50.svg" alt="icon whatsapp"></a>
                 </div>
             </div>
             <hr>
@@ -471,6 +472,22 @@
         </div>
         </div>
     </footer>
+    <script>
+        var bodyPage = document.querySelector(".body")
+        window.onload = function () {
+            document.querySelector(".preloader-container").style.display = "none";
+            bodyPage.classList.remove("hidden");
+        };
+    </script>
+    <script async src="./js/index.js"></script>
+    <script async src="./js/marquee.js"></script>
+    <script async src="./js/packs.js"></script>
+    <script async src="./js/gallery.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- /Footer -->
 </body>
+
 </html>

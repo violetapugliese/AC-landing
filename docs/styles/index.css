@@ -116,6 +116,7 @@ body {
   box-shadow: none;
 }
 .btn-ac {
+  will-change: transform;
   background: transparent;
   min-width: 150px;
   font-size: 0.8rem;
@@ -152,6 +153,7 @@ body {
   position: relative;
 }
 .ask {
+  will-change: transform;
   display: inline-block;
   margin: 0;
   padding: 0.2rem 1rem;
@@ -166,6 +168,7 @@ body {
   margin: 0;
 }
 .answer{
+  will-change: transform;
   display: inline;
   align-self: flex-end;
   margin: 0;
@@ -234,24 +237,26 @@ body {
   height: 80px;
 }
 .wrapper {
+  will-change: transform;
   position: fixed;
   top: 0;
   z-index: 1000;
-  right: -100%;
+  right: 0;
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-color: white;
   transition: all 0.6s ease-in-out;
+  transform: translateX(100%);
 }
 .wrapper-header {
   width: 100%;
   height: 80px;
   background-color: var(--ac-blue);
 }
-/* #active:checked ~ .wrapper {
-  right: 0;
-} */
+.showNav {
+  transform: translateX(0);
+}
 .menu-btn {
   position: fixed;
   margin-top: 0.8rem;
@@ -295,9 +300,6 @@ body {
   transition: background-color 0.6s;
 }
 /* closing animation */
-.showNav {
-  right: 0;
-}
 .closeBtn2 {
   transform: scaleX(0);
 }
@@ -348,10 +350,13 @@ body {
 }
 #Hero .carousel-inner .carousel-item img {
   object-fit: cover;
+  max-width: 575px;
   height: 90vh;
+  max-height: 800px;
   filter: grayscale(40%);
 }
 .hero-animation {
+  will-change: transform;
   top: 10vh;
   right: 0;
   left: 0;
@@ -448,6 +453,7 @@ body {
   max-width: 920px;
 }
 .service-item {
+  will-change: transform;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -467,7 +473,7 @@ body {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 .service-item .icon img {
-  width: 50%;
+  width: 40px;
 }
 .service-item .text {
   display: flex;
@@ -521,6 +527,7 @@ body {
   transform-style: preserve-3d;
 }
 #carousel{
+  will-change: transform;
   position: relative;
   width: 100%;
   height: 100%;
@@ -637,7 +644,7 @@ body {
   margin: 0 auto;
 }
 .manifest-img img {
-  width: 100%;
+  width: 236px
 }
 
 /* Gallery */
@@ -645,6 +652,7 @@ body {
   width: 100%;
 }
 .card {
+  will-change: transform;
   border: 3px solid transparent;
   cursor: pointer;
   border-radius: 0;
@@ -653,13 +661,15 @@ body {
   background-color: #fcf2fa00;
 }
 .card-img-top {
+  will-change: transform;
+  max-height: 420px;
+  max-width: 300px;
   border-radius: 0;
   transform: scale(1);
   transition: 4s;
 }
 .card-img-top:hover {
   transform: scale(1.2);
-  transition: 4s;
 }
 /* Separetor */
 .separetor {
@@ -684,89 +694,21 @@ body {
   text-decoration: none;
   color: white;
 }
-
 .footer a:hover {
   text-decoration: underline solid 1px;
 }
 .footer p {
   font-size: 0.8rem;
 }
-.footer svg {
-  font-size: 1.4rem;
+.footer img {
+  margin-right: 10px;
+  width: 20px;
 }
 a span {
   color: var(--ac-orange);
 }
 /* Darck Mode */
-/* .dark-mode {
-  background-color: #0c1f50;
-  color: var(--ac-light-pink);
-}
-.dark-mode a {
-  color: #fcf2fa;
-}
-.dark-mode li a {
-  color: #fcf2fa;
-}
-.dark-mode .menu-toggle:focus,
-.menu-toggle:hover {
-  border-bottom: 2px solid var(--ac-light-pink);
-}
-.dark-mode-border {
-  border: 1px solid var(--ac-light-pink);
-}
-Opacity */
-
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-  .gallery-container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 576px) {
-  .pack-container {
-    min-width: 300px;
-    max-width: 300px;
-  }
-  /* .bonus-circle {
-    width: 70%;
-    height: 0;
-    padding-bottom: 70%;
-  } */
-  .nav-bar p {
-    display: inline;
-  }
-}
-@media (min-width: 768px) {
-  .bg2 {
-    background-position-x: -512px;
-  }
-}
-@media (min-width: 992px) {
-  .about-container .overlay p {
-    font-size: 2.5rem;
-  }
-  .pack-container {
-    min-width: 350px;
-    max-width: 350px;
-  }
-  .bonus-circle {
-    width: 50%;
-    height: 0;
-    padding-bottom: 50%;
-  }
-  .bg2 {
-    background-position-x: -400px;
-  }
-}
-@media (min-width: 1024px) {
-}
-@media (min-width: 1200px) {
-  .bg2 {
-    background-position-x: -300px;
-  }
+.dark-mode {
+  color: white;
+  background-color: #040b1f;
 }
