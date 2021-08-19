@@ -11,11 +11,13 @@ var menuLink = document.querySelectorAll(".nav-bar-menu-link");
 var manifestContainer = document.querySelector(".manifest-text-container");
 var btnManifest = document.querySelector(".btn-manifest");
 var btnDarkMode = document.getElementById("darkMode");
+var imgDarkMode = document.querySelector(".img-dark-mode")
 
 // DarkMode
 btnDarkMode.addEventListener("click", toggleDarkMode);
 function toggleDarkMode(){
   bodyPage.classList.toggle("dark-mode")
+  imgDarkMode.classList.toggle("btn-dark-mode-rotate")
 }
 
 // BurgerButton
@@ -40,8 +42,8 @@ window.onscroll = function () {
     mirror: true,
   });
   if (
-    document.body.scrollTop >= 300 ||
-    document.documentElement.scrollTop >= 300
+    document.body.scrollTop >= 200 ||
+    document.documentElement.scrollTop >= 200
   ) {
     myNav.classList.add("nav-colored");
     myNav.classList.remove("nav-transparent");

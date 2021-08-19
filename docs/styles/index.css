@@ -112,6 +112,9 @@ body {
 .btn-dark-mode img{
   width: 1.2rem;
 }
+.btn-dark-mode-rotate {
+  transform: rotate(180deg)
+}
 .btn-dark-mode:focus{
   box-shadow: none;
 }
@@ -393,7 +396,7 @@ height: 100%;
   line-height: calc(1.375rem + 1.5vw);
   text-decoration: underline 2px;
 /*animation*/
-        animation:move 6.5s;
+        animation:move 7s;
 /*animation-iteration-count*/
         animation-iteration-count:infinite;
 /*animation-delay*/
@@ -428,8 +431,6 @@ height: 100%;
 /* BG-IMG */
 .bg1{
   background-image: url(../assets/bg1.png);
-  background-repeat: no-repeat;
-  background-position: left top;
 }
 .bg2{
   background-image: url(../assets/bg2.png);
@@ -512,7 +513,7 @@ height: 100%;
   color: #2157db;
 }
 .section-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: underline 3px;
   margin: 0;
@@ -622,45 +623,49 @@ height: 100%;
   z-index: -1;
 }
 /* About */
-.manifest-title {
+.about-title {
+  text-decoration: none;
+}
+.new-about__wrapper {
+  display: grid;
+}
+.new-about__imgOne, .new-about__imgTwo {
   width: 100%;
-  background-color: var(--ac-blue);
-  color: white;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-position: top left;
 }
-.manifest-title .section-title{
-  color: white;
-  font-size: 1.8rem;
+.new-about__imgOne {
+  background-image: url(../assets/wrapper-gridOne.png);
 }
-.manifest-text-container {
-  border: solid 2px var(--ac-blue);
-  overflow: hidden;
-  height: auto;
+.new-about__imgTwo {
+  background-image: url(../assets/wrapper-gridTwo.png);
 }
-/* .manifestExpand {
-  height: auto;
-} */
-.btn-manifest-container {
-  position: relative;
+.new-about__imgThree {
   width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-image: url(../assets/wrapper-gridThree.png);
 }
-.btn-manifest {
+.new-about__text-big-container {
   position: absolute;
-  right: 0;
-  bottom: -28px;
-  background: white;
-  color: var(--ac-orange);
-  border-radius: none;
-  border: 1px solid var(--ac-orange);
-}
-.manifest-img {
   width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
 }
-.manifest-img img {
-  width: 236px
+.new-about__text-container {
+  text-align: center;
+  width: 80%;
+ background-color: white;
+ color: var(--ac-orange);
+ padding: 3rem 1rem;
 }
-
 /* Gallery */
 .modal-body img {
   width: 100%;
@@ -724,5 +729,5 @@ a span {
 /* Darck Mode */
 .dark-mode {
   color: white;
-  background-color: #040b1f;
+  background-color: #010611;
 }
