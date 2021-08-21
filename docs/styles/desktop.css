@@ -1,7 +1,11 @@
 
 /* Media screen and (min-width: 992px) */
 #Hero .carousel-inner .carousel-item img {
-  max-width: 1500px;
+  max-width: 3000px;
+}
+.hero-icons__container{
+  width: 160px;
+  height: 160px;
 }
 .about-container .overlay p {
   font-size: 2.5rem;
@@ -20,4 +24,7 @@
 }
 .bg2 {
   background-position-x: -400px;
+}
+.gallery__slider .slick-slide {
+  width: 400px !important;
 }

@@ -12,3 +12,6 @@
 .nav-bar p {
   display: inline;
 }
+.gallery__slider .slick-slide {
+  width: 320px !important;
+}

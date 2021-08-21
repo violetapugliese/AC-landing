@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width: 576px)">
     <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
@@ -112,10 +113,10 @@
                 <div class="carousel-item"><img src="./assets/img/5.png" class="d-block w-100" alt="beer"></div>
 
             </div>
-            <div class="overlay">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-11 col-sm-6 offset-1">
+            <div class="overlay d-flex align-items-center">
+                <div class="container h-25">
+                    <div class="row">
+                        <div class="col-11 col-sm-5 offset-1">
                             <div class="Iam">
                                 <h1>
                                     <span class="container-innerIam">
@@ -128,7 +129,22 @@
                                     </span>
                                     <span><br> estrategias de<br>comunicación</span>
                                 </h1>
-                                <h6>para marcas fieles <br> a sí mismas.</h6>
+                            </div>
+                        </div>
+                        <div class="col-11 col-sm-5 offset-1">
+                            <div class="hero-icons">
+                                <div class="hero-icons__container hero-icons_one">
+                                    <img src="./assets/icons-hero/sticker-icon.png" alt="icono de cerebro">
+                                </div>
+                                <div class="hero-icons__container hero-icons_two">
+                                    <img src="./assets/icons-hero/pc-icon.png" alt="icono de cerebro">
+                                </div>
+                                <div class="hero-icons__container hero-icons_three">
+                                    <img src="./assets/icons-hero/shoot-icon.png" alt="icono de cerebro">
+                                </div>
+                                <div class="hero-icons__container hero-icons_four">
+                                    <img src="./assets/icons-hero/brain-icon.png" alt="icono de cerebro">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -205,23 +221,16 @@
     </section>
 
     <!-- /About -->
-
-
     <!-- Services -->
     <section id="Services" class="services">
-
         <div class="container">
-
             <div class="row pt-5">
                 <div class="col-10 offset-1 siemprelistas col-md-4 mb-3 pt-5">
                     <h2 class="title">Siempre Listas</h2>
-                    <p class="subtitle">para hacer lo que nos apasiona</p>
+                    <h3 class="subtitle">para poner tu marca <br> en movimiento.</h3>
                 </div>
                 <div
                     class="col-10 offset-1 offset-md-2 col-md-4 col-lg-3 d-flex flex-column justify-content-center overflow-hidden">
-                    <div class="mb-1 ask" data-aos="zoom-in-right" data-aos-duration="1000">
-                        <p>Ok</p>
-                    </div>
                     <div class="mb-3 ask" data-aos="zoom-in-right" data-aos-duration="1000">
                         <p>Pero, ¿qué hacen?</p>
                     </div>
@@ -233,10 +242,11 @@
             <div class="service-item-container row justify-content-around">
                 <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon">
-                        <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
+                        <img class="" src="./assets/icons-services/estartegia-icon.png"
+                            alt="dibujo de celular conectado">
                     </div>
                     <div class="text">
-                        <p class="title">Estrategia</p>
+                        <h6 class="title">Estrategia</h6>
                         <a class="section-text" href="./pages/services.html#Services-main">
                             <p class="mb-0">+ info</p>
                         </a>
@@ -245,10 +255,11 @@
                 </div>
                 <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon">
-                        <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
+                        <img class="" src="./assets/icons-services/identidad-icon.png"
+                            alt="dibujo de celular conectado">
                     </div>
                     <div class="text">
-                        <p class="title">Contenido</p>
+                        <h6 class="title">Identida Corporativa</h6>
                         <a class="section-text" href="./pages/services.html#Services-main">
                             <p class="mb-0">+ info</p>
                         </a>
@@ -257,10 +268,10 @@
                 </div>
                 <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon">
-                        <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
+                        <img class="" src="./assets/icons-services/camp-icon.png" alt="dibujo de celular conectado">
                     </div>
                     <div class="text">
-                        <p class="title">Campaña</p>
+                        <h6 class="title">Campaña</h6>
                         <a class="section-text" href="./pages/services.html#Services-main">
                             <p class="mb-0">+ info</p>
                         </a>
@@ -268,10 +279,10 @@
                 </div>
                 <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon">
-                        <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
+                        <img class="" src="./assets/icons-services/gencont-icon.png" alt="dibujo de celular conectado">
                     </div>
                     <div class="text">
-                        <p class="title">Social Media</p>
+                        <h6 class="title">Generación de contenido</h6>
                         <a class="section-text" href="./pages/services.html#Services-main">
                             <p class="mb-0">+ info</p>
                         </a>
@@ -279,10 +290,11 @@
                 </div>
                 <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon">
-                        <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
+                        <img class="" src="./assets/icons-services/socialmedia-icon.png"
+                            alt="dibujo de celular conectado">
                     </div>
                     <div class="text">
-                        <p class="title">Generación de contenido</p>
+                        <h6 class="title">Social Media</h6>
                         <a class="section-text" href="./pages/services.html#Services-main">
                             <p class="mb-0">+ info</p>
                         </a>
@@ -290,116 +302,61 @@
                 </div>
                 <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon">
-                        <img class="" src="./assets/icons-services/estartegia.png" alt="dibujo de celular conectado">
+                        <img class="" src="./assets/icons-services/sitioweb-icon.png" alt="dibujo de celular conectado">
                     </div>
                     <div class="text">
-                        <p class="title">Posicionamiento</p>
+                        <h6 class="title">E-commerce y Sitio web</h6>
                         <a class="section-text" href="./pages/services.html#Services-main">
                             <p class="mb-0">+ info</p>
                         </a>
                     </div>
-                </div>
-                <div class="col-10 offset-1 btn-ac-about-container d-flex flex-column overflow-hidden">
-                    <a href="./pages/services.html" class="text-end">
-                        <button class="btn btn-ac btn-ac-first btn-ac-about text-right" data-aos="zoom-in-left"
-                            data-aos-duration="1200">¡Mirá + detalles!</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-5 pt-5 bg2">
-            <div class="row container-services-one container-pink">
-                <div id="services-col-one" class="col-10 offset-1 col-md-5 offset-md-6 d-flex ">
-                    <div class="col pt-5">
-                        <h2 class="section-title">el impacto</h2>
-                        <h3 class="mb-3 section-subtitle">de la integración</h3>
-                        <p class="mb-3 section-text">En un mundo donde todo se disecciona, nosotras apuntamos a
-                            integrar. Nuestra
-                            experiencia nos
-                            enseñó la importancia de trabajar en distintos ejes, prestando especial atención a cada
-                            detalle, pero teniendo una visión global de cada marca y accionando en distintas
-                            direcciones
-                            a la vez.
-                        </p>
-                        <p class="mb-3 section-text">
-                            Vas a ver que ofrecemos desde servicios individuales hasta servicios totalmente
-                            integrados.
-                            Prestá atención al Nivel de Potencia que ofrece cada uno.
-                        </p>
-                        <a href="./pages/contact.html">
-                            <button class="btn btn-ac btn-ac-first mb-5 w-100" data-aos="zoom-in-left"
-                                data-aos-duration="1200">
-                                Conquistar el mundo digital
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Packs -->
-        <div class="container pt-3 bg3">
-            <div class="row my-3">
-                <div class="col-10 offset-1 col-md-5 pt-5">
-                    <h2 class="section-subtitle">Conocé nuestros packs...</h2>
-                    <p class="section-text mb-0">Podés elegir el que mejor se adpate a tu proyecto o <a
-                            href="./pages/contact.html">contactarnos</a> para que armemos la mejor opción para vos!</p>
-                </div>
-            </div>
-            <div class="carousel-big-container">
-                <div class="carousel-container">
-                    <input class="input-margin-start mb-3" type="radio" name="position" id="pack1" />
-                    <input class="mb-3" type="radio" name="position" id="pack2" checked />
-                    <input class="mb-3" type="radio" name="position" id="pack3" />
-                    <input class="mb-3" type="radio" name="position" id="pack4" />
-                    <main id="carousel" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-                        <!-- script -->
-                    </main>
                 </div>
             </div>
         </div>
     </section>
     <!-- /Services -->
     <!-- Gallery -->
-    <section id="Gallery" class="gallery-container container py-5 px-0">
+    <section id="Gallery" class="gallery">
         <div class="container">
-            <div class="row py-3 bg4">
-                <div class="col-10 offset-1 col-md-4 py-3 px-0">
-                    <h2 class="section-title">Trabajos realizados</h2>
-                    <h3 class="mb-3 section-subtitle">para clientes felices</h3>
-                    <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia sed
-                        deserunt ab facere labore!</p>
-                </div>
-            </div>
             <div class="row">
-                <div id="gallery-client1" class="col-6 col-md-3 p-0  gallery-client1">
-                    <div class="card-colum" data-aos-easing="linear" data-aos-duration="500">
-                        <!-- script -->
-                    </div>
-                </div>
-                <div id="gallery-client2" class="col-6 col-md-3 p-0  gallery-client2">
-                    <div class="card-colum">
-                        <!-- script -->
-                    </div>
-                </div>
-                <div id="gallery-client3" class="col-6 col-md-3 p-0  gallery-client3">
-                    <div class="card-colum">
-                        <!-- script -->
-                    </div>
-                </div>
-                <div id="gallery-client4" class="col-6 col-md-3 p-0  gallery-client3">
-                    <div class="card-colum">
-                        <!-- script -->
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="mt-3 col-10 offset-1 btn-ac-about-container d-flex flex-column overflow-hidden">
-                    <a href="./pages/gallery.html" class="text-end">
-                        <button class="btn btn-ac btn-ac-first btn-ac-about text-right" data-aos="zoom-in-left"
-                            data-aos-duration="1200">Mirá todos nuestros
-                            trabajos</button>
-                    </a>
-                </div>
+                <ul class="gallery__slider">
+                    <li>
+                        <div class="gallery__card-container">
+                            <img class="gallery__img" src="./assets/img/4.png" alt="">
+                            <div class="gallery__info-container">
+                                <!-- <h6>Nombre Marca - Algo más</h6> -->
+                                <img class="gallery__info-icon" src="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery__card-container">
+                            <img class="gallery__img" src="./assets/img/4.png" alt="">
+                            <div class="gallery__info-container">
+                                <h6>Nombre Marca - Algo más</h6>
+                                <img class="gallery__info-icon" src="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery__card-container">
+                            <img class="gallery__img" src="./assets/img/4.png" alt="">
+                            <div class="gallery__info-container">
+                                <h6>Nombre Marca - Algo más</h6>
+                                <img class="gallery__info-icon" src="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery__card-container">
+                            <img class="gallery__img" src="./assets/img/4.png" alt="">
+                            <div class="gallery__info-container">
+                                <h6>Nombre Marca - Algo más</h6>
+                                <img class="gallery__info-icon" src="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -496,6 +453,7 @@
         </div>
         </div>
     </footer>
+    <!-- /Footer -->
     <script>
         var bodyPage = document.querySelector(".body")
         window.onload = function () {
@@ -505,13 +463,16 @@
     </script>
     <script async src="./js/index.js"></script>
     <script async src="./js/marquee.js"></script>
-    <script async src="./js/packs.js"></script>
-    <script async src="./js/gallery.js"></script>
     <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- /Footer -->
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script async type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script async type="text/javascript" src="/docs/js/gallery.js"></script>
+
 </body>
 
 </html>
