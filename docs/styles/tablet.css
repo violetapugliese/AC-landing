@@ -12,6 +12,13 @@
 .nav-bar p {
   display: inline;
 }
-.gallery__slider .slick-slide {
-  width: 320px !important;
+.slider {
+  height: 220px;
+}
+.slider__card-container {
+  width: 350px;
+  max-height: 220px;
+}
+.slider__img {
+  width: 350px;
 }

@@ -25,6 +25,13 @@
 .bg2 {
   background-position-x: -400px;
 }
-.gallery__slider .slick-slide {
-  width: 400px !important;
+.slider {
+  height: 333px;
+}
+.slider__card-container {
+  width: 500px;
+  max-height: 333px;
+}
+.slider__img {
+  width: 500px;
 }
