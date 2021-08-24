@@ -12,12 +12,13 @@ var manifestContainer = document.querySelector(".manifest-text-container");
 var btnManifest = document.querySelector(".btn-manifest");
 var btnDarkMode = document.getElementById("darkMode");
 var imgDarkMode = document.querySelector(".img-dark-mode")
-
+var navDark = document.querySelector(".wrapper")
 // DarkMode
 btnDarkMode.addEventListener("click", toggleDarkMode);
 function toggleDarkMode(){
-  bodyPage.classList.toggle("dark-mode")
-  imgDarkMode.classList.toggle("btn-dark-mode-rotate")
+  bodyPage.classList.toggle("dark-mode");
+  navDark.classList.toggle("dark-mode");
+  imgDarkMode.classList.toggle("btn-dark-mode-rotate");
 }
 
 // BurgerButton

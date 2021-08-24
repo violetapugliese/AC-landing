@@ -9,7 +9,7 @@
   min-width: 300px;
   max-width: 300px;
 }
-.nav-bar p {
+.header__text-logo{
   display: inline;
 }
 .gallery__title-img{
