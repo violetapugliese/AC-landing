@@ -12,6 +12,9 @@
 .nav-bar p {
   display: inline;
 }
+.gallery__title-img{
+  width: 150px;
+}
 .slider {
   height: 220px;
 }

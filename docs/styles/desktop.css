@@ -25,6 +25,9 @@
 .bg2 {
   background-position-x: -400px;
 }
+.gallery__title-img{
+  width: 200px;
+}
 .slider {
   height: 333px;
 }

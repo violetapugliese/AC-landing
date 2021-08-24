@@ -1,47 +1,17 @@
-Header:
-Logo: en el centro queda desequeilibrado
-Texto: AGENCIA CRASH?
+Está muy bien este diseño.
 
-Hero: Animación - imagen de fondo - tiene que ser foto?
-        Si hay foto en hero, está bueno agregar otra foto más.
+No le agregaría mucho más.
 
-Encabezado: A dónde y qué texto va. Pero tiene que estar. ver keywords
+Engrosar el contenido:
 
-backgrounds: definir estética. Armar diseños
+--About: Texto bien específico sobre la función de agencia Crash en la tierra.
+        /Con las fotos va a quedar perfecto
 
-chat
-¿Qué dicen? Hay stickers? 
+--Presentar a los clientes: quienes confian en nosotras >> Animación clientes: Quién lo hace? cómo va?
+        /Está bien ahí o va debajo de servicios?
 
-Manifiesto: Ver extensión
+--Página de servicios, sí. Completar + foto
+  /Galeria: info de la foto, o de la campaña. Un pequeño epigrafe para cada foto. Ver color de fondo. No compite mucho con las fotos??
+  /aLGO MÁS EN RELACIÓN AL SERVICIO QUE BRINDAN DEBAJO DE la Galeria
 
-Página sobre nosotras:
--Manifiesto
--Fotos pibas + texto pibas
--bonus
-
-Hacemos lo que amamos: podría ser esa onda. Eso puede estar animado
-
-Servicios:
-Los packs pueden estar en una paágina de servicios, no necesariamente en el index
-
-Pagina de servicios.
-
-Iconos con los servicios + breve descripción
-Impacto
-Packs - los pack redireccionan a página de contacto insertando texto
-
-Trabajos realizados: 
-Que dice el título?
-Qué dice el subtítulo?
-Nombre de la foto: MARCA TAL
-descripción: En la foto, breve "contenido para redes" "identidad visual". En el logo, larga "Trababjamos con MARCA TAL en una etapa en la que la marca se convertía en zararzrararza".
-
-Pagina de trabajos realizados
-
-contacto
-Que dice el título?
-Qué dice el subtítulo?
-
-pagina contacto
-Que dice el título?
-Qué dice el subtítulo?
+--Sección y Pagina de contacto

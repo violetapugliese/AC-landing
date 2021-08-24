@@ -1,22 +1,25 @@
 .header-secondary-services {
-    height: 40vh;
+    height: 60vh;
     width: 100%;
-    background-image: url(../assets/bg3.png);
-    background-position: bottom ;
+    background-image: url(../assets/img/6.png);
+    background-position: bottom left;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 .services-main{
     overflow: hidden;
+}
+.service-item {
+    border-right: 1px solid #f2733b ;
 }
 .item-description-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 240px;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 0.5rem;
 }
 .item-description {
     font-size: 0.8rem;
-    color: #2157db;
     margin-bottom: 0;
  }
