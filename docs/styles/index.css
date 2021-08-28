@@ -443,7 +443,7 @@ body {
   line-height: calc(1.375rem + 1.5vw);
   text-decoration: underline 2px;
   /*animation*/
-  animation: move 7s;
+  animation: move 6s;
   /*animation-iteration-count*/
   animation-iteration-count: infinite;
   /*animation-delay*/
@@ -497,26 +497,26 @@ body {
 }
 .hero-icons_four {
   will-change: transform;
-  animation: move-icon 7s;
+  animation: move-icon 6s;
   animation-iteration-count: infinite;
 }
 .hero-icons_three {
   will-change: transform;
-  animation: move-icon 7s;
+  animation: move-icon 6s;
   animation-iteration-count: infinite;
-  animation-delay: 1.75s;
+  animation-delay: 1.5s;
 }
 .hero-icons_two {
   will-change: transform;
-  animation: move-icon 7s;
+  animation: move-icon 6s;
   animation-iteration-count: infinite;
-  animation-delay: 3.5s;
+  animation-delay: 3s;
 }
 .hero-icons_one {
   will-change: transform;
-  animation: move-icon 7s;
+  animation: move-icon 6s;
   animation-iteration-count: infinite;
-  animation-delay: 5.25s;
+  animation-delay: 4.5s;
 }
 @keyframes move-icon {
   0% {
@@ -574,12 +574,12 @@ body {
   background-repeat: repeat;
   background-size: 150%;
 }
-.bg3 {
+/* .bg3 {
   background-image: url(../assets/bg3.png);
   background-repeat: no-repeat;
   background-position: center top;
-}
-.bg4 {
+} */
+/* .bg4 {
   background-image: url(../assets/bg4.png);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -588,7 +588,7 @@ body {
   background-image: url(../assets/bg5.png);
   background-repeat: no-repeat;
   background-position: center bottom;
-}
+} */
 /* Services */
 #Services {
   overflow: hidden;
@@ -817,6 +817,7 @@ body {
   align-items: center;
   grid-template-columns: repeat(7, 1fr);
   overflow: scroll;
+  transition: ease-in-out;
 }
 .clients__logo-container {
   width: 30%;
@@ -868,12 +869,34 @@ body {
   transition: 0s ease-in;
 }
 .slider__card-container {
+  position: relative;
   width: 300px;
   max-height: 200px;
   overflow: hidden;
 }
 .slider__img {
   width: 300px;
+}
+.slider__info-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.slider__info-fill{
+  position:absolute;
+  bottom: 0;
+  background-color: rgba(1, 7, 19, 0.502);
+  width: 100%;
+  height: 40%;
+  border-radius: 40px;
+  transform: translate(90%, 30%);
+}
+.slider__info-icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 20px;
 }
 /* Separetor */
 .separetor {

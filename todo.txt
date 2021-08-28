@@ -4,6 +4,9 @@ No le agregaría mucho más.
 
 Engrosar el contenido:
 
+--cambiar velocidad hero
+modificar orden producros y servicios
+
 --About: Texto bien específico sobre la función de agencia Crash en la tierra.
         /Con las fotos va a quedar perfecto
 

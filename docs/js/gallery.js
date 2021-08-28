@@ -25,9 +25,9 @@ slider.addEventListener('mousemove', (e)=> {
     if(!pressed) return;
     e.preventDefault();
 
-    x = e.offsetX
+    x = e.offsetX 
 
-    innerSlider.style.left = `${x -startx}px`
+    innerSlider.style.left = `${x - startx}px`
     
     checkboundary()
 });
