@@ -103,47 +103,26 @@
 
 
                 <div class="col-10 offset-1 col-md-5 ">
-                    <form method="post" action="../send.php">
-                        <div class="mb-1">
-                            <label for="exampleFormControlInput1" class="section-text">Nombre y Apellido</label>
-                            <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" >
-                        </div>
-                        <div class="mb-1">
-                            <label for="exampleFormControlInput1" class="section-text">Email</label>
-                            <input type="text" name="email" class="form-control"
-                                placeholder="mail@example.com">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="section-text">Consulta</label>
-                            <textarea class="form-control" name="comentario" 
-                                rows="3" placeholder="Tu mensaje"></textarea>
-                        </div>
-                        <div class="w-100">
-                            <input class="btn-ac btn-ac-first w-100 p-1" value="Enviar" type="submit">
-                        </div>
+                    <h1>
 
-                    </form>
-
-                    <!-- <form method="post" action="../send.php">
-                        <table>
-                            <tr>
-                                <td>Nombre</td>
-                                <td><input name="nombre"></td>
-                            </tr>
-                            <tr>
-                                <td>E-mail</td>
-                                <td><input name="email"></td>
-                            </tr>
-                            <tr>
-                                <td>Comentario</td>
-                                <td><textarea rows="8" cols="50" name="comentario"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><input type="submit" value="Enviar"></td>
-                            </tr>
-                        </table>
-                    </form> -->
+                        <?php
+                        if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["comentario"])) {
+                            $to = "violeta.pugliese@gmail.com";
+                            $subject = "Mensaje Enviado";
+                            $contenido .= "Nombre: " . $_POST["nombre"] . "\n";
+                            $contenido .= "Email: " . $_POST["email"] . "\n\n";
+                            $contenido .= "Comentario: " . $_POST["comentario"] . "\n\n";
+                            $header = "From: info@agenciacrash.com\nReply-To:" . $_POST["email"] . "\n";
+                            $header .= "Mime-Version: 1.0\n";
+                            $header .= "Content-Type: text/plain";
+                            if (mail($to, $subject, $contenido, $header)) {
+                                echo "Tu mensaje ha sido enviado! Gracias por contactarnos! Te responderemos a la brevedad!";
+                            } else {
+                                echo "Ooops! Algo salió mal en el envío. Inténtalo nuevamente.";
+                            }
+                        }
+                        ?> 
+                    </h1>
 
                 </div>
             </div>
