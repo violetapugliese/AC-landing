@@ -598,16 +598,17 @@ body {
   text-decoration: underline 2px;
   margin: 0;
 }
-.service-item-container {
+/* .service-item-container {
   margin: 0 auto;
   width: 100%;
   max-width: 920px;
-}
+} */
 .service-item {
   will-change: transform;
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  /* width: 300px; */
+  min-width: 270px;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }

@@ -38,3 +38,6 @@
 .slider__img {
   width: 500px;
 }
+.service-item{
+min-width: 290px;
+}

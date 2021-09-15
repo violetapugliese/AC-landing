@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width: 576px)">
     <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="./styles/desktop-pro.css" media="screen and (min-width: 1400px)">
 </head>
 
 <body id="page-top" class="hidden body">
@@ -89,7 +90,7 @@
                                 <div class="container h-50">
                                     <div class="col h-50">
                                         <ul class="nav-bar-menu-container">
-                                            <li class="nav-bar-menu-link"><a href="#About">Nosotras </a>
+                                            <li class="nav-bar-menu-link"><a href="./pages/about.html">Nosotras </a>
                                             </li>
                                             <li class="nav-bar-menu-link"><a href="./pages/services.html">Servicios
                                                 </a></li>
@@ -127,7 +128,7 @@
             <div class="overlay d-flex align-items-center">
                 <div class="container h-25">
                     <div class="row">
-                        <div class="col-11 col-sm-5 offset-1">
+                        <div class="col-11 col-sm-5 offset-1 offset-sm-0 ">
                             <div class="Iam">
                                 <h1>
                                     <span class="container-innerIam">
@@ -142,7 +143,7 @@
                                 </h1>
                             </div>
                         </div>
-                        <div class="col-11 col-sm-5 offset-1">
+                        <div class="col-11 col-sm-5 offset-1 offset-md-2 ">
                             <div class="hero-icons">
                                 <div class="hero-icons__container hero-icons_one">
                                     <img src="./assets/icons-hero/sticker-icon.png" alt="icono de cerebro">
@@ -180,19 +181,19 @@
     <section id="About" class="bg1 pt-5">
         <div class="container">
             <div class="row pt-5">
-                <div class="col-10 offset-1">
+                <div class="col-10 offset-1 col-md-12 offset-md-0">
                     <h2 class="section-title about-title">el mundo digital <span><img src="./assets/web.png"
                                 alt="icono red azul" width="40"></span> está para conquistar. Elegí crashear</h2>
                 </div>
             </div>
             <div class="row mt-3">
-                <div class="col-10 offset-1 col-md-5">
+                <div class="col-10 offset-1 col-md-6 offset-md-0">
                     <p class="section-text">
                         Una marca que no comunica pierde la oportunidad de mostrar quién es, qué la diferencia. Lorem
                         ipsum dolor sit amet Provident, minima veritatis.
                     </p>
                 </div>
-                <div class="col-10 offset-1 offset-md-0 col-md-5">
+                <div class="col-10 offset-1 col-md-6 offset-md-0">
                     <p class="section-text">
                         La identidad de tu marca necesita ser sólida para ser duradera, para volverse alguien. Lorem
                         ipsum dolor sit amet consectetur nam natus labore.
@@ -236,12 +237,12 @@
     <section id="Services" class="services bg2 mb-4">
         <div class="container">
             <div class="row pt-5">
-                <div class="col-10 offset-1 siemprelistas col-md-4 mb-3 pt-5">
+                <div class="col-10 offset-1 siemprelistas col-sm-6 offset-sm-0 mb-3 pt-5">
                     <h2 class="title">Siempre Listas</h2>
                     <h3 class="subtitle">para poner tu marca <br> en movimiento.</h3>
                 </div>
                 <div
-                    class="col-10 offset-1 offset-md-2 col-md-4 col-lg-3 d-flex flex-column justify-content-center overflow-hidden">
+                    class="col-10 offset-1 col-sm-6 offset-sm-0 col-md-4 offset-md-2 d-flex flex-column justify-content-center overflow-hidden">
                     <div class="mb-3 ask" data-aos="zoom-in-right" data-aos-duration="1000">
                         <p>Pero, ¿qué hacen?</p>
                     </div>
@@ -250,76 +251,78 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item-container row justify-content-around">
-                <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="icon">
-                        <img class="" src="./assets/icons-services/estartegia-icon.png"
-                            alt="dibujo de celular conectado">
+            <div class="service-item-container row">
+                <div class="col-10 col-sm-12 offset-1 offset-sm-0 d-flex flex-wrap justify-content-center justify-content-sm-between p-0 ">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="icon">
+                            <img class="" src="./assets/icons-services/estartegia-icon.png"
+                                alt="dibujo de celular conectado">
+                        </div>
+                        <div class="text">
+                            <h6 class="title">Estrategia</h6>
+                            <a class="section-text" href="./pages/services.html#Services-main">
+                                <p class="mb-0">+ info</p>
+                            </a>
+                        </div>
+    
                     </div>
-                    <div class="text">
-                        <h6 class="title">Estrategia</h6>
-                        <a class="section-text" href="./pages/services.html#Services-main">
-                            <p class="mb-0">+ info</p>
-                        </a>
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="icon">
+                            <img class="" src="./assets/icons-services/identidad-icon.png"
+                                alt="dibujo de celular conectado">
+                        </div>
+                        <div class="text">
+                            <h6 class="title">Identida Corporativa</h6>
+                            <a class="section-text" href="./pages/services.html#Services-main">
+                                <p class="mb-0">+ info</p>
+                            </a>
+                        </div>
+    
                     </div>
-
-                </div>
-                <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="icon">
-                        <img class="" src="./assets/icons-services/identidad-icon.png"
-                            alt="dibujo de celular conectado">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="icon">
+                            <img class="" src="./assets/icons-services/camp-icon.png" alt="dibujo de celular conectado">
+                        </div>
+                        <div class="text">
+                            <h6 class="title">Campaña</h6>
+                            <a class="section-text" href="./pages/services.html#Services-main">
+                                <p class="mb-0">+ info</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h6 class="title">Identida Corporativa</h6>
-                        <a class="section-text" href="./pages/services.html#Services-main">
-                            <p class="mb-0">+ info</p>
-                        </a>
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="icon">
+                            <img class="" src="./assets/icons-services/gencont-icon.png" alt="dibujo de celular conectado">
+                        </div>
+                        <div class="text">
+                            <h6 class="title">Generación de contenido</h6>
+                            <a class="section-text" href="./pages/services.html#Services-main">
+                                <p class="mb-0">+ info</p>
+                            </a>
+                        </div>
                     </div>
-
-                </div>
-                <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="icon">
-                        <img class="" src="./assets/icons-services/camp-icon.png" alt="dibujo de celular conectado">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="icon">
+                            <img class="" src="./assets/icons-services/socialmedia-icon.png"
+                                alt="dibujo de celular conectado">
+                        </div>
+                        <div class="text">
+                            <h6 class="title">Social Media</h6>
+                            <a class="section-text" href="./pages/services.html#Services-main">
+                                <p class="mb-0">+ info</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h6 class="title">Campaña</h6>
-                        <a class="section-text" href="./pages/services.html#Services-main">
-                            <p class="mb-0">+ info</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="icon">
-                        <img class="" src="./assets/icons-services/gencont-icon.png" alt="dibujo de celular conectado">
-                    </div>
-                    <div class="text">
-                        <h6 class="title">Generación de contenido</h6>
-                        <a class="section-text" href="./pages/services.html#Services-main">
-                            <p class="mb-0">+ info</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="icon">
-                        <img class="" src="./assets/icons-services/socialmedia-icon.png"
-                            alt="dibujo de celular conectado">
-                    </div>
-                    <div class="text">
-                        <h6 class="title">Social Media</h6>
-                        <a class="section-text" href="./pages/services.html#Services-main">
-                            <p class="mb-0">+ info</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="icon">
-                        <img class="" src="./assets/icons-services/sitioweb-icon.png" alt="dibujo de celular conectado">
-                    </div>
-                    <div class="text">
-                        <h6 class="title">E-commerce y Sitio web</h6>
-                        <a class="section-text" href="./pages/services.html#Services-main">
-                            <p class="mb-0">+ info</p>
-                        </a>
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="icon">
+                            <img class="" src="./assets/icons-services/sitioweb-icon.png" alt="dibujo de celular conectado">
+                        </div>
+                        <div class="text">
+                            <h6 class="title">E-commerce y Sitio web</h6>
+                            <a class="section-text" href="./pages/services.html#Services-main">
+                                <p class="mb-0">+ info</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
