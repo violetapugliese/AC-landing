@@ -9,9 +9,46 @@
 .services-main{
     overflow: hidden;
 }
-.service-item {
+
+.service-item-sec {
+    will-change: transform;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    min-width: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border-right: 1px solid #f2733b ;
-}
+
+  }
+  .service-item-sec .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  .service-item-sec .icon img {
+    width: 60px;
+  }
+  .service-item-sec .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    max-width: 160px;
+    padding: 0 1rem 0 1rem;
+  }
+  .service-item-sec .title {
+    margin: 0;
+  }
+  .service-item-sec .section-text {
+    display: block;
+    color: var(--ac-orange);
+  }
+  .service-item-sec .section-text:hover {
+    color: #2157db;
+  }
 .item-description-container {
     display: flex;
     flex-direction: column;
