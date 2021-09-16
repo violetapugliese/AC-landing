@@ -1,7 +1,39 @@
 .header-secondary-about {
     height: 40vh;
     width: 100%;
-    background-image: url(../assets/bg3.png);
+    background-color: #2157db;
+    /* background-image: url(../assets/img/3.png);
     background-position: bottom ;
     background-repeat: no-repeat;
+    background-size: cover; */
+  }
+  .frases-container {
+    position: absolute;
+    top: -40%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 80%;
+    height: 140%;
+    color: #f2e7f0;
+    background-color: #f2733b;
+    border-radius: 20px;
+  }
+  .frases-container p {
+    font-size: 0.8rem;
+  }
+  .frases-logo{
+    position: absolute;
+    right: 1rem;
+    width: 40px;
+  }
+  .about-manifest-img-container{ 
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets/img/about-img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
   }
