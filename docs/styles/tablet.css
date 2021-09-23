@@ -25,3 +25,11 @@
 .slider__img {
   width: 350px;
 }
+.about-manifest-img-container{
+  height: 250px;
+}
+.clients__video{
+  height: auto;
+  width: 100%;
+  transform: translateX(0);
+}
