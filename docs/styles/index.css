@@ -487,7 +487,7 @@ body {
   align-items: center;
   width: 120px;
   height: 120px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background-color: var(--ac-orange);
   z-index: 0;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -497,28 +497,34 @@ body {
 }
 .hero-icons_four {
   will-change: transform;
-  animation: move-icon 6s;
+  animation: move-icon2 6s;
   animation-iteration-count: infinite;
 }
 .hero-icons_three {
   will-change: transform;
-  animation: move-icon 6s;
+  animation: move-icon2 6s;
   animation-iteration-count: infinite;
   animation-delay: 1.5s;
+  transform: translateY(50%) rotateX(-90deg);
 }
 .hero-icons_two {
   will-change: transform;
-  animation: move-icon 6s;
+  animation: move-icon2 6s;
   animation-iteration-count: infinite;
   animation-delay: 3s;
+  transform: translateY(50%) rotateX(-90deg);
 }
 .hero-icons_one {
   will-change: transform;
-  animation: move-icon 6s;
+  animation: move-icon2 6s;
   animation-iteration-count: infinite;
   animation-delay: 4.5s;
+  transform: translateY(50%) rotateX(-90deg);
 }
-@keyframes move-icon {
+
+/* icons2 */
+
+/* @keyframes move-icon {
   0% {
     transform: translateX(0);
     z-index: 0;
@@ -547,6 +553,32 @@ body {
     transform: translateX(0);
     z-index: 0;
     opacity: 0;
+  }
+} */
+@keyframes move-icon2 {
+  0% {
+    transform: translatey(50%) rotateX(-90deg);
+    z-index: 1;
+  }
+
+  25% {
+    transform: translateY(0%) rotateX(0deg);
+    opacity: 1;
+    z-index: 1;
+    background-color: #f2733b;
+  }
+  50% {
+    transform: translateY(-50%) rotateX(90deg);
+    background-color: #a34e2a;
+    opacity: 1;
+  }
+  75% {
+    z-index: 0;
+    opacity: 0;
+    transform: translateY(0%) rotateX(0deg);
+  }
+  100% {
+    transform: translatey(50%) rotateX(-90deg);
   }
 }
 /* Marquee */
