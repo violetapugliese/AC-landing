@@ -196,12 +196,7 @@
  .book__page .page__content-blockquote {
 	 margin-bottom: calc(var(--baseline) * 2);
 }
- .book__page .page__content-blockquote-text {
-	 font-family: var(--title);
-	 font-size: calc(var(--base-size) * 0.67);
-	 font-style: italic;
-	 text-align: justify;
-}
+
  .book__page .page__content-blockquote-reference {
 	 font-family: var(--title);
 	 font-size: calc(var(--base-size) * 0.7);
@@ -226,7 +221,7 @@
  .book input[type="radio"] {
 	 display: none;
 }
- .book input[type="radio"]:checked + .book__page {
+ .book .input-page-2[type="radio"]:checked + .book__page {
 	 transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
 	 transform: rotateY(-180deg);
 }
