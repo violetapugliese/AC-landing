@@ -47,3 +47,7 @@ min-width: 290px;
 .cover-1{
   display: block;
 }
+.bb-custom-firstpage p,
+.bb-custom-side p {
+  font-size: 1.2rem;
+}

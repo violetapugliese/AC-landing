@@ -11,13 +11,20 @@
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
     <link rel="preconect" href="https://unpkg.com/">
     <link rel="dns-prefetch" href="https://unpkg.com/">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/index.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Book-block -->
+    <script src="https://kit.fontawesome.com/d3a54d953f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/bookblock.css">
+    <script src="../js/book-block/modernizr.custom.js"></script>
+    <!--My styles  -->
     <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/tablet.css" media="screen and (min-width: 576px)">
     <link rel="stylesheet" href="../styles/desktop.css" media="screen and (min-width: 992px)">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body id="page-top" class="hidden body">
@@ -117,26 +124,16 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col position-relative d-none d-md-block">
-                    <div class="frases-container">
-                        <img class="frases-logo" src="../assets/logo-light.svg" alt="logo-agencia-crash">
-                        <h2 class="section-title">Nuestro <br> dia a dia</h2>
-                        <!-- <div class="frases">
-                            <p>Messirve</p>
-                            <p>Sí, de una</p>
-                            <p>Ya te lo preparo</p>
-                            <p>Excelente trabajo</p>
-                        </div> -->
-                    </div>
                 </div>
             </div>
-
-        </div>
-        </div>
+        </div>   
     </section>
     <!-- /About-main -->
 
     <!-- Marquee -->
+    
     <div id="MarqueeOne">
         <div id=marquee-1>
             <!-- script -->
@@ -157,82 +154,93 @@
                 </div>
             </div>
         </div>
-       <div class="manifest-book-container container py-5 d-flex justify-content-center">
-        <div class="cover-1">
-            <div class="book">
-            <label for="page-1"  class="book__page book__page--1">
-              <img src="../assets/img/agencia-orange.jpeg" alt="img-aleatoria">
-            </label>
-            
-            <label for="page-2" class="book__page book__page--4">
-              <div class="page__content">
-                <h1 class="page__content-title"></h1>
-                <div class="page__content-blockquote">
-                  <p class="page__content-blockquote-text section-text px-3">
-                    praesentium cumque ratione esse assumenda totam nam illo nesciunt amet expedita doloribus, quisquam optio voluptatem tenetur minus, suscipit quidem! Quisquam velit ea quaerat ex numquam, veritatis, mollitia at soluta sed suscipit odit nostrum possimus nobis ullam blanditiis saepe repudiandae maiores iste quis deserunt dolorem.
-                  </p>
-                  <img src="../assets/logo-azul-fem.svg" alt="logo-agencia-crash-azul" width="20">
+
+        <div class="container about-manifest mb-5"  data-aos="fade-up" data-aos-duration="1000">
+            <div class="about-manifest-title mt-5 mb-3">
+                <h1 class="section-title">manifiesto</h1>
+            </div>
+            <div class="bb-custom-wrapper book">
+
+                <div id="bb-bookblock" class="bb-bookblock">
+                    <div class="bb-item">
+                        <div class="bb-custom-firstpage">
+                            <p>
+                                Desde el principio hemos tenido en claro que poner en movimiento el contenido de valor
+                                de una marca nos impulsa, nos atraviesa.
+                            </p>
+                        </div>
+                        <div class="bb-custom-side">
+                            <p>Idear, proyectar y desplegar estrategias que potencien lo que ya existe, nos transforma
+                                como sujetos.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bb-item">
+                        <div class="bb-custom-side">
+                            <p>¿Cómo quedarnos quietas 
+                                cuando alrededor 
+                                todo cambia constantemente? 
+                                
+                            </p>
+                        </div>
+                        <div class="bb-custom-side">
+                            <p>La creatividad 
+                                nos lleva de un lado al otro, 
+                                nos hace (re) pensarnos, 
+                                despertarnos.
+                                
+                                 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bb-item">
+                        <div class="bb-custom-side">
+                            <p>Adoptar un deseo ajeno
+                                como propio,
+                                para ponerse en funcionamiento
+                                </p>
+                        </div>
+                        <div class="bb-custom-side">
+                            <p>Y así
+                                encontrarnos en el usuario.
+                                Y saber que a su vez 
+                                somos un puente,
+                                entre ellos y la marca.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="bb-item">
+                        <div class="bb-custom-side">
+                            <p>Explorando un terreno 
+                                que es virgen
+                                pero porque cambia todo el tiempo.
+                                </p>
+                        </div>
+                        <div class="bb-custom-side">
+                            <p>Acá se trabaja 
+                                y con pasión.
+                                Porque la transformación posta
+                                llega cuando estás en movimiento.                                
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <!-- <div class="page__content-text">
-                  <p>His name was Gaal Dornick and he was just a country boy who had never seen Trantor before. That is, not in real life. He had seen it many times on the hyper-video, and occasionally in tremendous three-dimensional newscasts covering an Imperial Coronation or the opening of a Galactic Council. Even though he had lived all his life on the world of Synnax, which circled a star at the edges of the Blue Drift, he was not cut off from civilization, you see. At that time, no place in the Galaxy was. </p>
-          
-                  <p>There were nearly twenty-five million inhabited planets in the Galaxy then, and not one but owed allegiance to the Empire whose seat was on Trantor. It was the last half-century in which that could be said. </p>
-                  <p>To Gaal, this trip was the undoubted climax of his young, scholarly life. He had been in space before so that the trip, as a voyage and nothing more, meant little to him. To be sure, he had traveled previously only as far as Synnax's only satellite in order to get the data on the mechanics of meteor driftage which he needed for his dissertation, but space-travel was all one whether one travelled half a million miles, or as many light years. </p>
-                </div> -->
-                <div class="page__number">3</div>
-              </div>
-            </label>
-              
-            <!-- Resets the page -->
-            <input type="radio" name="page" id="page-1"/>
-              
-            <!-- Goes to the second page -->
-            <input  class="input-page-2" type="radio" name="page" id="page-2"/>
-            <label class="book__page book__page--2">
-              <div class="book__page-front">
-                <div class="page__content pt-5">
-                  <h1 class="section-title">manifiesto</h1>
-                  <h6 class="section-subtitle"></h6>
-                  
-                  <p class="page__content-credits">
-                  </p>
-                  
-                  <p class="section-text px-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veritatis magnam, consequatur itaque nisi sit explicabo libero. Assumenda, necessitatibus obcaecati? Dolore modi quisquam perferendis, nemo distinctio enim rem quam, doloremque optio amet inventore explicabo ipsa corrupti repellat .
-                  </p>
 
-                  <p class="page__arrow">→</p>
-                  
-                  <div class="page__content-copyright">
-                    <!-- <p>The Folio Society</p>
-                    <p>London - MMXII</p> -->
-                  </div>
-                </div>
-              </div>
+                <nav>
+                    <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left"><i
+                            class="fas fa-arrow-left"></i></a>
+                    <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right"><i
+                            class="fas fa-arrow-right"></i></a>
+                </nav>
 
-              <div class="book__page-back">
-                <div class="page__content">
-                  <h1 class="page__content-title"></h1>
-                  <p class="section-text px-3">
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium ipsam eaque temporibus itaque! Labore unde, molestiae ab veniam ullam reiciendis. Lorem  accusamus rerum ea repellat blanditiis quo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, maiores quibusdam alias nisi vel corrupti qui aliquid minima quam. Minus vel aperiam at eum obcaecati veritatis molestias voluptate quibusdam voluptas!
-                  </p>                  
-                  <div class="page__arrow">←</div>
-                </div>
-              </div>
-
-              
-            </label>
-            
-            
-          </div>
-          </div>
-       </div>
-
+            </div>
     </section>
     <!-- /Manifest -->
 
+
     <!-- Contact -->
-    <section id="Contact" class="pb-5">
+    <section id="Contact" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-10 offset-1 col-md-4 offset-md-0 py-2">
@@ -313,9 +321,98 @@
     <!-- Aos -->
     <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+    <!-- Book-block -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/book-block/jquerypp.custom.js"></script>
+    <script src="../js/book-block/jquery.bookblock.js"></script>
+    <script>
+        var Page = (function () {
+
+            var config = {
+                $bookBlock: $('#bb-bookblock'),
+                $navNext: $('#bb-nav-next'),
+                $navPrev: $('#bb-nav-prev'),
+                $navFirst: $('#bb-nav-first'),
+                $navLast: $('#bb-nav-last')
+            },
+                init = function () {
+                    config.$bookBlock.bookblock({
+                        speed: 1000,
+                        shadowSides: 0.8,
+                        shadowFlip: 0.4
+                    });
+                    initEvents();
+                },
+                initEvents = function () {
+
+                    var $slides = config.$bookBlock.children();
+
+                    // add navigation events
+                    config.$navNext.on('click touchstart', function () {
+                        config.$bookBlock.bookblock('next');
+                        return false;
+                    });
+
+                    config.$navPrev.on('click touchstart', function () {
+                        config.$bookBlock.bookblock('prev');
+                        return false;
+                    });
+
+                    config.$navFirst.on('click touchstart', function () {
+                        config.$bookBlock.bookblock('first');
+                        return false;
+                    });
+
+                    config.$navLast.on('click touchstart', function () {
+                        config.$bookBlock.bookblock('last');
+                        return false;
+                    });
+
+                    // add swipe events
+                    $slides.on({
+                        'swipeleft': function (event) {
+                            config.$bookBlock.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function (event) {
+                            config.$bookBlock.bookblock('prev');
+                            return false;
+                        }
+                    });
+
+                    // add keyboard events
+                    $(document).keydown(function (e) {
+                        var keyCode = e.keyCode || e.which,
+                            arrow = {
+                                left: 37,
+                                up: 38,
+                                right: 39,
+                                down: 40
+                            };
+
+                        switch (keyCode) {
+                            case arrow.left:
+                                config.$bookBlock.bookblock('prev');
+                                break;
+                            case arrow.right:
+                                config.$bookBlock.bookblock('next');
+                                break;
+                        }
+                    });
+                };
+
+            return { init: init };
+
+        })();
+    </script>
+    <script>
+        Page.init();
+    </script>
     <!-- My js -->
     <script async src="../js/index.js"></script>
     <script async src="../js/marquee.js"></script>
+
 
 </body>
 
