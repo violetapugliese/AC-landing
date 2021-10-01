@@ -21,7 +21,7 @@
 }
 /* Book */
 .about-manifest {
-	height: 90vh;
+	height: 60vh;
 }
 .bb-custom-wrapper {
 	width: 100%;
@@ -116,7 +116,7 @@
 	width: 40px;
 	height: 40px;
 	text-align: center;
-	color: #2157db;
+	color: #f2733b;
 	text-decoration: none;
 }
 
