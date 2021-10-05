@@ -675,6 +675,9 @@ body {
 .section-text {
   font-size: 0.8rem;
 }
+.section-text span {
+  font-weight: 700;
+}
 .services-col-two {
   display: none;
 }
