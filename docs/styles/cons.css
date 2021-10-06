@@ -1,0 +1,43 @@
+.cons{
+    width: 100%;
+    background-color: #fcf2fa;
+}
+.cons__img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.cons__title{
+    color: #f2733b;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-decoration: underline 3px;
+    margin: 0 0 0.5rem 0;
+}
+.cons__subtitle{
+    color: #f2733b;
+    line-height: 1.3rem;
+    font-size: 1.3rem;
+    margin: 0;
+}
+.not-found{
+    width: 100%;
+    background-color: #2157db;
+    color: white;
+}
+
+.not-found__nav img{
+    width: 40px;
+    font-size: 1.3rem;
+    animation: boat 5s;
+    animation-iteration-count: infinite;
+}
+.not-found .nav a {
+    font-size: 1.3rem;
+    color: white !important;
+    text-decoration: none;
+}
+.not-found .nav .bonus{
+    color: #f2733b !important;
+}
