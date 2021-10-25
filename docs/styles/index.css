@@ -826,14 +826,16 @@ body {
   align-items: center;
   top: 0;
   left: 0;
+  right: 0;
+  margin: 0 auto;
 }
-.new-about__text-container {
-  text-align: center;
-  width: 100%;
+.new-about__text-container{
   background-color: var(--ac-light-pink);
   color: var(--ac-orange);
-  padding: 2rem 1rem;
+  text-align: center;
+  padding: 2rem;
 }
+
 /* Clients */
 .clients {
   width: 100%;
