@@ -15,7 +15,7 @@
 
   .monitor_container {
 	  position: relative;
-	  height: 80vh;
+	  height: 50vh;
 	  width: 100%;
 	  background-image: url(../assets/monitor.png);
 	  background-position: top;
@@ -40,7 +40,6 @@
 	width: 100%;
 }
 .team_container {
-	width: 100%;
 	background-color: #f2733b;
 	background-image: url(../assets/bg-orange.png);
 	background-repeat: no-repeat;
