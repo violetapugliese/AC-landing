@@ -12,7 +12,9 @@
 	  width: 100%;
 	  transform: translateY(-100px);
   }
-
+  .border-blue{
+	  border-bottom: solid 1px #2157db;
+  }
   .monitor_container {
 	  position: relative;
 	  height: 50vh;
@@ -148,7 +150,7 @@
 	margin: 1em auto 0;
 	/* position: fixed; */
 	bottom: 20px;
-	z-index: 1000;
+	z-index: 996;
 	text-align: center;
 }
 
@@ -162,6 +164,24 @@
 	text-align: center;
 	color: #f2733b;
 	text-decoration: none;
+}
+.cover-arrow-next{
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	width: 40px;
+	height: 40px;
+	background-color: #f2733b;
+	z-index: 997;
+}
+.cover-arrow-prev{
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	width: 40px;
+	height: 40px;
+	background-color: #f2733b;
+	z-index: 997;
 }
 
 .bb-custom-wrapper > nav a:hover {
