@@ -12,12 +12,7 @@
 	  width: 100%;
 	  transform: translateY(-100px);
   }
-  .border-blue{
-	  width: fit-content;
-	  padding-bottom: 1rem;
-	  margin-bottom: 1rem;
-	  border-bottom: solid 1px #2157db;
-  }
+
   .monitor_container {
 	  position: relative;
 	  height: 50vh;
