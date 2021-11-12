@@ -140,7 +140,6 @@ body {
 }
 .border-blue {
   width: fit-content;
-  padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: solid 1px #2157db;
 }
