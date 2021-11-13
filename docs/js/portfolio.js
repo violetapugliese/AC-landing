@@ -1,136 +1,113 @@
-const products = [   
+const clients = [   
     {
-        id: "30",
-        name: "Emulsión de limpieza Oil-free",
-        description: "Emulsión de limpieza Oil-free",
-        price: "$2800.-",
-        height: "card-height-200",
-        img: "../images/none.png",
-        msj: "Espuma%20de%20limpieza-oil-free",
+        id: "client1",
+        name: "Hekas",
+        category: "Cerveza Artesanal",
+        year: "2020",
+        action: "Etiquetas para porrones",
+        imgCard: "../assets/img/3.png", 
+        imgOne: "../assets/img/3.png",
+        imgTwo: "../assets/img/1.png",
+        imgThree: "../assets/img/2.png",
     },
     {
-        id: "31",
-        name: "Efumel TX",
-        description: "Efumel TX",
-        price: "$2000.-",
-        height: "card-height-200",
-        img: "../images/none.png",
-        msj: "Efumel%20TX",
+        id: "client1",
+        name: "Hekas",
+        category: "Cerveza Artesanal",
+        year: "2020",
+        action: "Etiquetas para porrones",
+        imgCard: "../assets/img/3.png", 
+        imgOne: "../assets/img/3.png",
+        imgTwo: "../assets/img/1.png",
+        imgThree: "../assets/img/2.png",
     },
     {
-        id: "32",
-        name: "Contorno de Ojos",
-        description: " Molecular Spert",
-        price: "$4500.-",
-        height: "card-height-200",
-        img: "../images/none.png",
-        msj: "Contorno%20de%20ojos",
-    },
-    
-]
-const sets = [
-    {
-        id: "23",
-        name: "Set Lumiere Visage",
-        description: "Complejo Hidratante antiarrugas <br><br> - 1 Contorno de ojos Lumiere No más arrugas <br> - 1 Emulsión Lumiere Visage 48hs <br><br>",
-        price: "$7000.-",
-        height: "card-height-500",
-        img: "../images/SetLumiere.png",
-        msj: "Set%20Lumiere%20Visage",
+        id: "client1",
+        name: "Hekas",
+        category: "Cerveza Artesanal",
+        year: "2020",
+        action: "Etiquetas para porrones",
+        imgCard: "../assets/img/3.png", 
+        imgOne: "../assets/img/3.png",
+        imgTwo: "../assets/img/1.png",
+        imgThree: "../assets/img/2.png",
     },
     {
-        id: "24",
-        name: "Set Solution Lift",
-        description: "Proteger y estimular las células madre de la piel <br><br>- 1 Serum <br>- 1 Crema <br>- 1 Contorno de ojos",
-        price: "$8700.-",
-        height: "card-height-500",
-        img: "../images/Set SolutionLife.png",
-        msj: "Set%20solution%20lift",
-    },
-    {
-        id: "25",
-        name: "Set ExtraFirm",
-        description: "- 1 Crema Tratamiento intensivo Noche <br> - 1 Crema Ultra Tensora Día <br> - 1 Suero tensor plus Contorno de ojos <br> - 1 Ampolla para combinar ",        
-        price: "$8700.-",
-        height: "card-height-500",
-        img: "../images/SetExtrafirm.png",
-        msj: "Set%20estrafirm",
-    },
-    {
-        id: "26",
-        name: "Set Biotic Balance - Nuevo!!",
-        description: "- 1 Biotic Día <br> - 1 Biotic Noche <br> - 1 A elección (Opc: Esp. de limpieza/Agua micelar/Agua Termal/Bruma de Retinol) <br>",       
-        price: "$7500.-",
-        height: "card-height-500",
-        img: "../images/SetBioticBalance.png",
-        msj: "Set%20bioticbalance",
-    },
-    {
-        id: "27",
-        name: "Set Despigmentante Global - Nuevo!!",
-        description: "- 1 Global Perfection <br> - 1 A elección (Opc: Esp. de limpieza/Agua micelar/Agua Termal/Bruma de Retinol) <br> - Combinar con medicación de profesional <br>",       
-        price: "$8700.-",
-        height: "card-height-500",
-        img: "../images/GlobalPerfection.jpg",
-        msj: "Set%20GlobalPerfection",
-    },
-    {
-        id: "28",
-        name: "Set Blue Light - Nuevo!!",
-        description: "- 1 Ultra Richi Q10  <br> - 1 A elección (Opc: Esp. de limpieza/Agua micelar/Agua <br> Previene el fotoenvejecimiento <br>",       
-        price: "$7500.-",
-        height: "card-height-500",
-        img: "../images/ultraRichQ.jpg",
-        msj: "Set%20ultraRichQ",
-    },
-    {
-        id: "29",
-        name: "Set Corporal New Body- NUEVO!!",
-        description: " - 1 New Body espuma <br>- 1 Exfoliante <br>- 1 Emulsión corporal <br>",       
-        price: "$7000.-",
-        height: "card-height-500",
-        img: "../images/NewBody.png",
-        msj: "Set%20NewBody",
+        id: "client1",
+        name: "Hekas",
+        category: "Cerveza Artesanal",
+        year: "2020",
+        action: "Etiquetas para porrones",
+        imgCard: "../assets/img/3.png", 
+        imgOne: "../assets/img/3.png",
+        imgTwo: "../assets/img/1.png",
+        imgThree: "../assets/img/2.png",
     },
 ]
-const productsContainer = document.querySelector(".main-products-big-container")
-const setsContainer = document.querySelector(".main-beautybox-big-container")
 
-for ( product of products) {
-    productsContainer.innerHTML += 
+const clientsContainer = document.querySelector(".clients-container")
+
+for ( client of clients) {
+    clientsContainer.innerHTML += 
     `
-    <article class="main-products-container-article ${product.height}">
-                    <div class="products-circle">
-                        <p class="send">Envío<br>gratis</p>
+    <div class="col-12 col-sm-6 mt-4">
+    <div class="portfolio__card" data-bs-toggle="modal" data-bs-target="#clientModal">
+        <img src="${client.imgCard}">
+        <div class="cover">
+            <h3>${client.name}</h3>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="clientModal" tabindex="-1" aria-labelledby="clientModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="clientModalLabel">diseño_packaging</h5>
+                <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal"
+                    aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row d-flex">
+                        <div class="modal-info">
+                            <p class="label">Cliente:</p>
+                            <p class="info text-decoration-underline">${client.name}</p>
+                        </div>
+                        <div class="modal-info">
+                            <p class="label">Rubro:</p>
+                            <p class="info">${client.category}</p>
+                        </div>
+                        <div class="modal-info">
+                            <p class="label">Año:</p>
+                            <p class="info">${client.year}</p>
+                        </div>
+                        <div class="modal-info">
+                            <p class="label">Trabajo:</p>
+                            <p class="info">${client.action}</p>
+                        </div>
                     </div>
-                    <img src="${product.img}" alt="${product.name}">
-                    <div>
-                        <p class="products-price">${product.price}</p>
-                        <h4>${product.name}</h4>
-                        <p>${product.description}</p>
+                    <div class="row"></div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12  mt-4">
+                            <img class="modal-img firsts" src="${client.imgOne}">
+                        </div>
+                        <div class="col-12 col-md-auto mt-4">
+                            <img class="modal-img second " src="${client.imgTwo}">
+                        </div>
+                        <div class="col-12 col-md-auto mt-4">
+                            <img class="modal-img second" src="${client.imgThree}">
+                        </div>
                     </div>
-                    <a class="products-button"
-                        href="https://api.whatsapp.com/send?phone=5491131709144&text=%C2%A1Hola!%20%C2%A1Me%20gustar%C3%ADa%20encargar%20un${product.msj}">Encargar
-                        <i class="icon-whatsapp meddia-button"></i></a>
-                </article>
-    `
-}
-for ( set of sets) {
-    setsContainer.innerHTML += 
-    `
-    <article class="main-beautybox-container-article ${set.height}">
-                    <div class="beautybox-circle">
-                        <p class="send">Envío<br>gratis</p>
-                    </div>
-                    <img src="${set.img}" alt="${set.name}">
-                    <div>
-                        <p class="products-price">${set.price}</p>
-                        <h4>${set.name}</h4>
-                        <p>${set.description}</p>
-                    </div>
-                    <a class="products-button"
-                        href="https://api.whatsapp.com/send?phone=5491131709144&text=%C2%A1Hola!%20%C2%A1Me%20gustar%C3%ADa%20encargar%20un${set.msj}">Encargar
-                        <i class="icon-whatsapp meddia-button"></i></a>
-                </article>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">X</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Modal -->
     `
 }

@@ -116,7 +116,7 @@
     </section>
     <!-- /Works -->
 
-    <div class="container bg2">
+    <div class="container bg2 mb-5">
         <div class="row my-4 d-flex align-items-center justify-content-between">
             <div class="col-10 offset-1">
                 <div class="portfolio-title">
@@ -125,63 +125,24 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-10 offset-1 d-flex justify-content-between flex-wrap">
-                <div class="col-12 col-sm-6 mt-4">
-                    <div class="portfolio__card" data-bs-toggle="modal" data-bs-target="#clientModal">
-                        <img src="../assets/img/3.png" alt="nombre del cliente">
-                        <div class="cover">
-                            <h3>Campo Claro</h3>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="clientModal" tabindex="-1" aria-labelledby="clientModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="clientModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Modal -->
-                <div class="col-12 col-sm-6 mt-4">
-                    <div class="portfolio__card">
-                        <img src="../assets/img/3.png" alt="nombre del cliente">
-                    </div>
-                </div>
+            <div class="col-10 offset-1 d-flex justify-content-between flex-wrap clients-container">
+               <!-- Script -->
             </div>
 
         </div>
     </div>
 
+            <!-- Marquee -->
 
-
-
-    <!-- <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-10 offset-1 col-md-5 py-2">
-                    <h3 class="section-title border-blue">Encontremos juntxs el servicio que estás buscando</h3>
+            <div id="MarqueeOne">
+                <div id=marquee-1>
+                    <!-- script -->
                 </div>
-                <div class="col-10 offset-1 col-md-5 offset-md-0 d-flex justify-content-center align-items-center my-2">
-                    <a href="./contact.html">
-                        <button class="btn btn-ac-first rounded-pill" data-aos="fade-up"
-                            data-aos-duration="1000">Presupuestar</button>
-                    </a>
+                <div id=marquee-2>
+                    <!-- script -->
                 </div>
             </div>
-    </section> -->
+            <!-- /Marquee -->
 
     <!-- Contact -->
     <section id="ContactPage" class="py-5">
@@ -259,6 +220,8 @@
     <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- My Js -->
     <script async src="../js/index.js"></script>
+    <script async src="../js/portfolio.js"></script>
+    <script async src="../js/marquee.js"></script>
 </body>
 
 </html>

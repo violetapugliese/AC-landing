@@ -51,4 +51,7 @@ min-width: 290px;
 .bb-custom-side p {
   font-size: 1.2rem;
 }
-
+.second{
+  width: auto;
+  height: 300px;
+}

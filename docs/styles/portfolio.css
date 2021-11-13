@@ -54,4 +54,45 @@
 }
 .portfolio__card .cover h3 {
   color: #ffffff;
+  text-transform: uppercase;
+}
+/* Modal */
+.modal-dialog{
+  width: 70% !important;
+  min-width: 300px !important;
+  max-width: none !important;
+}
+.modal-header {
+  background-color: #2157db;
+  color: white;
+}
+.btn-close-modal{
+  color: white;
+}
+.modal-title{
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.modal-body {
+  background-color: #fcf2fa;
+}
+.modal-info{
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  font-size: 1.5rem;
+}
+.label{
+  color: #c0c0c0;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.info{
+  margin-bottom: 0;
+}
+.modal-img{
+  width: 100%;
+}
+.modal-footer{
+  background-color: #fcf2fa;
 }

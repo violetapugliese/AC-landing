@@ -1,4 +1,8 @@
 /* Media screen and (min-width: 1400px) */
-.service-item{
-    min-width: 331px;
-    }
+.service-item {
+  min-width: 331px;
+}
+.modal-img{
+  /* width: 100%; */
+  max-width: 450px;
+}
