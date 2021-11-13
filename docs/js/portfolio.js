@@ -5,43 +5,10 @@ const clients = [
         category: "Cerveza Artesanal",
         year: "2020",
         action: "Etiquetas para porrones",
-        imgCard: "../assets/img/3.png", 
-        imgOne: "../assets/img/3.png",
-        imgTwo: "../assets/img/1.png",
-        imgThree: "../assets/img/2.png",
-    },
-    {
-        id: "client1",
-        name: "Hekas",
-        category: "Cerveza Artesanal",
-        year: "2020",
-        action: "Etiquetas para porrones",
-        imgCard: "../assets/img/3.png", 
-        imgOne: "../assets/img/3.png",
-        imgTwo: "../assets/img/1.png",
-        imgThree: "../assets/img/2.png",
-    },
-    {
-        id: "client1",
-        name: "Hekas",
-        category: "Cerveza Artesanal",
-        year: "2020",
-        action: "Etiquetas para porrones",
-        imgCard: "../assets/img/3.png", 
-        imgOne: "../assets/img/3.png",
-        imgTwo: "../assets/img/1.png",
-        imgThree: "../assets/img/2.png",
-    },
-    {
-        id: "client1",
-        name: "Hekas",
-        category: "Cerveza Artesanal",
-        year: "2020",
-        action: "Etiquetas para porrones",
-        imgCard: "../assets/img/3.png", 
-        imgOne: "../assets/img/3.png",
-        imgTwo: "../assets/img/1.png",
-        imgThree: "../assets/img/2.png",
+        imgCard: "3.png", 
+        imgOne: "3.png",
+        imgTwo: "1.png",
+        imgThree: "2.png",
     },
 ]
 
@@ -52,7 +19,7 @@ for ( client of clients) {
     `
     <div class="col-12 col-sm-6 mt-4">
     <div class="portfolio__card" data-bs-toggle="modal" data-bs-target="#clientModal">
-        <img src="${client.imgCard}">
+        <img src="../assets/img/${client.imgCard}">
         <div class="cover">
             <h3>${client.name}</h3>
         </div>
@@ -91,13 +58,13 @@ for ( client of clients) {
                     <div class="row"></div>
                     <div class="row d-flex justify-content-center">
                         <div class="col-12  mt-4">
-                            <img class="modal-img firsts" src="${client.imgOne}">
+                            <img class="modal-img firsts" src="../assets/img/${client.imgOne}">
                         </div>
                         <div class="col-12 col-md-auto mt-4">
-                            <img class="modal-img second " src="${client.imgTwo}">
+                            <img class="modal-img second " src="../assets/img/${client.imgTwo}">
                         </div>
                         <div class="col-12 col-md-auto mt-4">
-                            <img class="modal-img second" src="${client.imgThree}">
+                            <img class="modal-img second" src="../assets/img/${client.imgThree}">
                         </div>
                     </div>
                 </div>
