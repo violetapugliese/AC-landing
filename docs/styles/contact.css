@@ -7,9 +7,27 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .contact-title {
+    width: fit-content;
+      padding: 0.2rem 1rem;
+      background-color: #f2733b;
+      color: white;
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #2157db;
+  }
+  label{
+    color: white;
+    font-size: 0.8rem;
+  }
   .form-control {
     padding: 0.2rem 0.5rem;
-    border-radius: 0;
+    border-radius: 5px;
     font-size: 0.8rem;
   }
  #Contact-main svg {
