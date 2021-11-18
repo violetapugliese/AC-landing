@@ -12,7 +12,7 @@
 }
 html {
   font-size: 20px;
-  background-color: var(--ac-bg-gray);
+  background-color: var(--ac-light-pink);
 }
 .bg-ac-light-pink {
   background-color: var(--ac-light-pink);
@@ -879,12 +879,12 @@ body {
 }
 .slider__info-fill {
   position: absolute;
-  background-color: rgba(1, 7, 19, 0.502);
+  background-color: #2156db6c;
   right: -50%;
   bottom: -20%;
   opacity: 0;
   width: 100%;
-  height: 40%;
+  height: 30%;
   border-radius: 20px 20px 0 0;
   padding: 0.5rem 1rem;
   transition: 0.4s;
