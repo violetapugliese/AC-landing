@@ -33,10 +33,7 @@
   width: 100%;
   transform: translateX(0);
 }
-.bb-custom-firstpage p,
-.bb-custom-side p {
-  font-size: 1rem;
-}
+
 .portfolio__card {
   width: 90%;
   padding-top: 90%;

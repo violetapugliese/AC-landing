@@ -52,7 +52,7 @@
                                 <div class="wrapper-header text-white">
                                 </div>
                                 <div class="nav-bar__header text-center">
-                                    <p><a href="./index.html">HOLA
+                                    <p><a href="../index.html">HOLA
                                             <img src="../assets/boat-icon.png" alt="icono de bote de papel">
                                         </a> ¿NAVEGAMOS? </p>
                                 </div>
@@ -94,35 +94,35 @@
                     <div class="contact-title mb-3">
                         <h1 class="section-title">contacto</h1>
                     </div>
+                    <form method="post" action="../send.php" class="contact-form">
+                        <div class="mb-1">
+                            <label for="exampleFormControlInput1" class="">Nombre y Apellido</label>
+                            <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" >
+                        </div>
+                        <div class="mb-1">
+                            <label for="exampleFormControlInput1" class="">Email</label>
+                            <input type="text" name="email" class="form-control"
+                                placeholder="Tu email">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="">Consulta</label>
+                            <textarea class="form-control" name="comentario" 
+                                rows="3" placeholder="Contanos acerca de tu proyecto, tus dudas o tus ideas..."></textarea>
+                        </div>
+                        <div class="w-100 text-center">
+                            <input class="btn btn-ac-first rounded-pill" data-aos="fade-up"  data-aos-duration="1000" value="Enviar" type="submit">             
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-10 offset-1 col-md-5 d-flex flex-column justify-content-center ">
                     <div>
                         <h2 class="section-title">¡Bien! sos curiosx como nosotras</h2>
                         <p class="section-subtitle">Para conquistar el mundo digital trabajando juntxs, podemos empezar por conocernos. </p>
                         <br>
                         <p class="section-text">Contanos ¿En qué podemos ayudarte?</p>
                     </div>
-                </div>
-
-                <div class="col-10 offset-1 col-md-5 ">
-                    <form method="post" action="../send.php" class="contact-form">
-                        <div class="mb-1">
-                            <label for="exampleFormControlInput1" class="">Nombre y Apellido</label>
-                            <input type="text" name="nombre" class="form-control" placeholder="" >
-                        </div>
-                        <div class="mb-1">
-                            <label for="exampleFormControlInput1" class="">Email</label>
-                            <input type="text" name="email" class="form-control"
-                                placeholder="">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="">Consulta</label>
-                            <textarea class="form-control" name="comentario" 
-                                rows="3" placeholder="Escribí acá acerca de tu proyecto, tus dudas o tus ideas..."></textarea>
-                        </div>
-                        <div class="w-100 text-center">
-                            <input class="btn btn-ac-first rounded-pill" data-aos="fade-up"  data-aos-duration="1000" value="Enviar" type="submit">             
-                        </div>
-                    </form>
                 </div>
 
             </div>

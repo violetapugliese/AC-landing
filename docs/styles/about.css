@@ -86,7 +86,8 @@
 	float: left;
 	height: 100%;
 	overflow: hidden;
-	background: #f2e7f0;
+	background-image: url(../assets/LA-TEXTURA-oscurecer.png);
+	background-position: center;
 	/* Centering with flexbox */
 	display: -webkit-box;
 	display: -moz-box;
@@ -125,7 +126,8 @@
 	width: 50%;
 	float: left;
 	height: 100%;
-	background: #f2e7f0;
+	background-image: url(../assets/LA-TEXTURA-oscurecer.png);
+	background-position: center;
 }
 .bb-custom-firstpage p,
 .bb-custom-side p {

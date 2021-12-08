@@ -74,3 +74,10 @@
   background-repeat: no-repeat;
   background-position-y: top;
 }
+.bg-impact{
+  color: white;
+  background-image: url(../assets/img/about-img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: top;
+}
