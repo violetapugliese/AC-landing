@@ -58,7 +58,6 @@
 }
 /* Modal */
 .modal-dialog{
-  width: 100% !important;
   min-width: 300px !important;
   max-width: none !important;
 }
@@ -80,11 +79,11 @@
   display: flex;
   flex-wrap: wrap;
   width: fit-content;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .label{
   color: #c0c0c0;
-  margin-right: 10px;
+  margin-right: 2px;
   margin-bottom: 0;
 }
 .info{
