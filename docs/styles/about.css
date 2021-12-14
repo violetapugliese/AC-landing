@@ -56,12 +56,11 @@
   .about-manifest-img-container{ 
     width: 100%;
     height: 150px;
-    background-image: url(../assets/img/about-img-1.jpg);
+    background-image: url(../assets/img/nos_v2-35b.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: top;
   }
-
 .about-manifest-title{
 	display: inline-block;
 	padding: 0.2rem 1rem;
