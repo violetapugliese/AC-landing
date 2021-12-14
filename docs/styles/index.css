@@ -143,9 +143,6 @@ body {
   margin-bottom: 1rem;
   border-bottom: solid 1px #2157db;
 }
-/* .btn-ac:active {
-  
-} */
 
 /* Header */
 
@@ -979,8 +976,6 @@ body {
 a span {
   color: var(--ac-orange);
 }
-/* Darck Mode */
-.dark-mode {
-  color: var(--ac-light-pink);
-  background-color: #010611;
+.underline-blue{
+  border-bottom: 1px solid #2157db;
 }
