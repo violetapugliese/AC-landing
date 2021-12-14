@@ -61,4 +61,11 @@ min-width: 290px;
 .modal-info{
   font-size: 1.5rem;
 }
+.header-secondary-portfolio, .header-secondary-services {
+  height: 70vh;
+  background-position-y: -190px;
+}
+.header-secondary-contact{
+  background-position-y: -150px;
 
+}

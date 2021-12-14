@@ -49,7 +49,9 @@
 .team_container video {
 	width: 100%;
 }
-
+#About-manifest{
+	margin-bottom: 7rem;
+}
   .about-manifest-img-container{ 
     width: 100%;
     height: 150px;
@@ -203,16 +205,6 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-/* .bb-custom-icon-first:before,
-.bb-custom-icon-last:before {
-	content: "\e002";
-}
-
-.bb-custom-icon-arrow-left:before,
-.bb-custom-icon-arrow-right:before {
-	content: "\e003";
-} */
-
 .bb-custom-icon-arrow-left:before,
 .bb-custom-icon-first:before {
 	-webkit-transform: rotate(180deg);
@@ -227,7 +219,28 @@
 .no-js .bb-custom-content {
 	height: 470px;
 }
-
+#bonus h1{
+	display: inline-block;
+	width: fit-content;
+	color: white;
+	background-color: #2157db;
+	padding: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.bonusContainer {
+	min-width: 280px;
+	padding-bottom: 10%;
+}
+.bonusContainer img{
+	width: 100%;
+}
+.btnReloaded:focus{
+	box-shadow: none !important;
+}
+.btnReloaded:active{
+	transform: rotate(180deg);
+}
 @media screen and (max-width: 61.75em){
 	.bb-custom-side {
 		font-size: 70%;

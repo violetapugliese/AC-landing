@@ -2,8 +2,8 @@
 .header-secondary-contact {
     height: 60vh;
     width: 100%;
-    background-image: url(../assets/img/13.png);
-    background-position: bottom ;
+    background-image: url(../assets/img/portadacont_1.png);
+    background-position: top ;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -26,7 +26,7 @@
   }
   .form-control {
     padding: 0.2rem 0.5rem;
-    border-radius: 5px;
+    border-radius: 0px;
     font-size: 0.8rem;
   }
  #Contact-main svg {

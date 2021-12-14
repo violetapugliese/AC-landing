@@ -1,8 +1,9 @@
 .header-secondary-portfolio {
   height: 60vh;
   width: 100%;
-  background-image: url(../assets/img/6.png);
-  background-position: bottom left;
+  background-image: url(../assets/img/portadatrab_2.png);
+  background-position-y: 0px;
+  background-position-x: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
