@@ -125,7 +125,7 @@ for ( client of clients) {
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn" data-bs-dismiss="modal">X</button>
+                <button type="button" class="btn btn-back" data-bs-dismiss="modal">Volver</button>
             </div>
         </div>
     </div>
