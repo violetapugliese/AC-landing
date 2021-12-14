@@ -551,21 +551,7 @@ body {
   background-repeat: repeat;
   background-size: 150%;
 }
-/* .bg3 {
-  background-image: url(../assets/bg3.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-} */
-/* .bg4 {
-  background-image: url(../assets/bg4.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-.bg5 {
-  background-image: url(../assets/bg5.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-} */
+
 /* Services */
 #Services {
   overflow: hidden;

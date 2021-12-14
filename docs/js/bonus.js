@@ -54,13 +54,13 @@ const images = [
   "adrianalestido3.jpg",
   "adrianalestido4.jpg",
 ];
-const bonusContainer = document.querySelector('.bonusContainer')
+const bonusImgContainer = document.querySelector('.bonusImgContainer')
 function rand(n) {
   return Math.floor(Math.random() * n + 1);
 }
 
 function cambiar() {
-    bonusContainer.innerHTML = 
+    bonusImgContainer.innerHTML = 
     `
     <img id="ia" src="../assets/bonus/${images[rand(54)-1]}" alt="meme-agencia-crash">
     `

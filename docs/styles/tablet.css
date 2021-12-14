@@ -15,16 +15,6 @@
 .gallery__title-img{
   width: 150px;
 }
-/* .slider {
-  height: 220px;
-} */
-/* .slider__card-container {
-  width: 350px;
-  max-height: 220px;
-}
-.slider__img {
-  width: 350px;
-} */
 .about-manifest-img-container{
   height: 250px;
 }
@@ -38,3 +28,13 @@
   width: 90%;
   padding-top: 90%;
 }
+.header-secondary-about {
+	position: relative;
+    width: 100%;
+	height: 60vh;
+	overflow: hidden;
+	background-image: url(../assets/v2_2x3.gif);
+	background-size: cover;
+	background-position-y: -50px;
+	background-repeat: no-repeat;
+  }
