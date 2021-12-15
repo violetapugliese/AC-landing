@@ -65,7 +65,7 @@ function cambiar() {
     <source srcset="../assets/bonus/${images[rand(54)-1]}-small.jpg" media="(max-width:  480px)" />
     <source srcset="../assets/bonus/${images[rand(54)-1]}-medium.jpg" media="(max-width: 640px)" />
     <source srcset="../assets/bonus/${images[rand(54)-1]}-big.jpg" media="(max-width: 1200px)" />
-    <img id="ia" src="../assets/bonus/${images[rand(54)-1]}-small.jpg" alt="meme-agencia-crash">
+    <img id="ia" src="../assets/bonus/${images[rand(54)-1]}-big.jpg" alt="meme-agencia-crash">
     </picture>
     
     `
