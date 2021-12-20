@@ -740,10 +740,10 @@ body {
   background-size: cover;
 }
 .new-about__imgOne {
-  background-image: url(../assets/wrapper-gridOne.png);
+  background-image: url(../assets/wrapper-gridOne.jpg);
 }
 .new-about__imgTwo {
-  background-image: url(../assets/wrapper-gridTwo.png);
+  background-image: url(../assets/wrapper-gridTwo.jpg);
 }
 .new-about__imgThree {
   width: 100%;
@@ -751,7 +751,7 @@ body {
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
-  background-image: url(../assets/wrapper-gridThree.png);
+  background-image: url(../assets/wrapper-gridThree.jpg);
 }
 .new-about__text-big-container {
   position: absolute;

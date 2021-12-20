@@ -1,13 +1,13 @@
 .header-secondary-about {
 	position: relative;
     width: 100%;
-	height: 40vh;
+	height: 60vh;
 	overflow: hidden;
-	background-image: url(../assets/v2_2x3.gif);
-	background-size: contain;
-	background-position-y: 60px;
-	background-position-x: center;
-	background-repeat: no-repeat;
+  }
+  .video-mockup{
+	position: relative;
+	width: 100%;
+	top: 0;
   }
   .about_video-stopmotion {
 	  width: 100%;
@@ -56,7 +56,7 @@
   .about-manifest-img-container{ 
     width: 100%;
     height: 150px;
-    background-image: url(../assets/img/nos_v2-35b.png);
+    background-image: url(../assets/img/nos_v2-35b-small.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: top;
