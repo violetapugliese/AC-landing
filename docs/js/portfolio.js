@@ -74,7 +74,7 @@ for ( client of clients) {
     `
     <div class="col-12 col-sm-6 mt-4">
     <div class="portfolio__card" data-bs-toggle="modal" data-bs-target="#${client.id}">
-        <img src="../assets/portfolio/${client.imgCard}">
+        <img loading="lazy" src="../assets/portfolio/${client.imgCard}">
         <div class="cover">
             <h3>${client.name}</h3>
         </div>
@@ -113,13 +113,13 @@ for ( client of clients) {
                     <div class="row"></div>
                     <div class="row d-flex justify-content-center">
                         <div class="col-12  mt-4">
-                            <img class="modal-img firsts" src="../assets/portfolio/${client.imgOne}">
+                            <img loading="lazy" class="modal-img firsts" src="../assets/portfolio/${client.imgOne}">
                         </div>
                         <div class="col-12 col-md-6 mt-4">
-                            <img class="modal-img second" src="../assets/portfolio/${client.imgTwo}">
+                            <img loading="lazy" class="modal-img second" src="../assets/portfolio/${client.imgTwo}">
                         </div>
                         <div class="col-12 col-md-6 mt-4">
-                            <img class="modal-img second" src="../assets/portfolio/${client.imgThree}">
+                            <img loading="lazy" class="modal-img second" src="../assets/portfolio/${client.imgThree}">
                         </div>
                     </div>
                 </div>

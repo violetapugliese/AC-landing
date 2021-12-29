@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Agencia Crash | Contacto</title>
-    <link rel="icon" type="image/png" href="./assets/logo-light.svg">
+    <link rel="icon" type="image/png" href="../assets/logo-light.svg">
     <link rel="preconect" href="https://cdn.jsdelivr.net/">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
     <link rel="preconect" href="https://unpkg.com/">
@@ -37,15 +37,12 @@
                 <div class="row">
                     <div class="col d-flex align-items-center">
                         <a href="../index.html">
-                            <img src="../assets/logo-light.svg" class="nav-bar-logo" alt="logo blanco agencia crash">
+                            <img loading="lazy" src="../assets/logo-light.svg" class="nav-bar-logo" alt="logo blanco agencia crash">
                             <p class="header__text-logo"> agencia crash</p>
                         </a>
                     </div>
                     <div class="col d-flex align-items-end">
                         <div class="container-red">
-                            <button type="button" class="btn-dark-mode btn" id="darkMode">
-                                <img src="../assets/darkMood.svg" width="24" alt="darkmood boton" class="img-dark-mode">
-                            </button>
                             <button class="btn menu-btn" id="menu-btn">
                                 <div class="menu-btn-ham1"></div>
                                 <div class="menu-btn-ham2"></div>
@@ -55,25 +52,25 @@
                                 <div class="wrapper-header text-white">
                                 </div>
                                 <div class="nav-bar__header text-center">
-                                    <p><a href="./index.html">HOLA
-                                            <img src="../assets/boat-icon.png" alt="icono de bote de papel">
+                                    <p><a href="../index.html">HOLA
+                                            <img loading="lazy" src="../assets/boat-icon.png" alt="icono de bote de papel">
                                         </a> ¿NAVEGAMOS? </p>
                                 </div>
                                 <div class="container h-50">
                                     <div class="col h-50">
                                         <ul class="nav-bar-menu-container">
-                                            <li class="nav-bar-menu-link"><a href="../index.html#About" class="nav-bar-menu__link">Nosotras </a>
+                                            <li class="nav-bar-menu-link"><a href="./about.html" class="nav-bar-menu__link">Nosotras </a>
                                             </li>
                                             <li class="nav-bar-menu-link"><a href="./services.html" class="nav-bar-menu__link">Servicios
                                                 </a></li>
-                                            <li class="nav-bar-menu-link"><a href="../index.html#Gallery" class="nav-bar-menu__link">Trabajos </a>
+                                            <li class="nav-bar-menu-link"><a href="./portfolio.html" class="nav-bar-menu__link">Trabajos </a>
                                             </li>
-                                            <li class="nav-bar-menu-link"><a href="./contact.html" class="nav-bar-menu__link">Contacto</a>
+                                            <li class="nav-bar-menu-link"><a href="./contact.html" class="nav-bar-menu__link underline-blue">Contacto</a>
                                             </li>
-                                            <li class="nav-bar-menu-link"><a href="../index.html" class="bonus" class="nav-bar-menu__link">Bonus ◊ © ± ¦</a>
+                                            <li class="nav-bar-menu-link"><a href="./about.html#bonus" class="bonus" class="nav-bar-menu__link">Bonus ◊ © ± ¦</a>
                                             </li>
                                             <div class="nav-bar-menu__logo">
-                                                <img src="../assets/logo-azul-fem.svg" alt="logo-azul-fem">
+                                                <img loading="lazy" src="../assets/logo-azul-fem.svg" alt="logo-azul-fem">
                                             </div>
                                         </ul>
                                     </div>
@@ -133,27 +130,35 @@
     <!-- Footer -->
     <footer id="Footer" class="footer h-50 bg-ac-blue">
         <div class="container">
-            <div class="row pt-4">
-                <div class="col-10 text-center offset-1 ">
+            <div class="row pt-5 d-flex align-items-center">
+                <div
+                    class="col-10 offset-1 col-md-4 d-flex align-items-center justify-content-md-start justify-content-center footer__border">
+                    <h5 class="footer_title">Agencia Crash</h5>
+                </div>
+                <div class="col-10 offset-1 col-md-2 offset-md-0 d-flex justify-content-center align-items-center">
                     <a href="../index.html">
-                        <img class="logo-footer pb-2" src="../assets/logo-light.svg" alt="logo agencia crash color claro">
+                        <img loading="lazy" class="logo-footer pb-2" src="../assets/logo-fem-light.png" alt="logo-fem-light">
                     </a>
                 </div>
-                <hr>
-                <div class="col-10 offset-1 col-md-5 d-flex flex-column justify-content-center">
-                    <p class="section-text mb-0">¿Te gustaría ser parte de Agencia Crash?</p>
-                    <p class="section-text"><a href=""><span>Completá este formulario</span></a> para conocernos</p>
+                <div
+                    class="col-10 offset-1 col-md-4 offset-md-0 d-flex align-items-center justify-content-md-end justify-content-center footer__border">
+                    <h6 class="footer_direction"><img loading="lazy" src="../assets/iconmedia/location.png" alt="icon-location">Buenos
+                        Aires, Argentina</h6>
                 </div>
 
-                <div class="col-10 offset-1 col-md-5 d-flex align-items-center justify-content-center ">
-                    <a href=""><img src="../assets/iconmedia/icons8-gmail-50.svg" alt="icon gmail"></a>
-                    <a href=""><img src="../assets/iconmedia/icons8-linkedin-50.svg" alt="icon linkedin"></a>
-                    <a href=""><img src="../assets/iconmedia/icons8-whatsapp-50.svg" alt="icon whatsapp"></a>
+                <div class="col-10 col-md-5 offset-1 p-0 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <h6 class="text-decoration-underline">#ContenidoEnMovimiento</h6>
+                </div>
+                <div class="col-10 col-md-5 offset-1 offset-md-0 p-0 d-flex align-items-center justify-content-center justify-content-md-end footer__icons">
+                    <a href=""><img loading="lazy" src="../assets/iconmedia/icon-wp.png" alt="icon-whatsapp"></a>
+                    <a href="https://www.linkedin.com/in/agencia-crash-460252212/"><img loading="lazy" src="../assets/iconmedia/icon-linkedin.png" alt="icon-linkedin"></a>
+                    <a href="https://www.instagram.com/agenciacrash/"><img loading="lazy" src="../assets/iconmedia/icon-ig.png" alt="icon-ig"></a>
+                    <a href="mailto:agenciacrashh@gmail.com"><img loading="lazy" src="../assets/iconmedia/icon-mail.png" alt="icon-mail"></a>
+
                 </div>
             </div>
-            <hr>
             <div class="row text-center">
-                <p class="pt-4"> © Agencia Crash - 2021</p>
+                <p class="pt-4">Agencia Crash © 2021</p>
             </div>
         </div>
         </div>
@@ -167,9 +172,10 @@
             bodyPage.classList.remove("hidden");
         };
     </script>
-    <script async src="../js/index.js"></script>
     <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--  -->
+    <script async src="../js/index.js"></script>
 </body>
 
 </html>
