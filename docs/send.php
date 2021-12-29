@@ -104,7 +104,7 @@
 
                         <?php
                         if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["comentario"])) {
-                            $to = "violeta.pugliese@gmail.com";
+                            $to = "agenciacrashh@gmail.com";
                             $subject = "Mensaje Enviado";
                             $contenido .= "Nombre: " . $_POST["nombre"] . "\n";
                             $contenido .= "Email: " . $_POST["email"] . "\n\n";

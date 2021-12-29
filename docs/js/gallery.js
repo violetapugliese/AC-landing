@@ -229,7 +229,7 @@ for ( image of images) {
     <source srcset="assets/gallery/${image.id}-small.jpg" media="(max-width:  480px)" />
     <source srcset="assets/gallery/${image.id}-medium.jpg" media="(max-width: 640px)" />
     <source srcset="assets/gallery/${image.id}-big.jpg" media="(max-width: 1200px)" />
-    <img loading="lazy" class="slider__img" src="./assets/gallery/${image.id}-big.jpg" alt="gallery-ac">
+    <img class="slider__img" src="./assets/gallery/${image.id}-big.jpg" alt="gallery-ac">
     </picture>
     <div class="slider__info-container">
         <img class="slider__info-icon" src="./assets/info.svg" alt="info logo">

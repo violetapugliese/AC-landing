@@ -897,11 +897,16 @@ body {
 .swiper:active {
   cursor: grabbing;
 }
+.swiper-wrapper{
+  will-change: contents;
+  transform: translate3d(0px, 0px, 0px);
+  transition-duration: 0ms;
+}
 .swiper-slide {
   /* max-height: 200px; */
   /* min-width: 300px !important; */
 
-  width: fit-content;
+  width: auto;
   height: 300px;
   font-size: 18px;
   background: #fff;
